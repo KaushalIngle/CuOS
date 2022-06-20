@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: Tails\n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2021-11-19 17:07+0000\n"
+"PO-Revision-Date: 2022-04-24 22:22+0000\n"
+"Last-Translator: Joaquín Serna <bubuanabelas@cryptolab.net>\n"
+"Language-Team: Spanish <http://translate.tails.boum.org/projects/tails/"
+"and_the_winner_is/es/>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9.1\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta date=\"Sat, 12 Apr 2014 20:23:45 +0000\"]]\n"
+msgstr "[[!meta date=\"Sat, 12 Apr 2014 20:23:45 +0000\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!pagetemplate template=\"news.tmpl\"]]\n"
+msgstr "[[!pagetemplate template=\"news.tmpl\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta title=\"And the winner is...\"]]\n"
+msgstr "[[!meta title=\"Y el ganador es...\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!tag announce]]\n"
+msgstr "[[!tag announce]]\n"
+
+#. type: Plain text
+#, fuzzy
+#| msgid ""
+#| "Our [[logo contest|logo_contest]] ended up [a few days ago](https://"
+#| "mailman.boum.org/pipermail/tails-dev/2014-April/005390.html).  Since "
+#| "then, 11 regular Tails contributors voted on the [[36 proposals|blueprint/"
+#| "logo]]."
+msgid ""
+"Our [[logo contest|logo_contest]] ended up a few days ago.  Since then, 11 "
+"regular Tails contributors voted on the [[!tails_blueprint logo desc=\"36 "
+"proposals\"]]."
+msgstr ""
+"Nuestro [[concurso de logo|logo_contest]] finalizó [hace unos días](https://"
+"mailman.boum.org/pipermail/tails-dev/2014-April/005390.html). Desde "
+"entonces, 11 contribuyentes regulares de Tails votaron sobre las [[36 "
+"propuestas|blueprint/logo]]."
+
+#. type: Title =
+#, no-wrap
+msgid "Winner"
+msgstr "Ganador"
+
+#. type: Plain text
+#, fuzzy
+#| msgid "The winning proposal is the one by [[Tchou|blueprint/logo#tchou]]."
+msgid ""
+"The winning proposal is the one by [[!tails_blueprint logo#tchou desc=\"Tchou"
+"\"]]."
+msgstr "La propuesta ganadora es la de [[Tchou|blueprint/logo#tchou]]."
+
+#. type: Plain text
+#, fuzzy
+#| msgid ""
+#| "We commented on the initial version and we already came up with an "
+#| "improved version:"
+msgid ""
+"We commented on the initial version and we already came up with an improved "
+"version: [[!tails_blueprint logo/tchou-improved.png]]"
+msgstr "Comentamos la versión inicial y ya tenemos una versión mejorada:"
+
+#. type: Plain text
+msgid "Congratulations!"
+msgstr "¡Felicitaciones!"
+
+#. type: Plain text
+msgid ""
+"In the coming days we will keep on fine-tuning it and integrating it in time "
+"for Tails 1.0. So don't hesitate to comment on it."
+msgstr ""
+"En los próximos días vamos a seguir mejorándolo e integrándolo a tiempo para "
+"Tails 1.0. Así que no dudes en comentarlo."
+
+#. type: Title =
+#, no-wrap
+msgid "Top 7"
+msgstr "Top 7"
+
+#. type: Plain text
+msgid "Six other great proposals made it to the top 7:"
+msgstr "Otras seis estupendas propuestas que llegaron al top 7:"
+
+#. type: Bullet: '  - '
+#, fuzzy
+#| msgid ""
+#| "2nd: tie between [[Andrew|blueprint/logo#andrew]] and [[Joe|blueprint/"
+#| "logo#joe]]"
+msgid ""
+"2nd: tie between [[!tails_blueprint logo#andrew desc=\"Andrew\"]] and [[!"
+"tails_blueprint logo#joe desc=\"Joe\"]]"
+msgstr ""
+"segundo: empate entre [[Andrew|blueprint/logo#andrew]] y [[Joe|blueprint/"
+"logo#joe]]"
+
+#. type: Bullet: '  - '
+#, fuzzy
+#| msgid ""
+#| "4th: tie between [[Jared|blueprint/logo#jared]] and [[Renato|blueprint/"
+#| "logo#renato]]"
+msgid ""
+"4th: tie between [[!tails_blueprint logo#jared desc=\"Jared\"]] and [[!"
+"tails_blueprint logo#renato desc=\"Renato\"]]"
+msgstr ""
+"Cuarto: empate entre [[Jared|blueprint/logo#jared]] y [[Renato|blueprint/"
+"logo#renato]]"
+
+#. type: Bullet: '  - '
+#, fuzzy
+#| msgid ""
+#| "6th: tie between [[MewChan, hiding cat|blueprint/logo#mewchan]] and "
+#| "[[Christopher|blueprint/logo#christopher]]"
+msgid ""
+"6th: tie between [[!tails_blueprint logo#mewchan desc=\"MewChan, hiding cat"
+"\"]] and [[!tails_blueprint logo#christopher desc=\"Christopher\"]]"
+msgstr ""
+"Sexto: empate entre [[MewChan, hiding cat|blueprint/logo#mewchan]] y "
+"[[Christopher|blueprint/logo#christopher]]"
+
+#. type: Plain text
+#, fuzzy
+#| msgid ""
+#| "This [[PDF|blueprint/logo/top7.pdf]] shows a graph of how many voters "
+#| "preferred a given proposal to another one."
+msgid ""
+"This [[!tails_blueprint logo/top7.pdf desc=\"PDF\"]] shows a graph of how "
+"many voters preferred a given proposal to another one."
+msgstr ""
+"Este [[PDF|blueprint/logo/top7.pdf]] muestra un gráfico de cuántos votantes "
+"prefirieron una determinada propuesta sobre otra."
+
+#. type: Plain text
+msgid ""
+"We reiterate our thanks to the 31 designers who worked for this contest to "
+"be such a success."
+msgstr ""
+"Reiteramos nuestro agradecimiento a los 31 diseñadores que trabajaron en "
+"este concurso para que sea un éxito."
+
+#~ msgid "[[!img blueprint/logo/tchou-improved.png link=\"no\"]]\n"
+#~ msgstr "[[!img blueprint/logo/tchou-improved.png link=\"no\"]]\n"

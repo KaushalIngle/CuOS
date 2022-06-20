@@ -1,0 +1,45 @@
+[[!meta title="Roadmap"]]
+
+Our plans for the next releases
+===============================
+
+See our [[!tails_gitlab groups/tails/-/milestones desc="GitLab milestones"]].
+
+Our priorities for 2021&ndash;2022
+==================================
+
+## New features and major improvements
+
+- Improve the interface of the **Persistent Storage settings** ([[!tails_ticket 15572]])
+
+- <strike>Redesign how to **start Tor and configure Tor bridges** ([[!tails_ticket 10491]], [[!tails_ticket 17215]])</strike> [DONE]
+
+- <strike>Make it possible to **persist Tor bridges** ([[!tails_ticket 5461]])</strike> [DONE]
+
+## Security and maintenance
+
+- Add **Boot Loader entries for common hardware problems** ([[!tails_ticket 17641]])
+
+- Migrate to **Wayland** ([[!tails_ticket 12213]])
+
+- <strike>Release **Tails 5.0** based on Debian 11 (Bullseye) ([Tails 5.0](https://gitlab.tails.boum.org/tails/tails/-/issues?milestone_title=Tails_5.0))</strike> [DONE]
+
+## Website and documentation
+
+- Restructure our **support pages** ([[!tails_ticket 15130]])
+
+- <strike>Simplify our **installation pages** ([[!tails_ticket 16808]])</strike> [DONE]
+
+- <strike>Rewrite our **warnings page** ([[!tails_ticket 8845]])</strike> [DONE]
+
+<!--
+Other candidates that I decided not to include in the summary:
+
+- Do usability tests with first time users ([[!tails_ticket 18074]]))
+- Review accessibility and responsive web design on our website ([[!tails_ticket XXX]])
+- Create a public repository of user research data ([[!tails_ticket 18075]])
+- Gather privacy-preserving metrics on numbers of installation and versions ([[!tails_ticket 16535]], [[!tails_ticket 17545]])
+- Clarify hardware limitations and recommended hardware ([[!tails_ticket 17441]], [[!tails_ticket 15026]])
+- Allow doing a backup of the Persistent Storage when cloning ([[!tails_ticket 7049]])
+- Explain the **basics of using Tails** ([[!tails_ticket 17725]])
+-->

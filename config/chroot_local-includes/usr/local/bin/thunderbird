@@ -1,0 +1,68 @@
+#!/bin/sh
+
+set -e
+set -u
+set -x
+
+# Import set_mozilla_pref()
+. /usr/local/lib/tails-shell-library/tor-browser.sh
+
+THUNDERBIRD_CONFIG_DIR="${HOME}/.thunderbird"
+PROFILE="${THUNDERBIRD_CONFIG_DIR}/profile.default"
+
+configure_locale() {
+    # Thunderbird will set the locale based on the environment when
+    # this pref is empty, but will then save the result to this pref
+    # disabling this "guess" for the next time. We want Thunderbird to
+    # always match the locale of the Tails session.
+    set_mozilla_pref "${PROFILE}/prefs.js"   \
+                     "intl.locale.requested" \
+                     '""'                    \
+                     user_pref
+}
+
+reconfigure_profile() {
+    mkdir -p "${PROFILE}"
+    configure_locale
+}
+
+native_openpgp_configured() {
+    grep -q -E '^user_pref\("mail\.identity\.id[0-9]+\.openpgp_key_id"' \
+         "${PROFILE}/prefs.js"
+}
+
+enigmail_configured() {
+    grep -q -E '^user_pref\("mail\.identity\.id[0-9]+\.enablePgp", true\);' \
+         "${PROFILE}/prefs.js"
+}
+
+notify_enigmail_migration() {
+    local dialog_msg open_docs ignore
+    dialog_msg="<b><big>$(gettext "You need to migrate your OpenPGP keys")</big></b>
+
+$(gettext "<i>Thunderbird</i> 78 now replaces the <i>Enigmail</i> extension with built-in support for OpenPGP encryption. To continue using your OpenPGP keys in <i>Thunderbird</i>, follow our migration instructions.")
+"
+    open_docs=$(gettext "_Open Migration Instructions")
+    ignore=$(gettext "_Migrate Later")
+    zenity --question --width 480 --title "OpenPGP Migration" --text "${dialog_msg}" \
+           --ok-label "${open_docs}" --cancel-label "${ignore}"
+}
+
+enigmail_migration() {
+    if native_openpgp_configured || ! enigmail_configured; then
+        return
+    fi
+    if notify_enigmail_migration; then
+        tails-documentation doc/anonymous_internet/thunderbird/openpgp_migration &
+    fi
+}
+
+start_thunderbird() {
+    export GNOME_ACCESSIBILITY=1
+    unset SESSION_MANAGER
+    reconfigure_profile
+    enigmail_migration
+    exec /usr/bin/thunderbird --class "Thunderbird" -profile "${PROFILE}" "${@}"
+}
+
+start_thunderbird "${@}"

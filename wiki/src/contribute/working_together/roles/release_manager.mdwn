@@ -1,0 +1,211 @@
+[[!meta title="Release Manager"]]
+[[!meta robots="noindex"]]
+
+[[!toc levels=1]]
+
+<a id="duties"></a>
+
+# Duties
+
+Core members of the [[Foundations Team|roles/foundations_team]]
+are responsible for:
+
+* publishing new Tails versions in a timely fashion, according to the
+  schedule submitted by the [[Foundations Team|foundations team]];
+
+* reaching a consensus regarding documenting, delaying, or releasing,
+  when emergency releases might be warranted (usually prompted by
+  unplanned Tor Browser releases for security issues that require
+  urgent care);
+
+* making sure automatic and manual testers are covered during each
+  release process;
+
+* being in the loop when major changes land in release branches, so
+  that they can propose extra manual tests if those changes feel
+  risky (e.g. changes in the upgrader code).
+
+To ensure releasing is achievable in a timely manner, historically,
+they have also been responsible for:
+
+* making sure the various Git branches get successful builds and test
+  suite runs in Jenkins, filing issues for the Foundations Team as
+  needed.
+
+This responsibility might get shifted to the Foundations Team in the
+near future though.
+
+Also historically, the Release Manager for a given Tails release deals
+with integrating the target Tor Browser version, even if that's one of
+the Foundations Team's duties.
+
+<a id="shift"></a>
+
+# Shift
+
+## In the beginning of your shift
+
+- Check the [Tor Browser release
+  schedule](https://gitlab.torproject.org/tpo/applications/tor-browser/-/wikis/Release-Schedule). `[skip-if-emergency-release]`
+- Check the Mozilla release calendars: `[skip-if-emergency-release]`
+  * [Google calendar](https://www.google.com/calendar/embed?src=mozilla.com_2d37383433353432352d3939%40resource.calendar.google.com)
+  * [Release schedule](https://wiki.mozilla.org/Release_Management/Calendar)
+- Reply to the email sent to <tails-dev@boum.org> and
+  <tails-l10n@boum.org> by the RM for the previous release,
+  to provide any information they could not, such as: `[skip-if-emergency-release]`
+  - Code freeze date
+  - If this will be a major release: the release schedule for its RC.
+- Ask for a _Trusted Reproducer_:
+
+        ./bin/generate-call-for-trusted-reproducer \
+           --version VERSION_YOU_WILL_RELEASE
+
+- Update [[contribute/calendar]] accordingly.
+- Check if there's a
+  [[!tails_gitlab groups/tails/-/milestones desc="GitLab milestone"]]
+  with the correct due date. If it is not, create a merge request against
+  [[!tails_gitlab tails/gitlab-config]] to fix it.
+- Create an issue with the `Core Work: Foundations Team` label,
+  about upgrading Tor Browser in the release your shift is about.
+- Ensure there's [an issue about
+  writing the release notes](https://gitlab.tails.boum.org/tails/tails/-/issues?scope=all&state=opened&label_name[]=Core%20Work%3ATechnical%20writing&search=release+notes). This also applies to betas and release
+  candidates, so you might create multiple such issues during one
+  shift.
+- The ISO images for *every* previous beta, RC, and final release
+  based on the version of Debian that will be used for the release
+  you'll be preparing.
+
+  To get the list of images you'll need, run:
+
+        ./bin/iuk-source-versions VERSION_YOU_WILL_RELEASE
+
+  For example, if you're preparing 4.4, you need the ISO images
+  for 4.0~beta1, 4.0~beta2, 4.0~rc1, 4.0, 4.1, 4.1.1, 4.2, 4.2.2, and 4.3.
+
+  ie, you can run this inside isos.git:
+
+        git annex sync
+        (cd ${TAILS_GIT_REPO:?}; ./bin/iuk-source-versions "${VERSION:?}" | tr ' ' '\n' | sed -e 's/^/tails-amd64-/') | xargs -r git annex get
+
+
+
+- Ensure the next steps are tracked in your preferred personal
+  organization tool.
+
+## Two weeks after the beginning of your shift
+
+- Ensure you have found a _Trusted Reproducer_ and write who this is
+  in the [[contribute/calendar]].
+- Check if you have enough manual testers registered.
+  If not, ping the usual testers.
+
+## The Friday before the release date
+
+### Take care of TBB upgrade
+
+Ask the Tor Browser developers when they expect they'll have
+tarballs ready.
+
+Rationale: we need to coordinate our Tails release with the Tor Browser
+developers to make sure that the Tor Browser we plan to include in our
+release is ready in time for when we build the release image. The
+Friday prior to the release is a good candidate, since it's
+around this time they usually release tarballs for testing, and it
+will still give some time for us to improvise according to their
+"delayed" schedule and arrange a contingency plan (e.g. possibly
+delaying our release a day or two). Asking for a status report a day
+or two earlier than Friday *in addition* won't hurt, too.
+
+<div class="note">
+
+Note: the Tor Browser team Cc's tails-dev@boum.org when sending QA
+requests to tor-qa@lists.torproject.org which makes this easier.
+We are also often notified of any last last-minute rebuilds, better
+ask explicitly the Tor Browser team what their plans are.
+
+</div>
+
+As soon as the new *Tor Browser* tarballs are ready, you may import
+them in a topic branch and trigger CI runs, which will save you
+some precious time on pre-release Monday. See the
+[[Upgrading the Tor Browser|contribute/release_process/tor-browser]]
+page for details.
+
+### Make sure your build setup works
+
+This is not a mandatory step. However, it's suggested that you do this, especially if more than a week passed
+since you build a Tails image.
+
+You just need to make sure that `rake build` will work, so on Monday you can expect less glitches to happen.
+
+## Make the release happen
+
+No kidding. See [[contribute/release_process]].
+
+<a id="emergency-release"></a>
+
+# Emergency release
+
+This section documents what differs, when preparing an emergency release,
+from publishing a scheduled release.
+
+### Making decisions
+
+When an event prompts us to wonder whether we shall prepare an emergency
+release, we have to make 2 decisions:
+
+ - Will we publish an emergency release?
+
+   First, create an issue about this question. **Do not** leak
+   any information that was shared with us privately.
+
+   These stakeholders must be part of the decision-making process:
+
+    - release managers: determine whether we have the capacity to prepare an
+      emergency release, and when; privately share confidential information that
+      other stakeholders need to do their job
+
+    - developers i.e. Foundations Team: assess the risk that the emergency
+      release would cancel or mitigate; propose mitigation measures that
+      we could recommend to users
+
+      Rules of thumb:
+
+       - We usually do not prepare emergency releases for local privilege
+         escalation (even to root) if they cannot be exploited from the
+         execution context of Tor Browser.
+
+    - UX: evaluate the acceptability of mitigation measures proposed by
+      developers; remind everyone else that any extra upgrade has a UX cost
+
+    - technical writers: determine whether we have the capacity
+      to document mitigation measures, and when
+
+   If we decide to publish an emergency release, say so on the aforementioned
+   issue, then read on. Else, explain why on the aforementioned issue,
+   and close it with the _Rejected_ label.
+
+ - When will we prepare and publish it? (if we decided to go ahead)
+
+   This mostly depends on the availability of release managers and manual
+   testers. Privately reach out to them, asking when they could do their part of
+   the work. Then, release managers make this decision.
+
+### Additional steps
+
+1. Announce to <tails-dev@boum.org>:
+    - There's an upcoming emergency release. Don't say why if it's a secret.
+    - Announce the code freeze.
+2. Announce to manual testers: when you expect the tests to happen
+
+### Irrelevant steps
+
+Steps that are not relevant for emergency releases are tagged
+`[skip-if-emergency-release]`.
+
+### Timing
+
+By definition, an emergency release happens under timing constraints that are
+different from a scheduled release. To account for this, ignore timing
+indications below such as "Two weeks after" or "The Friday": assume everything
+is relevant shall happen as soon as reasonably possible.

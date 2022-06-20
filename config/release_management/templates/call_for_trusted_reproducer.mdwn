@@ -1,0 +1,18 @@
+{# Jinja2 template used by bin/generate-call-for-trusted-reproducer -#}
+To: tails-foundations@boum.org, tails-manual-testers@boum.org
+Subject: Looking for a Trusted Reproducer for Tails {{version}}
+
+Hi!
+
+Can you be the Trusted Reproducer for Tails {{version}}?
+
+Your job will be to reproduce the ISO and USB images for the RC (if applicable)
+and final release within 72 hours after the RM (yours truly) has unplugged
+their smartcard.
+
+If you volunteer, you must immediately read the "Preparation" section of
+the instructions:
+https://tails.boum.org/contribute/release_process/test/reproducibility/#preparation
+
+Thank you for considering,
+cheers!

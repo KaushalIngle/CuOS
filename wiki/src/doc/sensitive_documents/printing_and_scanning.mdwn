@@ -1,0 +1,36 @@
+[[!meta title="Printing and scanning"]]
+
+[[!toc]]
+
+Printing
+========
+
+To configure a printer or manage your printing jobs choose
+<span class="menuchoice">
+  <span class="guimenu">Applications</span>&nbsp;▸
+  <span class="guisubmenu">System Tools</span>&nbsp;▸
+  <span class="guimenuitem">Settings</span></span>&nbsp;▸
+  <span class="bold">Printers</span></span>.
+
+To check the compatibility of your printer with Linux and Tails, consult
+the [OpenPrinting database](https://www.openprinting.org/printers) of
+the Linux Foundation.
+
+<div class="tip">
+<p>To reuse the configuration of your printers across different working
+sessions, turn on the [[Printers|doc/first_steps/persistence#printers]]
+feature of the Persistent Storage.</p>
+</div>
+
+Scanning
+========
+
+Tails includes <span class="application">[Simple
+Scan](https://launchpad.net/simple-scan)</span>, a tool to scan both
+documents and photos.
+
+To start <span class="application">Simple Scan</span> choose
+<span class="menuchoice">
+  <span class="guimenu">Applications</span>&nbsp;▸
+  <span class="guisubmenu">Graphics</span>&nbsp;▸
+  <span class="guimenuitem">Simple Scan</span></span>.

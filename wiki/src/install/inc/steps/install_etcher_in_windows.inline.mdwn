@@ -1,0 +1,12 @@
+[[!meta robots="noindex"]]
+
+<h1 id="etcher" class="step">Download <em>balenaEtcher</em></h1>
+
+<div class="step-image">[[!img inc/infography/install-etcher.png link="no" alt=""]]</div>
+
+<p class="upgrade">In the following steps, you will install an intermediary Tails using the Tails USB
+image that you downloaded earlier.</p>
+
+1. Click on the following button to download <em>balenaEtcher</em>:
+
+   <a href="https://tails.boum.org/etcher/Etcher-Portable.exe" class="button">Download balenaEtcher for Windows</a>

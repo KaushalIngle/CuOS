@@ -1,0 +1,422 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-02-25 15:40-0600\n"
+"PO-Revision-Date: 2022-05-04 19:24+0000\n"
+"Last-Translator: Chre <tor@renaudineau.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.9.1\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta title=\"Our achievements in 2019\"]]\n"
+msgstr "[[!meta title=\"Nos réalisations en 2019\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta date=\"Thu, 31 Oct 2019 12:34:56 +0000\"]]\n"
+msgstr "[[!meta date=\"Thu, 31 Oct 2019 12:34:56 +0000\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!pagetemplate template=\"news.tmpl\"]]\n"
+msgstr "[[!pagetemplate template=\"news.tmpl\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!tag announce]]\n"
+msgstr "[[!tag announce]]\n"
+
+#. type: Plain text
+msgid ""
+"On October 7, we started our [[yearly donation campaign|news/2019-"
+"fundraiser]]. Today, we summarize what we achieved with your help in 2019."
+msgstr ""
+"Le 7 octobre, nous avons commencé notre [[campagne de dons annuelle|"
+"news/2019-fundraiser]]. Aujourd'hui, nous résumons ce que nous avons réalisé "
+"avec votre aide en 2019."
+
+#. type: Plain text
+msgid ""
+"If you liked our work in 2019, please take a minute to donate and make Tails "
+"thrive in 2020!"
+msgstr ""
+"Si vous avez aimé notre travail en 2019, merci de prendre une minute pour "
+"faire un don et faire prospérer Tails en 2020 !"
+
+#. type: Title =
+#, no-wrap
+msgid "Easier adoption by new users"
+msgstr "Appropriation plus facile pour les nouvelles personnes utilisant Tails"
+
+#. type: Plain text
+msgid ""
+"In 2019, we focused on fewer but critical features to make Tails easier to "
+"discover and adopt for first time users."
+msgstr ""
+"En 2019, nous nous sommes concentrés sur des fonctionnalités moins "
+"nombreuses, mais importantes pour rendre Tails plus aisé à découvrir et à "
+"prendre en main."
+
+#. type: Bullet: '- '
+msgid ""
+"In January, we completely changed the Tails installation procedure.  Tails "
+"is now downloaded as a *USB image*: an exact copy of the data as it is "
+"written to the USB stick."
+msgstr ""
+"En janvier, nous avons complètement modifié la procédure d'installation de "
+"Tails. Tails est maintenant téléchargeable en tant qu'*image USB* : une "
+"copie exacte des données qui seront écrites sur la clé USB."
+
+#. type: Plain text
+#, fuzzy, no-wrap
+#| msgid ""
+#| "  This made the installation experience better for all operating\n"
+#| "  systems and particularly easier and much faster for less\n"
+#| "  tech-savvy users of [[Windows|install/win/usb]] and\n"
+#| "  [[macOS|install/mac/usb]].\n"
+msgid ""
+"  This made the installation experience better for all operating\n"
+"  systems and particularly easier and much faster for less\n"
+"  tech-savvy users of Windows and\n"
+"  macOS.\n"
+msgstr ""
+"  Cela a rendu l'installation plus aisée depuis tous les systèmes\n"
+"  d'exploitation et particulièrement plus simple et bien plus rapide pour les\n"
+"  utilisateurs de [[Windows|install/win/usb]] et\n"
+"  [[macOS|install/mac/usb]] moins à l'aise en informatique.\n"
+
+#. type: Bullet: '- '
+msgid ""
+"Then, we improved our documentation to help first time users with their "
+"Tails installation:"
+msgstr ""
+"Donc, nous avons amélioré notre documentation pour aider les nouvelles "
+"personnes dans leur installation de Tails :"
+
+#. type: Bullet: '  - '
+#, fuzzy
+#| msgid ""
+#| "We explained better how to [[troubleshoot failing Wi-Fi|install/win/"
+#| "usb#wi-fi]], an issue unfortunately quite common, especially on Mac, and "
+#| "documented which Wi-Fi USB adapters work well in Tails."
+msgid ""
+"We explained better how to [[troubleshoot failing Wi-Fi|install/windows#wi-"
+"fi]], an issue unfortunately quite common, especially on Mac, and documented "
+"which Wi-Fi USB adapters work well in Tails."
+msgstr ""
+"Nous avons mieux expliqué comment [[corriger les problèmes de Wi-Fi|install/"
+"win/usb#wi-fi]], un problème malheureusement très courant, notamment sur "
+"Mac, et documenté quels adaptateurs Wi-Fi USB fonctionnent bien avec Tails."
+
+#. type: Bullet: '  - '
+#, fuzzy
+#| msgid ""
+#| "We created a [[boot menu animation|install/win/usb#animation]] to "
+#| "visualize how to start Tails on PC and clarified related troubleshooting "
+#| "instructions."
+msgid ""
+"We created a [[boot menu animation|install/windows#animation]] to visualize "
+"how to start Tails on PC and clarified related troubleshooting instructions."
+msgstr ""
+"Nous avons créé une [[animation du menu de démarrage|install/win/"
+"usb#animation]] pour visualiser comment démarrer Tails sur un PC et "
+"clarifier les instructions de dépannage."
+
+#. type: Plain text
+msgid "As a consequence, more people than ever are using Tails:"
+msgstr "Par conséquent, plus de personnes que jamais utilisent Tails :"
+
+#. type: Plain text
+msgid ""
+"- Tails is used nearly 25 000 times every day worldwide. That's 15% more "
+"than in August 2018."
+msgstr ""
+"- Tails est utilisé près de 25000 fois chaque jour dans le monde. C'est 15% "
+"de plus qu'en août 2018."
+
+#. type: Bullet: '- '
+msgid ""
+"The percentage of people using Tails on Mac more than doubled since January "
+"2019."
+msgstr ""
+"Le pourcentage de personnes utilisant Tails sur Mac a plus que doublé depuis "
+"janvier 2019."
+
+#. type: Plain text
+msgid ""
+"To continue making Tails more accessible to users globally, we built a "
+"[[translation platform|https://translate.tails.boum.org/]] for our website.  "
+"Since then, people started translations in Arabic, Catalan, Traditional and "
+"Simplified Chinese, Polish, Russian, Serbian, and Turkish."
+msgstr ""
+"Pour continuer de rendre Tails plus accessible à travers le monde, nous "
+"avons mis en place une [[plate-forme de traduction|https://translate.tails."
+"boum.org/]] pour notre site Web. Depuis, des personnes ont commencé des "
+"traductions en Arabe, Catalan, Chinois traditionnel et simplifié, Polonaiss, "
+"Russe, Serbe et Turc."
+
+#. type: Plain text
+msgid ""
+"We also improved a lot the usability of the Welcome Screen for non-English "
+"users in [[Tails 4.0|version_4.0#greeter]]."
+msgstr ""
+"Nous avons également amélioré l'ergonomie de l'écran de bienvenue pour les "
+"personnes non anglophones dans [[Tails 4.0|version_4.0#greeter]]."
+
+#. type: Title =
+#, no-wrap
+msgid "Maintenance work"
+msgstr "Travail de maintenance"
+
+#. type: Plain text
+msgid ""
+"2019 was also a year of heavy maintenance work, as always. Keeping alive a "
+"tool like Tails consists mostly of many tasks that are not very exciting: "
+"publishing new releases every 6 weeks, updating Tails and our infrastructure "
+"to new versions of Debian and other software that we use, fixing small "
+"issues as they are reported to us, and implementing the many small "
+"improvements that make Tails easier to use."
+msgstr ""
+"2019 a également été une année de gros travaux de maintenance, comme "
+"toujours. Faire vivre un outil comme Tails consiste généralement en plein de "
+"tâches qui ne sont pas très passionnantes : publier de nouvelles versions "
+"toutes les six semaines, mettre à jour Tails et notre infrastructure avec "
+"les nouvelles versions de Debian et des autres logiciels que nous utilisons, "
+"corriger les petits problèmes qui nous sont signalés et implémenter de "
+"nombreuses petites améliorations qui rendent Tails plus facile à utiliser."
+
+#. type: Bullet: '- '
+msgid ""
+"In October, we released [[Tails 4.0|version_4.0]], which is the first "
+"version of Tails based on Debian 10 (Buster)."
+msgstr ""
+"En octobre, nous avons publié [[Tails 4.0|version_4.0]], qui est la première "
+"version de Tails basée sur Debian 10 (Buster)."
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  Tails 4.0 was our most important release in years. Tails 4.0 adds\n"
+"  KeePassXC, OnionShare 1.3.2, fixes Electrum, updates to Debian 10 and\n"
+"  GNOME 3.30, starts faster and uses less memory.\n"
+msgstr ""
+"  Tails 4.0 est notre plus importante version de ces dernières années. Tails 4.0 ajoute\n"
+"  KeePassXC, OnionShare 1.3.2, corrige Electrum, met à jour vers Debian 10 et\n"
+"  GNOME 3.30, démarre plus vite et utilise moins de mémoire.\n"
+
+#. type: Bullet: '- '
+msgid ""
+"We released 13 new versions of Tails to deliver improvements and security "
+"fixes as soon as possible."
+msgstr ""
+"Nous avons publié 13 nouvelles versions de Tails pour fournir des "
+"améliorations et des correctifs de sécurité le plus rapidement possible."
+
+#. type: Bullet: '- '
+msgid ""
+"We published more emergency releases than ever before: 5 emergency releases "
+"to fix 5 critical security vulnerabilities in Firefox and Tor Browser and "
+"always keep Tails as secure as possible."
+msgstr ""
+"Nous avons publié plus de version d'urgence que jamais auparavant : cinq "
+"versions d'urgence pour corriger cinq vulnérabilités de sécurité critiques "
+"dans Firefox et le navigateur Tor et ainsi garder Tails aussi sûr que "
+"possible."
+
+#. type: Bullet: '- '
+msgid ""
+"We removed less popular software and localization packages, which you can "
+"now install yourself using the [[Additional Software|doc/first_steps/"
+"additional_software]] feature. Optimizations like these made the USB image "
+"of Tails 4.0 47 MB smaller than Tails 3.6, which was the bigger release ever."
+msgstr ""
+"Nous avons enlevé les logiciels et les paquets de langues les moins "
+"populaires, que vous pouvez maintenant installer vous-mêmes avec la fonction "
+"[[Logiciels additionnels|doc/first_steps/additional_software]]. Ces "
+"optimisations ont permis de rendre l'image USB de Tails 4.0 47Mo plus petite "
+"que celle de Tails 3.6, qui était la plus grosse version jamais publiée."
+
+#. type: Bullet: '- '
+msgid ""
+"Tails depends on a wider ecosystem of Free Software and privacy tools. We "
+"continuously contribute improvements to other projects which are either "
+"included in Tails or used on our infrastructure. Some of these projects, "
+"that we call \"upstream\", are:"
+msgstr ""
+"Tails dépend d'un écosystème plus large de logiciels libres et d'outil de "
+"vie privée. Nous apportons continuellement des améliorations aux autres "
+"projets qui sont inclus dans Tails ou utilisés dans notre infrastructure. "
+"Certains de ces projets, que nous appelons projets « en amont » sont :"
+
+#. type: Bullet: '  - '
+msgid "[Thunderbird](https://bugzilla.mozilla.org/show_bug.cgi?id=971347)"
+msgstr "[Thunderbird](https://bugzilla.mozilla.org/show_bug.cgi?id=971347)"
+
+#. type: Bullet: '  - '
+msgid "[GNOME](https://gitlab.gnome.org/GNOME/gtk/merge_requests/263)"
+msgstr "[GNOME](https://gitlab.gnome.org/GNOME/gtk/merge_requests/263)"
+
+#. type: Bullet: '  - '
+msgid ""
+"[Debian](https://tracker.debian.org/news/1062740/accepted-apparmor-2133-5-"
+"source-into-unstable/)"
+msgstr ""
+"[Debian](https://tracker.debian.org/news/1062740/accepted-apparmor-2133-5-"
+"source-into-unstable/)"
+
+#. type: Bullet: '  - '
+msgid ""
+"[OnionShare](https://tracker.debian.org/news/1036041/accepted-"
+"onionshare-20-1-source-all-into-unstable/)"
+msgstr ""
+"[OnionShare](https://tracker.debian.org/news/1036041/accepted-"
+"onionshare-20-1-source-all-into-unstable/)"
+
+#. type: Bullet: '  - '
+msgid "[KeePassXC](https://github.com/keepassxreboot/keepassxc/pull/2593)"
+msgstr "[KeePassXC](https://github.com/keepassxreboot/keepassxc/pull/2593)"
+
+#. type: Bullet: '  - '
+msgid ""
+"[torsocks](https://tracker.debian.org/news/1037418/accepted-torsocks-230-2-"
+"source-amd64-into-unstable/)"
+msgstr ""
+"[torsocks](https://tracker.debian.org/news/1037418/accepted-torsocks-230-2-"
+"source-amd64-into-unstable/)"
+
+#. type: Bullet: '  - '
+msgid "[ikiwiki](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=911356)"
+msgstr "[ikiwiki](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=911356)"
+
+#. type: Bullet: '- '
+msgid ""
+"We had to temper several [[!wikipedia Denial-of-service_attack desc="
+"\"distributed denial-of-service (DDoS)\"]] attacks targeting our "
+"infrastructure."
+msgstr ""
+"Nous avons dû faire face à plusieurs attaques [[!wikipedia_fr "
+"Attaque_par_déni_de_service desc=\"par déni de service distribué "
+"(distributed denial-of-service – DDoS)\"]] visant notre infrastructure."
+
+#. type: Bullet: '- '
+msgid ""
+"For 9 years, we have been relying on the hosting services provided by the "
+"fine people of boum.org. Thank you! As they were reducing their activities, "
+"we had to migrate our services. Our website is now self-hosted and our "
+"mailing-lists are taken care of by 2 experienced and trusted autonomous "
+"server projects: [autistici.org](https://autistici.org) and [puscii.nl]"
+"(https://puscii.nl)."
+msgstr ""
+"Pendant 9 ans, nous avons compté sur les services d'hébergement fournis par "
+"les merveilleuses personnes de boum.org. Merci ! Comme elles réduisent leurs "
+"activités, nous avons migré nos services. Notre site Web est maintenant auto-"
+"hébergé et nos listes de discussion par courrier électronique sont prises en "
+"charge par deux projets de serveurs autonomes de confiance et expérimentés : "
+"[autistici.org](https://autistici.org) et [puscii.nl](https://puscii.nl)."
+
+#. type: Title =
+#, no-wrap
+msgid "Community"
+msgstr "Communauté"
+
+#. type: Plain text
+msgid ""
+"Over the years, Tails has been able to gather a lively community which is "
+"growing, evolving, and deserves care."
+msgstr ""
+"Au fil des ans, Tails a réussi à rassembler une communauté vivante qui "
+"grandit, évolue et mérite attention."
+
+#. type: Bullet: '- '
+msgid ""
+"We published a statement of our [[mission and values|contribute/mission]] to "
+"help us clarify who we are, what we stand for, and what we want to do for "
+"our users."
+msgstr ""
+"Nous avons publié une déclaration sur nos [[missions et valeurs|contribute/"
+"mission]] pour nous aider à clarifier qui nous sommes, ce que nous défendons "
+"et ce que nous voulons faire pour les personnes utilisant Tails."
+
+#. type: Bullet: '- '
+msgid ""
+"We agreed on [[user personas|contribute/personas]], fictitious but concrete "
+"representations of the people using Tails. We use these personas to keep in "
+"mind who we are working for, what are their needs, and what Tails should do "
+"for them."
+msgstr ""
+"Nous nous sommes mis d'accord sur des [[profils d'utilisateurs|contribute/"
+"personas]], fictifs mais qui sont des représentations concrètes des "
+"personnes qui utilisent Tails. Nous utilisons ces personnages pour garder à "
+"l'esprit pour qui nous travaillons, quels sont leurs besoins et ce que Tails "
+"peut faire pour eux."
+
+#. type: Bullet: '- '
+msgid ""
+"We attended 9 conferences and connected to Free Software and Internet "
+"freedom communities in 9 different countries, including FOSDEM (Belgium), "
+"Internet Freedom Festival (Spain), Tor Meeting (Sweden), OTF Summit "
+"(Taiwan), DebConf (Brazil), and MozFest (UK)."
+msgstr ""
+"Nous avons assisté à neuf conférences et pris contact avec les communautés "
+"des libertés sur Internet et du logiciel libre dans neuf pays différents, "
+"notamment FOSDEM (Belgique), Internet Freedom Festival (Espagne), Tor "
+"Meeting (Suède), OTF Summit (Taïwan), DebConf (Brésil) et MozFest "
+"(Angleterre)."
+
+#. type: Bullet: '- '
+msgid ""
+"The wider Tails community organized 10 workshops to present Tails to new "
+"users in North and South America, Europe, and East and South-East Asia."
+msgstr ""
+"La large communauté Tails a organisé dix ateliers pour présenter Tails à des "
+"nouvelles personnes en Amérique du sud et du nord, en Europe et dans l'Asie "
+"de l'est et du sud-est."
+
+#. type: Bullet: '- '
+msgid ""
+"We answered 883 bug reports through our help desk and helped all these "
+"people to be safer online."
+msgstr ""
+"Nous avons répondu à 883 rapports de bugs via notre centre d'assistance et "
+"aidé toutes ces personnes à rester en sûreté en ligne."
+
+#. type: Plain text
+msgid "- 2 new workers joined our help desk and sysadmin teams."
+msgstr ""
+"- deux nouvelles personnes ont rejoint notre centre d'assistance et notre "
+"équipe d'administration du système."
+
+#. type: Plain text
+msgid ""
+"All of this is made possible by donations from people like you. And because "
+"these help us to plan our work, we particularly appreciate monthly and "
+"yearly donations, even the smallest ones."
+msgstr ""
+"Toute cela a été rendu possible par des dons de personnes comme vous. Et "
+"parce que cela nous aide à planifier notre travail, nous apprécions "
+"particulièrement les dons mensuels et annuels, même les plus petits d'entre "
+"eux."
+
+#. type: Plain text
+msgid ""
+"If you liked our work in 2019, please take a minute to donate and make us "
+"thrive in 2020!"
+msgstr ""
+"Si vous aimez notre travail en 2019, merci de prendre une minute pour faire "
+"un don et nous faire prospérer en 2020 !"
+
+#. type: Plain text
+#, no-wrap
+msgid "<div class=\"donate-button\"><a href=\"https://tails.boum.org/donate/?r=2019-achievements\">Donate</a></div>\n"
+msgstr "<div class=\"donate-button\"><a href=\"https://tails.boum.org/donate/?r=2019-achievements\">Faire un don</a></div>\n"

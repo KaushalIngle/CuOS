@@ -1,0 +1,285 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2020-07-21 15:23+0000\n"
+"PO-Revision-Date: 2022-04-24 22:23+0000\n"
+"Last-Translator: Joaquín Serna <bubuanabelas@cryptolab.net>\n"
+"Language-Team: Spanish <http://translate.tails.boum.org/projects/tails/"
+"social_contract/es/>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9.1\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta date=\"Tue, 09 May 2017 12:34:56 +0000\"]]\n"
+msgstr "[[!meta date=\"Tue, 09 May 2017 12:34:56 +0000\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!pagetemplate template=\"news.tmpl\"]]\n"
+msgstr "[[!pagetemplate template=\"news.tmpl\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta title=\"Announcing the Tails Social Contract\"]]\n"
+msgstr "[[!meta title=\"Anunciamos el Contrato Social de Tails\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!tag announce]]\n"
+msgstr "[[!tag announce]]\n"
+
+#. type: Plain text
+msgid ""
+"We had written and adopted a [[Code of Conduct|contribute/working_together/"
+"code_of_conduct]] since our first public hackfest in Paris in 2014. This "
+"code was and is meant as a guide to make our public spaces welcoming and "
+"friendly to every sentient being."
+msgstr ""
+"Escribimos y adoptamos un [[Código de conducta|contribute/working_together/"
+"code_of_conduct]] a partir de nuestro primer encuentro público en Paris en "
+"2014. Lo hicimos como una guía para hacer nuestros espacios públicos más "
+"abiertos y amigables para todos."
+
+#. type: Plain text
+msgid ""
+"We have since then worked on a [[Social Contract|doc/about/social_contract]] "
+"which we proudly present today!"
+msgstr ""
+"Desde entonces hemos trabajado en un [[Contrato social|doc/about/"
+"social_contract]] que presentamos hoy con orgullo!"
+
+#. type: Plain text
+#, no-wrap
+msgid "<!-- Note for translators: Starting from here the content is a copy of the Social Contract. -->\n"
+msgstr "<!-- Note for translators: Starting from here the content is a copy of the Social Contract. -->\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"The Tails Social Contract is a set of commitments that we as\n"
+"contributors to the Tails project stand by. This work is derived from\n"
+"the Debian Social Contract and the Tor Social Contract. If you have any\n"
+"questions or comments, feel free to email: <tails-project@boum.org>.\n"
+msgstr ""
+"El Contrato Social de Tails es un grupo de compromisos que asumimos\n"
+"como colaboradores de Tails. Este trabajo se deriva del Contrato Social de\n"
+"Debian y del Contrato Social de Tor. Si tienes preguntas o comentarios, \n"
+"no dudes en contactar <tails-project@boum.org>.\n"
+
+#. type: Plain text
+msgid ""
+"This is a promise from our contributors community to the rest of the world, "
+"affirming a commitment to our beliefs."
+msgstr ""
+"Es una promesa de nuestra comunidad de colaboradores al resto del mundo, "
+"afirmando un compromiso con nuestras creencias."
+
+#. type: Title ##
+#, no-wrap
+msgid "1. By creating Tails we try to provide usable tools for anonymity and privacy"
+msgstr ""
+"1. Al crear Tails intentamos dar herramientas usables para el anonimato y la "
+"privacidad"
+
+#. type: Plain text
+msgid ""
+"We believe that privacy, the free exchange of ideas, and equal access to "
+"information are essential to free and open societies. Through our community "
+"standards and the tools we create, we provide means that empower all people "
+"to protect and advance these ideals."
+msgstr ""
+"Creemos que la privacidad, el intercambio libre de ideas y el acceso "
+"igualitario a la información son esenciales para las sociedades libres y "
+"abiertas. A través de nuestros estándares comunitarios y las herramientas "
+"que creamos, proveemos medios que den poder a todas las personas para "
+"proteger y avanzar estos ideales."
+
+#. type: Title ##
+#, no-wrap
+msgid "2. Tails is and will remain free software"
+msgstr "2. Tails es y seguirá siendo software libre"
+
+#. type: Plain text
+msgid ""
+"Equal access to information includes the free availability of our code and "
+"documentation as well as the transparency of our decision making processes."
+msgstr ""
+"El acceso igualitario a la información incluye la libre disponibilidad de "
+"nuestro código y documentación, así como la transparencia de nuestro proceso "
+"de toma de decisiones."
+
+#. type: Plain text
+msgid ""
+"All the components of Tails that we create ourselves are, and will be, "
+"licensed in a manner consistent with the [Debian Free Software Guidelines]"
+"(https://www.debian.org/social_contract)."
+msgstr ""
+"Todos los componentes de Tails que creamos son y serán licenciados de modo "
+"consistente con las [Directrices de Software Libre de Debian](https://www."
+"debian.org/social_contract)."
+
+#. type: Plain text
+msgid ""
+"Tails will always be free to use, remix, adapt and distribute.  As the only "
+"exceptions to this rule, Tails includes:"
+msgstr ""
+"Tails será siempre libre de usar, remezclar, adaptar y distribuir. Como "
+"única excepción a esta regla, Tails incluye:"
+
+#. type: Bullet: '- '
+msgid ""
+"a minor part of non-free firmware in order to work on as much hardware as "
+"possible;"
+msgstr ""
+"una pequeña porción de firmware no libre para poder funcionar en la mayor "
+"cantidad posible de hardware;"
+
+#. type: Bullet: '- '
+msgid ""
+"a few pieces of software whose source code is public but not compatible with "
+"the Debian Free Software Guidelines; they are needed to support important "
+"use cases."
+msgstr ""
+"algunas porciones de software necesario para apoyar usos importantes, cuyo "
+"código fuente es público pero incompatible con las Directrices de Software "
+"Libre de Debian."
+
+#. type: Title ##
+#, no-wrap
+msgid "3. We will give back to the Free Software community"
+msgstr "3. Devolveremos a la comunidad de Software Libre"
+
+#. type: Plain text
+msgid ""
+"Tails is a privacy-oriented [Debian Derivative](https://wiki.debian.org/"
+"Derivatives)."
+msgstr ""
+"Tails es un [Derivativo de Debian](https://wiki.debian.org/Derivatives) "
+"orientado a la privacidad."
+
+#. type: Plain text
+msgid ""
+"We want usable security and privacy-oriented tools to become a standard for "
+"the Free Software community as a whole."
+msgstr ""
+"Queremos que las herramientas orientadas a la privacidad y la seguridad se "
+"vuelvan comunes a lo largo de toda la comunidad del Software Libre."
+
+#. type: Plain text
+msgid ""
+"Bug fixes, code improvements, Debian packaging, as well as work on usability "
+"issues will be sent upstream whenever possible. This way, our modifications "
+"will benefit others and can be improved upon further by a wider audience of "
+"people."
+msgstr ""
+"Los problemas arreglados, las mejoras de código, los paquetes de Debian, el "
+"trabajo que hacemos sobre usabilidad, serán enviados siempre que sea posible "
+"a los desarrolladores originales. De este modo nuestras modificaciones "
+"beneficiarán a otros y podrán a su vez ser mejoradas por más gente."
+
+#. type: Title ##
+#, no-wrap
+msgid "4. We encourage participation and transparency"
+msgstr "4. Recomendamos la participación y la transparencia"
+
+#. type: Plain text
+msgid ""
+"We want to produce Tails in a way that encourages participation, which "
+"requires publicly documenting what can be improved.  As Tails is created in "
+"such a transparent manner, anyone is encouraged to participate, review it "
+"and point out problems."
+msgstr ""
+"Queremos producir Tails de una manera que fomente la participación, lo que "
+"requiere documentar públicamente lo que se puede mejorar. Como Tails se crea "
+"de una manera tan transparente, se anima a todos a participar, revisarlo y "
+"señalar problemas."
+
+#. type: Plain text
+msgid ""
+"To make our community a welcoming place for everybody we agreed on a [[Code "
+"of Conduct|contribute/working_together/code_of_conduct]]."
+msgstr ""
+"Para hacer que nuestra comunidad sea un lugar de bienvenida para todos, "
+"hemos acordado un [[Código de Conducta| contribute/working_together/"
+"code_of_conduct]]."
+
+#. type: Title ##
+#, no-wrap
+msgid "5. We will never harm our users intentionally"
+msgstr "5. Nunca dañaremos intencionalmente a nuestras usuarias"
+
+#. type: Plain text
+msgid ""
+"We will always do our best to create secure and usable tools. We will never "
+"willingly include backdoors or malicious software nor will we cooperate with "
+"any entity wanting us to harm our users."
+msgstr ""
+"Siempre haremos nuestro mejor esfuerzo para crear herramientas seguras y "
+"utilizables. Nunca incluiremos voluntariamente puertas traseras o software "
+"malicioso ni cooperaremos con ninguna entidad que desee que dañemos a "
+"nuestros usuarios."
+
+#. type: Plain text
+msgid ""
+"Mistakes sometimes happen. We will be honest about them and fix those that "
+"affect the safety of Tails users when they are reported to us."
+msgstr ""
+"A veces ocurren errores. Seremos honestos respecto a ellos y solucionaremos "
+"aquellos que afecten la seguridad de los usuarios de Tails cuando nos lo "
+"reporten."
+
+#. type: Plain text
+msgid ""
+"Whenever severe security issues are reported to us in private, we will test "
+"them and ensure we promptly fix these issues. We will notify our users "
+"whenever such an issue has been reported to us. However, for the security of "
+"our users, we might not disclose such a severe issue before releasing a fix."
+msgstr ""
+"Siempre que se nos informe en privado de problemas graves de seguridad, los "
+"probaremos y nos aseguraremos de solucionarlos rápidamente. Notificaremos a "
+"nuestros usuarios cada vez que se nos informe de un problema de este tipo. "
+"Sin embargo, por la seguridad de nuestros usuarios, es posible que no "
+"revelemos un problema tan grave antes de publicar una solución."
+
+#. type: Title ##
+#, no-wrap
+msgid "6. We give users the means to decide how much they can rely on Tails"
+msgstr ""
+"6. Damos a los usuarios los medios para decidir cuánto pueden confiar en "
+"Tails"
+
+#. type: Plain text
+msgid ""
+"We encourage users to inform themselves and decide if Tails is suitable for "
+"their use case and how much they can trust it. We work diligently to keep "
+"our community up-to-date through our various communication channels about "
+"the current state of our software and its limitations. We encourage users to "
+"read our documentation as well as third-party documentation in order to make "
+"an informed decision and engage in a learning process about the tools we "
+"ship."
+msgstr ""
+"Alentamos a los usuarios a informarse y decidir si Tails es adecuado para su "
+"caso de uso y cuánto pueden confiar en él. Trabajamos diligentemente para "
+"mantener actualizada a nuestra comunidad a través de nuestros diversos "
+"canales de comunicación sobre el estado actual de nuestro software y sus "
+"limitaciones. Alentamos a los usuarios a leer nuestra documentación, así "
+"como la documentación de terceros, para tomar una decisión informada y "
+"participar en un proceso de aprendizaje sobre las herramientas que enviamos."
+
+#. type: Plain text
+msgid ""
+"We provide and explain methods of verification so that anyone can ensure "
+"that they downloaded a genuine copy of Tails."
+msgstr ""
+"Proporcionamos y explicamos métodos de verificación para que cualquiera "
+"pueda asegurarse de haber descargado una copia genuina de Tails."

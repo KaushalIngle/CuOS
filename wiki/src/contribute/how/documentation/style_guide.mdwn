@@ -1,0 +1,862 @@
+[[!meta title="Documentation style guide"]]
+
+Introduction
+============
+
+We use this style guide to keep our documentation clear, consistent, and
+accessible to a global audience. Apply this style guide when writing new
+documentation or when updating existing documentation.
+
+Reference hierarchy
+===================
+
+Use references in the following order:
+
+1. This style guide.
+
+2. The [GNOME Documentation Style Guide](https://developer-old.gnome.org/gdp-style-guide/).
+
+   Read at least [Section 1 ― Fundamental Concepts of Technical
+   Documentation](http://developer-old.gnome.org/gdp-style-guide/2.32/gdp-style-guide.html#fundamentals).
+
+   The following sections are also of particular interest or have been
+   debated within Tails before:
+
+     - [4.&nbsp;Writing documentation for an International
+       Audience](http://developer-old.gnome.org/gdp-style-guide/2.32/gdp-style-guide.html#locale)
+       includes specific rules about how to write documentation that is
+       easier to translate, with practical examples.
+     - [5.2.&nbsp;Checks You Can Do
+       Yourself](http://developer-old.gnome.org/gdp-style-guide/2.32/gdp-style-guide.html#improving-6)
+       lists the top ten topics that you need to watch out for when you
+       review your work.
+     - [A.&nbsp;Recommended
+       Terminology](http://developer-old.gnome.org/gdp-style-guide/2.32/gdp-style-guide.html#wordlist)
+       contains a glossary of terms for use when writing documentation.
+
+3. Other style guides:
+
+   - [Google developer documentation style guide](https://developers.google.com/style)
+   - [Microsoft Writing Style Guide](https://docs.microsoft.com/en-us/style-guide/welcome/).
+   - [Apple Style Guide](https://help.apple.com/applestyleguide/)
+
+For spelling of words, we use the
+[Merriam-Webster](https://www.merriam-webster.com/) dictionary.
+
+The following resources can also be helpful when writing documentation for
+Tails:
+
+Related online resources
+------------------------
+
+- Jakob Nielsen's
+  [How Users Read on the Web](http://www.nngroup.com/articles/how-users-read-on-the-web/)
+  and [Be Succinct - Writing for the Web](http://www.nngroup.com/articles/be-succinct-writing-for-the-web/).
+  However do not use bold for scanning in instruction steps. Steps
+  should be short enough and bold mixes up with other GUI formatting.
+
+- [Wikipedia.org](https://en.wikipedia.org/),
+  [Webopedia.com](http://www.webopedia.com),
+  [Whatis.com](http://whatis.com) can be used as terminology websites
+  for technical terms.
+
+Style and usage
+===============
+
+<a id="administration-password"></a>
+
+- **administration password** vs **root password**
+
+  Use *administration password*. Avoid *root password* even though many
+  Linux users would use it.
+
+  *For example:*
+
+  - [[Set up an administration password
+    |doc/first_steps/welcome_screen/administration_password]] when
+    you start Tails.
+
+  - Start Tails and [[set up an administration
+    password|doc/first_steps/welcome_screen/administration_password]].
+
+<a id="alt"></a>
+
+- **`alt` attributes for images**
+
+  The `alt` attribute of an image is, for example, read by screen readers
+  in place of images allowing the *content* and *function* of the image to
+  be accessible to those with visual or certain cognitive disabilities.
+
+  Every image must have an `alt` attribute but it can be empty (`alt=""`).
+
+  In the case of our documentation:
+
+  - Often screenshots require no additional information to clarify their
+    *content*. They often provide visual context that is useful for people
+    who see them but not necessary to people who don't see them.
+
+  - For graphical buttons or icons, use as `alt` attribute the text that
+    is read by the GNOME Screen Reader (or that you think should be read
+    if none is read). For example:
+
+    <pre>1. Click on the &lt;span class="guimenu"&gt;
+    \[[!img lib/unlock.png alt="Unlock" class="symbolic" link="no"]]
+    &lt;/span&gt; button.</pre>
+
+  For more guidelines and examples about writing good `alt` attributes,
+  read the article on [alternative text by
+  WebAIM](https://webaim.org/techniques/alttext/).
+
+<a id="anchor"></a>
+
+- **anchor** (HTML anchor)
+
+  Use HTML anchors to provide shortcuts when pointing people to sections
+  inside a page.
+
+  Keep them as short as possible as they appear in the URL.
+
+  Use lowercase and underscore to separate words.
+
+  *For example*:
+
+  - `<a id="2014">` in `doc/about/finances` to be able to point to
+    `https://tails.boum.org/finances#2014`.
+
+  When adding an anchor to a section on a page that has a table of
+  content, add the <span class="code">id</span> attribute directly to
+  the HTML heading. ikiwiki will automatically reference it in the table
+  of content instead of the default value that might change over time.
+
+  *For example:*
+
+  - <pre>
+    &#91;&#91;!toc&#93;&#93;
+    &lt;h1 id="my_section"&gt;My section&lt;/h1&gt;
+    </pre>
+
+    Creates a hyperlink to <span class="code">#my_section</span> in the
+    table of content instead of a hyperlink to
+    <span class="code">#index1h1</span> that might change with the
+    structure of the page.
+
+  To reduce translation work, avoid adding anchors to translated pages when we
+  are not using them anywhere on the website.
+
+<a id="boot"></a>
+
+- **boot** vs **start**
+
+  Use *start* and *restart* as much as possible to refer to starting a
+  computer on Tails; *boot* is almost always unnecessary jargon.
+
+  You might use *boot* when the word is displayed to the user by the
+  computer or when writing for a technical audience, like in our
+  design documentation.
+
+  Use *boot* when referring to *boot options*, which are only
+  documented for workarounds or a technical audience.
+
+  *For example*:
+
+  - When starting Tails, add the <span class="command">toram</span>
+    boot option. See our instructions on [[modifying the boot options using
+    the Boot Loader|doc/advanced_topics/boot_options]].
+
+  - To make the display work properly, [[add the following boot option using the
+    Boot Loader|doc/advanced_topics/boot_options]] when starting Tails:
+
+        nouveau.noaccel=1
+
+<a id="boot-menu"></a>
+
+- **Boot Menu** and **Boot Loader**
+
+  Use *Boot Loader* when referring to either *GRUB* or *SYSLINUX*.
+
+  *For example:*
+
+  - The Boot Loader is the first screen that appears when starting Tails.
+
+  Use *Boot Menu* and *Boot Menu key* when referring to the BIOS
+  screen that allows choosing from which device to start from.
+
+  [[!img install/inc/screenshots/boot_menu.png link="no" alt=""]]
+
+<a id="bulleted-lists"></a>
+
+- **bulleted lists**
+
+  Refer to this article from NN/g on [presenting bulleted
+  lists](https://www.nngroup.com/articles/presenting-bulleted-lists/).
+
+  Always add empty lines between list items to:
+
+  - Make them easier to read.
+
+  - Make them easier to translate. Each item from the list will be put
+    in a separate PO string in PO files by the PO plugin when building
+    the website.
+
+<a id="capitalization"></a>
+
+- **capitalization**
+
+   * **Use sentence case for titles and headings**
+
+     Do not capitalize the second or subsequent words,
+     unless they are proper nouns. Sentence case
+     looks less formal and is easier to read for a global audience.
+
+     See the [capitalization rules from Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Naming_conventions_%28capitalization%29).
+
+   * **Use title case for GUI items**
+
+     Buttons, dialogs, applications, menus, etc.
+
+<a id="css"></a>
+
+- **CSS formatting for documentation**
+
+  Use the following Markdown and HTML
+  to style your documentation using CSS.
+
+  - Features
+
+    Capitalize the name of major features of Tails.
+
+    *For example:*
+
+    * Welcome Screen
+    * Persistent Storage
+
+  - Application and file names
+
+    Write in italic the names of files and applications other than Tails.
+
+    *For example:*
+
+    * Markdown: <span class="code">\*Thunderbird\*</span>
+    * HTML: <span class="code">&lt;i&gt;Thunderbird&lt;/i&gt;</span>
+    * Result: *Thunderbird*
+
+    *For example:*
+
+    * Markdown: <span class="code">\*~/.gnupg/gpg.conf\*</span>
+    * HTML: <span class="code">&lt;i&gt;~/.gnupg/gpg.conf&lt;/i&gt;</span>
+    * Result: *~/.gnupg/gpg.conf*
+
+  - Button names, GUI labels, key caps, and menu items
+
+    Write in bold button names, GUI labels, key caps, and menu items, especially
+    in procedures.
+
+    *For example:*
+
+    * Markdown: <span class="code">Click \*\*Save\*\*</span>
+    * HTML: <span class="code">Click &lt;b&gt;Save&lt;/b&gt;</span>
+    * Result: Click **Save**
+
+    *For example:*
+
+    * Markdown: <span class="code">Choose \*\*Applications&amp;nbsp;▸ Tor Browser\*\*</span>
+    * HTML: <span class="code">Choose &lt;b&gt;Applications&amp;nbsp;▸ Tor Browser&lt;/b&gt;</span>
+    * Result: Choose **Applications&nbsp;▸ Tor Browser**
+
+  - Commands and code excerpts:
+
+    Write in full HTML with the <span class="code">code</span> class commands and
+    code excerpts.
+
+    *For example:*
+
+    * Markdown and HTML: <span class="code">&lt;span class="code"&gt;live-media=removable&lt;/span&gt;</span>
+    * Result: <span class="code">live-media=removable</span>
+
+<a id="debian-versions"></a>
+
+- **Debian and Ubuntu versions**
+
+  Refer to Debian and Ubuntu versions primarily by their number, and additionally
+  by their codenames.
+
+  *For example*:
+
+  - Tails 3.0 is based on Debian 9 (Stretch)
+
+  - *Tails Installer* is available on Ubuntu 15.10 (Wily Werewolf) or later.
+
+<a id="earlier"></a>
+
+- **earlier** and **later**
+
+  Use to refer to versions of software.
+
+  Don't use *lower* and *higher* or *newer* and *older*.
+
+  Don't use "regular expressions" like *Tails 2.1.&#42;*.
+
+  *For example:*
+
+  - If you are running macOS 10.10 (Yosemite) or earlier
+
+<a id="future-tense"></a>
+
+- **future tense**
+
+  Whenever possible, use present, not future, tense. Don't switch
+  unnecessarily from present to future tense when present tense is
+  sufficient to express a sequence of steps or events.
+
+  Present tense is easier to read than past or future tense. Simple verbs
+  are easier to read and understand than complex verbs, such as verbs in
+  the progressive or perfect tense.
+
+<a id="digit-grouping"></a>
+
+- **digit grouping**
+
+  Use a non-breaking thin space (HTML entity: `&#8239;`) or a space to separate
+  groups of three digits.
+
+  *For example*:
+
+  - $50&#8239;000
+
+  See [[!wikipedia Decimal_separator#Digit_grouping]] and [[!wikipedia
+  ISO_31-0#Numbers]].
+
+<a id="gnome-application"></a>
+
+- **GNOME applications: <i>Files</i>, <i>Disks</i>, etc.**
+
+  GNOME applications that have a common noun as their name (like
+  <i>Files</i> or
+  <i>Disks</i>) can be confusing when referred
+  to in the documentation.
+
+  Make sure to clarify that you are referring to an application (and
+  not, for example, a set of files or disks):
+
+  *For example*:
+
+  - In the title of sections
+
+  - When first referring to the application in a section
+
+  *Use*:
+
+  - The <i>Files</i> browser
+
+  - The <i>Disks</i> utility
+
+  Otherwise, use the short name of the application as it appears in the menus when giving
+  instructions to be executed inside Tails.
+
+  *For example*:
+
+  - Open */live/persistence/TailsData_unlocked/dotfiles* in *Files*.
+
+  Prepend "*GNOME*" when giving instructions to be executed outside of
+  Tails.
+
+  *For example*:
+
+  - Install <i>GNOME Disks</i> in Debian.
+
+<a id="graphics-card"></a>
+
+- **graphics card**
+
+  And not *graphics adapters*, *graphics*, *graphical hardware*, or
+  *video card*.
+
+<a id="compress-image"></a>
+
+- **Image compression**
+
+  - Images on our website are compressed and cleaned using the
+    [[compress-image.sh]] script. To run this script you need the
+    `trimage` and `mat2` packages.
+
+<a id="internet"></a>
+
+- **Internet**
+
+  Capitalize. When used as a noun, always preceded by *the*.
+
+<a id="shortcuts"></a>
+
+- **Ikiwiki shortcuts**
+
+  The `\[[!tails_ticket ..]]` and `\[[!wikipedia ..]]` strings you can find in some files are ikiwiki [[shortcuts]].
+  You might also need to understand [[ikiwiki directives|ikiwiki/directive]].
+
+<a id="link"></a>
+
+- **Link labels**
+
+  Write link labels that are both specific and short to help with the
+  findability and accessibility of content.
+
+  Links must be able to stand alone as people scan rather than read on the web.
+
+  See [NN/g: Better Link Labels: 4Ss for Encouraging Clicks](https://www.nngroup.com/articles/better-link-labels/).
+
+<a id="mac-address"></a>
+
+- **MAC address anonymization**
+
+  And not *MAC address spoofing*, or *MAC spoofing*.
+
+  We're still using *MAC spoofing* in internal and design documentation because
+  it's common tech jargon.
+
+<a id="media"></a>
+
+- **media** and **installation media**
+
+  Use only in rare occasions where it is especially relevant to mention
+  both USB sticks and DVDs.
+
+  Tails is now primarily advertised for USB sticks. We prefer making our
+  text easy to read for the majority of people using USB sticks than to
+  be exhaustive and always mention DVDs, implicitly or explicitly.
+
+  *For example*:
+
+  - Tails runs on a USB stick that you can plug in and use on almost
+    any computer.
+
+  - It is not possible to install Tails on a hard disk. Tails is
+    designed to be a live system running from a removable media: USB
+    stick or DVD.
+
+<a id="might"></a>
+
+- **might**, **may**, **can**
+
+  Use *might* to express possibility.
+
+  Only use *may* to express permission.
+
+  Use *can* to express ability.
+
+  Only use *could* to refer to the past.
+
+  See [Microsoft Style Guide: can, may](https://docs.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/c/can-may).
+
+<a id="network-interface"></a>
+
+- **network interface**, **Wi-Fi interface**
+
+  And not *card*, *device*, or *adapter*.
+
+  Still, **USB Wi-Fi adapters** are USB dongles that provide a Wi-Fi interface.
+
+<a id="numbers"></a>
+
+- **numbers**
+
+  Show numbers as numerals, and not letters.
+
+  See [NN/g: Show Numbers as Numerals When Writing for Online Readers](https://www.nngroup.com/articles/web-writing-show-numbers-as-numerals/).
+
+<a id="persistent-storage"></a>
+
+- **Persistent Storage**
+
+  And not *persistence* or *persistent volume*. Capitalize. Can be
+  introduced by *your*, *the*, *a* or no article depending on the
+  context.
+
+  The Persistent Storage refers to both the feature and the encrypted
+  volume on the USB stick.
+
+  In rare occasions, we write *encrypted Persistent Storage*, for
+  example when introducing the concept. Otherwise, we rely on the
+  interface of the Welcome Screen to remind people that it is encrypted.
+
+  The Persistent Storage is *created* using the Persistent Storage settings and
+  *unlocked* in the Welcome Screen.
+
+  *For example*:
+
+  - Create a Persistent Storage on your Tails USB stick.
+
+  - Enter your passphrase to unlock your Persistent Storage.
+
+  - Everything in the Persistent Storage is encrypted automatically.
+
+  - Add To Persistent Storage (button)
+
+<a id="persistent-folder"></a>
+
+- **<em>Persistent</em> folder**
+
+  The folder */home/amnesia/Persistent/*.
+
+  *For example*:
+
+  - Save the database as `keepassx.kdbx` in the *Persistent* folder.
+
+<a id="persistence-feature"></a>
+
+- **feature of the Persistent Storage**
+
+  And not *Persistent Storage feature*.
+
+  To refer to the features available in the configuration of the
+  *Persistent Storage*.
+
+  The construction *of the Persistent Storage* can be omitted if
+  redundant in the context.
+
+  *For example*:
+
+  - To install additional software automatically when starting Tails, turn on
+    the [[Additional Software|doc/first_steps/persistence#additional_software]]
+    feature of the Persistent Storage.
+
+<a id="persistent"></a>
+
+- **persistent** and **persist**
+
+  The property of something saved in the Persistent Storage and the act
+  of making something persistent. Use rarely.
+
+  *For example*:
+
+  - The Persistent Storage is optional and you always decide what is
+    persistent. Everything else is amnesic.
+
+<a id="please"></a>
+
+- **please**
+
+  Avoid please except in situations where the user is asked to do
+  something inconvenient or the software is to blame for the situation.
+
+<a id="procedures"></a>
+
+- **procedures** (a series of steps)
+
+  Keep the number of steps low within a procedure (for example, below
+  10, ideally 7). For longer procedures, split them and give each
+  section a title.
+
+  Add a blank line between each step.
+
+  Rely on the automatic numbered of Markdown and number all the steps
+  with `1.`
+
+  See also the *Microsoft Manual of Style: Procedures and technical
+  content*.
+
+  *For example*:
+
+  <pre>
+  1. Make sure that you are connected to the Internet.
+
+  1. Start <i>Software Sources</i>.
+
+  1. Click on the <b>PPAs</b> button and then choose to <b>Add a new PPA&hellip;</b>.
+  </pre>
+
+<a id="qr"></a>
+
+- **QR codes**
+
+  - To encode and decode QR codes, you can use the [[qrcode-encode.sh]]
+    and [[qrcode-decode.sh]] scripts. To run these scripts
+    you need to install the `qrencode` and `zbar-tools` packages.
+
+    For example (run from Tails' source root):
+
+        wiki/src/contribute/how/documentation/qrcode-encode.sh https://tails.boum.org/
+
+    Creates a QR code in tails_boum_org.png. And:
+
+        wiki/src/contribute/how/documentation/qrcode-decode.sh tails_boum_org.png
+
+    Outputs:
+
+        QR-Code:https://tails.boum.org/
+
+<a id="right-click"></a>
+
+- **right-click**
+
+  Trackpads on Mac have a single button. Control-click, the usual way of
+  doing right-click on Mac, does something different in Tails (and
+  Windows): it is used to select multiple items.
+
+  Always clarify how to do right-click on Mac:
+
+  *For example:*
+
+  - Right-click (on Mac, click with two fingers) on the file and
+    choose <b>Share via OnionShare</b>.
+
+<a id="screenshot"></a>
+
+- **Screenshots**
+
+  Use screenshots only when they provide useful additional information to
+  complete the text. The text should be enough to follow our documentation but
+  screenshots might help provide context, engage the reader, or support a
+  complex procedure.
+
+  We limit the number of screenshots to the minimum
+  because they take time to produce, they need frequent update, are harder to
+  translate, and are not accessible.
+
+  When using screenshots of full windows, we include the window decoration
+  and a border of blue background to clarify the context and the nature of
+  the image. To take such a screenshot:
+
+  1. In *Gimp* choose **File**&nbsp;▸ **Create**&nbsp;▸ **Screenshot&hellip;**.
+  2. Select **Include windows decoration**.
+  3. Make sure the blue border (`0x204a87`) on each side of the screenshot is at least 18px.
+
+  We also most of the time resize the screenshots to 66%, either when they are
+  too big or when they can be confused for the actual application (see
+  [[!tails_ticket 11527]]). Use the *NoHalo* interpolation in *GIMP*.
+
+  We always compress screenshots using [[compress-image|style_guide#compress-image]].
+
+  Good:
+
+  [[!img screenshot-blue.png link="no"]]
+
+  Bad:
+
+  [[!img screenshot-transparent.png link="no"]]
+
+  [[!img screenshot-cut.png link="no"]]
+
+  When an element of a screenshot needs to be highlighted, for example
+  because the element is small, has no label or is in a place that is hard
+  to describe, highlight it in red using *Inkscape*:
+
+  1. Create the base screenshot, resized at 66%.
+  1. Open it in Inkspace.
+  1. Create a red circle or rectangle with a width of 2 px.
+  1. Export the screenshot to PNG, respecting its original size.
+
+<a id="secure-boot"></a>
+
+- **Secure Boot**
+
+  Capitalize as a brand or feature. Writing *secure boot* would make it
+  sound more like a magic security feature (which it is not).
+
+<a id="serial-comma"></a>
+
+- **serial comma**
+
+  Place a [[!wikipedia serial comma]] immediately before the
+  coordinating conjunction (usually *and* or *or*) in a series of three
+  or more terms.
+
+<a id="tails"></a>
+
+- **your Tails**
+
+  Use to refer to the installation of the operating system of the user.
+
+  Use *your Tails USB stick* when it's useful to refer to the physical medium more explicitly.
+
+  *For example*:
+
+  - A virus in Windows could corrupt your Tails.
+
+  - Plug your Tails USB stick into your computer.
+
+<a id="session"></a>
+
+- **Tails session**
+
+  The time between starting Tails and shutting it down.
+
+<a id="tails-versions"></a>
+
+- **Tails versions**
+
+  Refer to Tails versions by their number. Optionally mention the month
+  and year of the release when it might help users evaluate the
+  relevance of an information, for example when mentioning important
+  changes in a past version.
+
+  *For example*:
+
+  - Tails 1.1 does not start in some virtualization environments.
+
+  - Tails does not work on 32-bit computers since Tails 3.0 (June 2017).
+
+<a id="tips"></a>
+
+- **Tips, notes, cautions, bugs, and next**
+
+  Use tips, notes, and cautions to highlight important information.
+
+  * Tip:
+
+    <pre>
+    &lt;div class="tip"&gt;
+
+    &lt;p&gt;This tip could be useful to some readers.&lt;/p&gt;
+
+    &lt;/div&gt;
+    </pre>
+
+    <div class="tip">
+
+    <p>This tip could be useful to some readers.</p>
+
+    </div>
+
+  * Note:
+
+    <pre>
+    &lt;div class="note"&gt;
+
+    &lt;p&gt;This note attracts attention.&lt;/p&gt;
+
+    &lt;/div&gt;
+    </pre>
+
+    <div class="note">
+
+    <p>This note attracts attention.</p>
+
+    </div>
+
+  * Caution:
+
+    <pre>
+    &lt;div class="caution"&gt;
+
+    &lt;p&gt;This warning describes something dangerous.&lt;/p&gt;
+
+    &lt;/div&gt;
+    </pre>
+
+    <div class="caution">
+
+    <p>This warning describes something dangerous.</p>
+
+    </div>
+
+  * Bug:
+
+    <pre>
+    &lt;div class="bug"&gt;
+
+    &lt;p&gt;This bug describes an important flaw of the software.&lt;/p&gt;
+
+    &lt;/div&gt;
+    </pre>
+
+    <div class="bug">
+
+    <p>This bug describes an important flaw of the software.</p>
+
+    </div>
+
+  * Next:
+
+    <pre>
+    &lt;div class="next"&gt;
+
+    &lt;p&gt;This note helps to know what to read next.&lt;/p&gt;
+
+    &lt;/div&gt;
+    </pre>
+
+    <div class="next">
+
+    <p>This note helps to know what to read next.</p>
+
+    </div>
+
+  * Trophy:
+
+    <pre>
+    &lt;div class="trophy"&gt;
+
+    &lt;p&gt;This trophy celebrates a user achievement.&lt;/p&gt;
+
+    &lt;/div&gt;
+    </pre>
+
+    <div class="trophy">
+
+    <p>This trophy celebrates a user achievement.</p>
+
+    </div>
+
+  * Attack:
+
+    <pre>
+    &lt;div class="attack"&gt;
+
+    &lt;p&gt;This note decribes a security attack and its likelihood.&lt;/p&gt;
+
+    &lt;/div&gt;
+    </pre>
+
+    <div class="attack">
+
+    <p>This note decribes a security attack and its likelihood.</p>
+
+    </div>
+
+<a id="update"></a>
+
+- **update** vs **upgrade**
+
+  Use **upgrade** to refer to the replacement of a previous version of
+  Tails by another.
+
+  *For example:*
+
+  - If you know someone you trust who already did the upgrade, you can
+    upgrade your Tails by cloning from their Tails.</p>
+
+  You might use **update** to refer to other operations that update
+  some data or software outside of Tails releases.
+
+  *For example:*
+
+  - Make sure to update your *dotfiles* each time you use the **init**
+    command of *keyringer*.
+
+  - The packages from your list of additional software will be updated
+    automatically when you connect to the Internet.
+
+<a id="usb-stick"></a>
+
+- **USB stick**
+
+  And not *USB drive*, *USB*, *thumb drive*, or *flash drive*.
+
+<a id="vulnerability"></a>
+
+- **vulnerability** or **security vulnerability**
+
+  And not *hole*, *bug*, *issue*, or *exploit*.
+
+<a id="welcome-screen"></a>
+
+- **Welcome Screen**
+
+  With an article. Not *Tails Greeter* or *the Greeter*.
+
+<a id="wrap"></a>
+
+- **Wrap to 80 characters but only when needed**
+
+  New documentation should be wrapped to 80 characters. However, please do
+  not submit patches that merely re-wrap existing text, as this makes it
+  harder to read the Git history.

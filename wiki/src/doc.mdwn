@@ -1,0 +1,63 @@
+[[!meta title="Documentation"]]
+[[!meta stylesheet="hide-breadcrumbs" rel="stylesheet" title=""]]
+
+<div class="tip">
+
+<p>If this section doesn't answer your questions, you can also look at our
+[[FAQ|support/faq]].</p>
+
+</div>
+
+# General information
+
+[[!inline pages="doc/about.index" raw="yes" sort="age"]]
+
+<a id="install"></a>
+
+# Download, installation, and upgrade
+
+  - Installing from:
+    - [[Windows|install/windows]]
+    - [[macOS|install/mac]]
+    - [[Linux (recommended)|install/linux]]
+    - [[Debian, Ubuntu, or Mint using the command line and GnuPG (experts)|install/expert]]
+  - Installing by cloning from another Tails:
+    - [[For PC|install/clone/pc]]
+    - [[For Mac|install/clone/mac]]
+  - [[Burning a DVD|install/dvd]]
+  - [[Running Tails in a virtual machine|install/vm]]
+  - Downloading without installing:
+    - [[For USB sticks (USB image)|install/download]]
+    - [[For DVDs and virtual machines (ISO image)|install/download-iso]]
+  - Upgrading a Tails USB stick:
+    - [[Upgrading_automatically|upgrade]]
+    - [[Upgrading_manually_from_your_Tails|upgrade/tails]]
+    - [[Upgrading_manually_from_Windows|upgrade/windows]]
+    - [[Upgrading_manually_from_macOS|upgrade/mac]]
+    - [[Upgrading_manually_from_Linux|upgrade/linux]]
+    - [[Upgrading_manually_by_cloning_from_another_Tails|upgrade/clone]]
+    - [[!traillink Repairing_a_Tails_USB_stick_that_fails_to_start_after_an_upgrade|upgrade/repair]]
+  - Uninstalling Tails or resetting a USB stick using
+    [[!traillink Linux|reset/linux]],
+    [[!traillink Windows|reset/windows]], or
+    [[!traillink Mac|reset/mac]]
+
+# First steps with Tails
+
+[[!inline pages="doc/first_steps.index" raw="yes" sort="age"]]
+
+# Uncensored and anonymous Internet
+
+[[!inline pages="doc/anonymous_internet.index" raw="yes" sort="age"]]
+
+# Encryption and privacy
+
+[[!inline pages="doc/encryption_and_privacy.index" raw="yes" sort="age"]]
+
+# Work on sensitive documents
+
+[[!inline pages="doc/sensitive_documents.index" raw="yes" sort="age"]]
+
+# Advanced topics
+
+[[!inline pages="doc/advanced_topics.index" raw="yes" sort="age"]]

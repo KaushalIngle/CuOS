@@ -1,0 +1,141 @@
+@import url("columns.css");
+
+#greetings {
+  margin-top: 0;
+}
+
+#text {
+  display: block;
+}
+
+#text a {
+  display: inline-block;
+}
+
+/* Testimonials */
+
+#testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: url('thanks/world.png') no-repeat 95% 0;
+  padding-top: 50px;
+}
+
+.quote {
+  width: 350px;
+  min-height: 250px;
+  position: relative;
+}
+
+#mexico {
+  background: url(thanks/mexico.png) no-repeat bottom left;
+  padding: 0 0 100px 75px;
+}
+
+#pakistan {
+  background: url(thanks/pakistan.png) no-repeat bottom right;
+  padding: 0 75px 100px 0;
+}
+
+.quote blockquote {
+  width: 275px;
+  margin: 0;
+}
+
+.quote blockquote p {
+  padding: 1em;
+}
+
+.quote blockquote strong {
+  padding-right: 1em;
+}
+
+#pakistan blockquote {
+  position: absolute;
+  bottom: 100px;
+}
+
+@media (max-width: 760px) {
+#testimonials {
+  justify-content: center;
+  background: url('thanks/world.svg') no-repeat 10px 0;
+  background-size: 100%;
+  padding-top: 20%;
+}
+.quote {
+  width: 300px;
+}
+.quote blockquote {
+  width: 225px;
+}
+#mexico {
+  margin-right: 10px;
+}
+#pakistan {
+  margin-top: 125px;
+  margin-left: 10px;
+}
+}
+
+/* Twitter */
+
+#twitter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.follow, .tweet {
+  width: 290px;
+  color: black !important;
+  text-decoration: none;
+  border: 1px solid #b5b7b9 !important;
+  border-radius: 20px;
+  padding: 20px !important;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  background-image: none !important;
+  justify-content: space-between;
+}
+
+.tweet img {
+  height: 150px;
+  width: 177px;
+  margin: 0 auto 20px auto;
+}
+
+.tweet p {
+  margin-bottom: 0;
+}
+
+.tweet p.tweet-text {
+  flex-grow: 2;
+}
+
+.follow img {
+  height: 100px;
+  width: 123px;
+  margin: 75px auto;
+}
+
+.twitter-button {
+  font-weight: bold;
+  border-radius: 0.5em;
+  margin: 20px 0 0 0;
+  padding: 1em 0.5em;
+  text-align: center;
+  box-shadow: 1px 1px 5px #ccc;
+  width: 100%;
+  background: #53b351;
+}
+
+@media (max-width: 986px) {
+#twitter {
+  justify-content: space-evenly;
+}
+.tweet, .follow {
+  margin: 10px;
+}
+}

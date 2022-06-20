@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Tails\n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2021-09-07 14:15+0200\n"
+"PO-Revision-Date: 2022-06-08 09:39+0000\n"
+"Last-Translator: drebs <drebs@riseup.net>\n"
+"Language-Team: Tails translators <tails@boum.org>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.9.1\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta title=\"Error while checking for upgrades\"]]\n"
+msgstr "[[!meta title=\"Erro ao buscar atualizações\"]]\n"
+
+#. type: Plain text
+msgid ""
+"Tails could not determine whether an upgrade is available from our website.  "
+"This is most likely caused by a network connection problem."
+msgstr ""
+"Não foi possível para o Tails determinar se há uma atualização disponível em "
+"nosso site.  A causa mais provável para isso é um problema de conexão de "
+"rede."
+
+#. type: Plain text
+msgid "To solve it:"
+msgstr "Para resolver isso:"
+
+#. type: Bullet: '1. '
+msgid ""
+"Check your network connection and restart Tails to check for upgrades again."
+msgstr ""
+"Verifique a sua conexão de rede e reinicie o Tails para tentar novamente "
+"buscar atualizações."
+
+#. type: Bullet: '1. '
+msgid ""
+"Read our [[release notes|doc/upgrade/release_notes]] to see if there are "
+"known issues with automatically upgrading to the latest version of Tails."
+msgstr ""
+"Leia nossas [[notas de lançamento|doc/upgrade/release_notes]] para ver se há "
+"algum problema conhecido com a atualização automática para a ultima versão "
+"do Tails."
+
+#. type: Bullet: '1. '
+msgid "If the problem persists, do a [[manual upgrade|doc/upgrade#manual]]."
+msgstr ""
+"Se o problema persistir, faça uma [[atualização manual|doc/upgrade#manual]]."
+
+#. type: Plain text
+#, no-wrap
+msgid "<a id=\"4.18\"></a>\n"
+msgstr "<a id=\"4.18\"></a>\n"
+
+#. type: Title =
+#, no-wrap
+msgid "Automatic upgrades are broken between Tails 4.15 and Tails 4.18"
+msgstr ""
+"As atualizações automáticas estão quebradas entre as versões 4.15 e 4.18 do "
+"Tails"
+
+#. type: Plain text
+msgid ""
+"To upgrade from Tails 4.15, Tails 4.16, Tails 4.17, or Tails 4.18, you can "
+"either:"
+msgstr ""
+"Para atualizar a partir do Tails 4.15, Tails 4.16, Tails 4.17 ou Tails 4.18 "
+"você pode fazer um dos seguintes:"
+
+#. type: Plain text
+msgid "- Do a [[manual upgrade|doc/upgrade#manual]]."
+msgstr "- Uma [[atualização manual|doc/upgrade#manual]]."
+
+#. type: Plain text
+msgid "- Fix the automatic upgrade from a terminal. To do so:"
+msgstr ""
+"- Consertar a atualização automática usando o terminal. Para isso, faça:"
+
+#. type: Bullet: '  1. '
+msgid ""
+"Start Tails and set up an [[administration password|doc/first_steps/"
+"welcome_screen/administration_password]]."
+msgstr ""
+"Inicie o Tails e configure uma [[senha de administração|doc/first_steps/"
+"welcome_screen/administration_password]]."
+
+#. type: Bullet: '  1. '
+msgid "In a terminal, execute the following command:"
+msgstr "Em um terminal, execute o seguinte comando:"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"         torsocks curl --silent https://tails.boum.org/isrg-root-x1-cross-signed.pem \\\n"
+"         | sudo tee --append /usr/local/etc/ssl/certs/tails.boum.org-CA.pem \\\n"
+"         && systemctl --user restart tails-upgrade-frontend\n"
+msgstr ""
+"         torsocks curl --silent https://tails.boum.org/isrg-root-x1-cross-"
+"signed.pem \\\n"
+"         | sudo tee --append /usr/local/etc/ssl/certs/tails.boum.org-CA.pem "
+"\\\n"
+"         && systemctl --user restart tails-upgrade-frontend\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "     <div class=\"note\">\n"
+msgstr "     <div class=\"note\">\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"     <p>This command is a single command that wraps across several lines.\n"
+"     Copy and paste the entire block at once and make sure that it executes\n"
+"     as a single command.</p>\n"
+msgstr ""
+"     <p>Este comando é um único comando quebrado em diversas linhas.\n"
+"     Copie e cole o bloco inteiro de uma vez e tenha certeza de que ele é "
+"executado\n"
+"     como um único comando.</p>\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "     </div>\n"
+msgstr "     </div>\n"
+
+#. type: Bullet: '  1. '
+msgid ""
+"Approximately 30 seconds later, you should be prompted to upgrade to the "
+"latest version of Tails. If no prompt appears, you might already be running "
+"the latest version of Tails."
+msgstr ""
+"Aproximadamente 30 segundos depois, deve aparecer uma solicitação para "
+"atualizar para a última versão do Tails. Se nada aparecer, talvez você já "
+"esteja executando a versão mais recente do Tails."
+
+#, fuzzy
+#~| msgid "This is probably caused by a network connection problem."
+#~ msgid "This is most likely caused by a network connection problem."
+#~ msgstr "Isto provavelmente foi ocasionado por um erro de conexão à rede."
+
+#, fuzzy
+#~| msgid ""
+#~| "If the problem persists, [[report an error|support]] and include in your "
+#~| "report the debugging information that appears in the error message."
+#~ msgid ""
+#~ "  Include in your report the debugging information that appears in the "
+#~ "error message.\n"
+#~ msgstr ""
+#~ "Se o problema persistir, [[relate um erro|support]] e inclua a informação "
+#~ "que aparece na mensagem de erro."
+
+#~ msgid "This error could also be caused by:"
+#~ msgstr "Este erro também pode ter sido causado por:"
+
+#~ msgid "an error in Tails Upgrader"
+#~ msgstr "um erro no Atualizador do Tails"
+
+#~ msgid ""
+#~ "a failure or an attack on the Tor exit node being used, your Internet "
+#~ "service provider, or our website."
+#~ msgstr ""
+#~ "uma falha ou um ataque no nó de saída do Tor sendo utilizado, no seu "
+#~ "provedor de serviços de Internet, ou em nosso site."
+
+#~ msgid "Sending us a report is the best way to further analyse the error."
+#~ msgstr ""
+#~ "Usar o nosso sistema de suporte para enviar informações é a melhor forma "
+#~ "de analisar este erro."

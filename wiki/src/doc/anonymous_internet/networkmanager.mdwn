@@ -1,0 +1,63 @@
+[[!meta title="Connecting to a local network"]]
+
+[[!toc levels=2]]
+
+Connecting to a local network
+=============================
+
+You can connect to a local network using a wired, Wi-Fi, or mobile data
+connection:
+
+1. Open the system menu in the top-right corner.
+
+   [[!img doc/first_steps/desktop/system.png link="no"]]
+
+   - If a wired connection is detected, Tails automatically connects to the network.
+
+   - To connect to a Wi-Fi network, choose <span class="guilabel">Wi-Fi Not
+     Connected</span> and then <span class="guilabel">Select Network</span>.
+
+   <div class="bug">
+
+   <p>If there is no option to connect to a Wi-Fi network, your Wi-Fi interface
+   is not working in Tails. See our documentation on [[troubleshooting Wi-Fi
+   not working|no-wifi]].</p>
+
+   </div>
+
+   - To connect to a mobile data network, choose
+     <span class="guilabel">Mobile Broadband</span>.
+
+   <div class="note">
+   <p>It is currently impossible to connect to a network using:</p>
+
+   <ul>
+   <li>Dial-up modems.</li>
+   <li>VPNs, see [[the corresponding FAQ|support/faq#vpn]].</li>
+   </ul>
+
+   </div>
+
+1. After you connect to a local network, the *Tor Connection* assistant
+   appears to help you [[connect to the Tor network|tor]].
+
+   [[!img tor/tor-connection.png link="no"]]
+
+For more information, open
+<span class="application">[[GNOME Help|first_steps/desktop#help]]</span>
+and choose <span class="guilabel">Networking, web & email</span>.
+
+Saving your network settings
+============================
+
+To remember the password for Wi-Fi networks and custom network configurations
+across different Tails sessions, turn on the [[Network
+Connections|first_steps/persistence#network_connections]] feature of
+the Persistent Storage.
+
+Modifying your network settings
+===============================
+
+To modify your network settings, for example, to configure whether or not
+to automatically connect to a Wi-Fi network, choose
+**Applications&nbsp;▸ System Tools&nbsp;▸ Settings&nbsp;▸ Network**.

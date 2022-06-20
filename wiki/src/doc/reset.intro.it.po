@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ITALIAN TEAM\n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2017-07-31 21:51+0000\n"
+"PO-Revision-Date: 2020-08-19 19:29+0000\n"
+"Last-Translator: gallium69 <gallium69@riseup.net>\n"
+"Language-Team: ita <transitails@inventati.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.5.1\n"
+
+#. type: Plain text
+msgid ""
+"To uninstall Tails from a USB stick, and use it for something else, you have "
+"to reset it."
+msgstr ""
+"Per disinstallare Tails da una chiavetta USB e usarla per qualcos'altro, "
+"devi inizializzarla."
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"**The content of the USB stick will be lost in the operation,** but an attacker\n"
+"might still be able to tell that Tails was installed on that USB stick using\n"
+"[[data recovery techniques|encryption_and_privacy/secure_deletion]] unless you\n"
+"[[securely clean all the available disk space|encryption_and_privacy/secure_deletion#usb_and_ssd]]\n"
+"afterwards.\n"
+msgstr ""
+"**Il contenuto della chiavetta USB verrà perso durante l'operazione,** ma un "
+"attaccante\n"
+"potrebbe ancora essere in grado di stabilire che Tails era installato su "
+"quella chiavetta USB usando\n"
+"[[tecniche di recupero dati|encryption_and_privacy/secure_deletion]], a meno "
+"che tu non esegua la\n"
+"[[cancellazione sicura dell'intero spazio disco disponibile|"
+"encryption_and_privacy/secure_deletion#usb_and_ssd]]\n"
+"successivamente.\n"

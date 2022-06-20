@@ -1,0 +1,29 @@
+[[!meta title="Calculating checksums using GtkHash"]]
+
+[*GtkHash*](https://github.com/tristanheaven/gtkhash)
+allows you to calculate [[!wikipedia checksum desc="checksums"]]. Checksums can
+be useful to verify the integrity of a file, for example, if you downloaded it
+from the Internet.
+
+To calculate the checksum of a file:
+
+  1. Open the <span class="application">Files</span> browser.
+
+  1. Navigate to the folder containing the file that you want to calculate the
+     checksum for.
+
+  1. Right-click (on Mac, click with two fingers) on the file and choose <span class="guimenuitem">Properties</span>.
+
+  1. In the <span class="guimenuitem">Properties</span> dialog, click on the
+     <span class="guilabel">Digests</span> tab.
+
+     [[!img gtkhash.png link="no"]]
+
+  1. In the <span class="guilabel">Hash Function</span> column of the
+     <span class="guilabel">Digests</span> tabbed section, select the check boxes
+     corresponding to the checksums that you want to calculate.
+
+  1. Click on the <span class="bold">Hash</span> button.
+
+  1. The calculated checksums appear in the <span class="guilabel">Digest</span>
+     column.

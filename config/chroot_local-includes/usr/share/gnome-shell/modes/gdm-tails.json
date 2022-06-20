@@ -1,0 +1,15 @@
+{
+    "hasNotifications": true,
+    "isGreeter": false,
+    "isPrimary": true,
+    "unlockDialog": null,
+    "isLocked": true,
+    "hasWindows": true,
+    "components": ["polkitAgent"],
+    "panel": {
+        "left": [],
+        "center": ["dateMenu"],
+        "right": ["dwellClick", "a11y", "keyboard", "aggregateMenu"]
+    },
+    "stylesheetName": "gnome-classic.css"
+}

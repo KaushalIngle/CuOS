@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2020-10-22 02:48+0000\n"
+"PO-Revision-Date: 2021-10-24 22:06+0000\n"
+"Last-Translator: la_r_go* <largo@tracciabi.li>\n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
+
+#. type: Content of: <div>
+msgid "[[!meta title=\"Tell us about your problem\"]]"
+msgstr "[[!meta title=\"fai sapere del tuo problema\"]]"
+
+#. type: Content of: outside any tag (error?)
+msgid ""
+"[[!meta stylesheet=\"donate/canceled\" rel=\"stylesheet\" title=\"\"]] [[!"
+"meta stylesheet=\"hide-breadcrumbs\" rel=\"stylesheet\" title=\"\"]] [[!meta "
+"stylesheet=\"hide-donate-banner\" rel=\"stylesheet\" title=\"\"]] [[!meta "
+"robots=\"noindex\"]]"
+msgstr ""
+"[[!meta stylesheet=\"donate/canceled\" rel=\"stylesheet\" title=\"\"]] [["
+"!meta stylesheet=\"hide-breadcrumbs\" rel=\"stylesheet\" title=\"\"]] [["
+"!meta stylesheet=\"hide-donate-banner\" rel=\"stylesheet\" title=\"\"]] [["
+"!meta robots=\"noindex\"]]"
+
+#. type: Content of: <div>
+msgid "[[!img canceled.png link=\"no\" alt=\"\"]]"
+msgstr "[[!img canceled.png link=\"no\" alt=\"\"]]"
+
+#. type: Content of: <div><div><p>
+msgid "Your payment was canceled."
+msgstr "Il tuo pagamento è stato annullato."
+
+#. type: Content of: <div><div><p>
+msgid ""
+"If you had a technical problem or got annoyed while donating, please leave "
+"us anonymous feedback below. We will do our best to make it easier for you "
+"to support our work."
+msgstr ""
+"Se hai avuto un problema tecnico o ti sei irritato mentre donavi, per favore "
+"lasciaci un feedback anonimo qui sotto. Faremo del nostro meglio per "
+"renderti più facile sostenere il nostro lavoro."
+
+#. type: Content of: <div><div><form><p>
+msgid "<textarea name=\"feedback\"></textarea>"
+msgstr "<textarea name=\"feedback\"></textarea>"
+
+#. type: Content of: <div><div><form><p>
+msgid "<input type=\"submit\" value=\"Send feedback\" />"
+msgstr "<input type=\"submit\" value=\"Send feedback\" />"
+
+#. type: Content of: <div><div>
+msgid ""
+"[[!inline pages=\"donate/canceled/others.inline\" raw=\"yes\" sort=\"age\"]]"
+msgstr ""
+"[[!inline pages=\"donate/canceled/others.inline\" raw=\"yes\" sort=\"age\"]]"
+
+#~ msgid "[[!meta title=\"Payment canceled\"]]\n"
+#~ msgstr "[[!meta title=\"Pagamento annullato\"]]\n"
+
+#~ msgid ""
+#~ "If you faced technical problems or were annoyed by something in the "
+#~ "process, we are very interested in hearing about it."
+#~ msgstr ""
+#~ "Se hai incontrato problemi tecnici o qualcosa nella procedura ti ha "
+#~ "infastidito, siamo molto interessati ad averne notizia."
+
+#~ msgid "Please contact us at <mailto:tails-fundraising@boum.org>."
+#~ msgstr "Ti preghiamo di contattarci a <mailto:tails-fundraising@boum.org>."

@@ -1,0 +1,32 @@
+[[!meta title="Shutting down Tails"]]
+
+There are several ways of shutting down Tails:
+
+- By clicking on the system menu located in
+  the upper right corner of the screen and choosing either:
+
+  - [[!img lib/system-shutdown.png link="no" class="symbolic" alt="Shutdown icon"]] to
+    shutdown the computer or
+  - [[!img lib/view-refresh.png link="no" class="symbolic" alt="Restart icon"]] to restart
+    the computer.
+
+  [[!img desktop/system.png link="no"]]
+
+- By physically removing the USB stick or DVD that Tails is running from.
+
+  <div class="caution">
+
+  <p>Only physically remove the USB stick in case of emergency as doing
+  so can sometimes break the file system of the Persistent Storage.</p>
+
+  <p>If you cannot unlock the Persistent Storage anymore after
+  physically removing the USB stick, try to do a [[file system check on
+  the Persistent Storage|advanced_topics/persistence/check_file_system]]
+  to fix it.</p>
+
+  </div>
+
+When you shut down Tails, all the data stored in [[!wikipedia
+Random-access_memory desc="RAM"]] is erased
+to protect you from [[cold boot
+attacks|doc/advanced_topics/cold_boot_attacks]].

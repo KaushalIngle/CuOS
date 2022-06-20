@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Tails 2.2.1\n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2020-12-04 17:08+0000\n"
+"PO-Revision-Date: 2022-06-07 12:40+0000\n"
+"Last-Translator: drebs <drebs@riseup.net>\n"
+"Language-Team: Tails translators <tails@boum.org>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9.1\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta title=\"Upgrading a Tails USB stick\"]]\n"
+msgstr "[[!meta title=\"Atualizando um dispositivo USB com Tails\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta stylesheet=\"hide-breadcrumbs\" rel=\"stylesheet\" title=\"\"]]\n"
+msgstr ""
+"[[!meta stylesheet=\"hide-breadcrumbs\" rel=\"stylesheet\" title=\"\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!toc levels=2]]\n"
+msgstr "[[!toc levels=2]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!inline pages=\"doc/upgrade\" raw=\"yes\" sort=\"age\"]]\n"
+msgstr "[[!inline pages=\"doc/upgrade.pt\" raw=\"yes\" sort=\"age\"]]\n"
+
+#~ msgid "[[!meta robots=\"noindex\"]]\n"
+#~ msgstr "[[!meta robots=\"noindex\"]]\n"
+
+#, fuzzy
+#~| msgid "Choose your <strong>manual upgrade</strong> scenario"
+#~ msgid "[[!meta title=\"Choose your manual upgrade scenario\"]]"
+#~ msgstr "Escolha o seu cenário de <strong>atualização manual</strong>"
+
+#, fuzzy
+#~| msgid ""
+#~| "[[!meta title=\"Choose your manual upgrade scenario\"]] [[!meta robots="
+#~| "\"noindex\"]] [[!meta stylesheet=\"bootstrap.min\" rel=\"stylesheet\" "
+#~| "title=\"\"]] [[!meta stylesheet=\"install/inc/stylesheets/assistant\" "
+#~| "rel=\"stylesheet\" title=\"\"]] [[!inline pages=\"install/inc/tails-"
+#~| "installation-assistant.inline\" raw=\"yes\" sort=\"age\"]]"
+#~ msgid ""
+#~ "[[!meta robots=\"noindex\"]] [[!meta stylesheet=\"bootstrap.min\" rel="
+#~ "\"stylesheet\" title=\"\"]] [[!meta stylesheet=\"install/inc/stylesheets/"
+#~ "assistant\" rel=\"stylesheet\" title=\"\"]]"
+#~ msgstr ""
+#~ "[[!meta title=\"Escolha o seu cenário de atualização manual\"]] [[!meta "
+#~ "robots=\"noindex\"]] [[!meta stylesheet=\"bootstrap.min\" rel=\"stylesheet"
+#~ "\" title=\"\"]] [[!meta stylesheet=\"install/inc/stylesheets/assistant\" "
+#~ "rel=\"stylesheet\" title=\"\"]] [[!inline pages=\"install/inc/tails-"
+#~ "installation-assistant.inline.pt\" raw=\"yes\" sort=\"age\"]]"
+
+#~ msgid "Upgrade from another Tails"
+#~ msgstr "Atualize a partir de outro Tails"
+
+#, fuzzy
+#~| msgid ""
+#~| "If you know someone of trust who already did the upgrade, you can "
+#~| "upgrade your Tails by cloning from it."
+#~ msgid ""
+#~ "If you know someone you trust who already did the upgrade, you can "
+#~ "upgrade your Tails by cloning from their Tails."
+#~ msgstr ""
+#~ "Se você conhece uma pessoa de confiança que já fez a atualização, você "
+#~ "pode atualizar seu Tails clonando a partir do dela."
+
+#~ msgid "You need:"
+#~ msgstr "Você precisa de:"
+
+#, fuzzy
+#~| msgid "Your USB stick"
+#~ msgid "Your Tails USB stick"
+#~ msgstr "Sua memória USB"
+
+#~ msgid "¼ hour to upgrade"
+#~ msgstr "¼ de hora para atualizar"
+
+#~ msgid "[["
+#~ msgstr "[["
+
+#~ msgid "<small>Manually</small>"
+#~ msgstr "<small>Manualmente</small>"
+
+#~ msgid "upgrade from another Tails"
+#~ msgstr "atualizar a partir de outro Tails"
+
+#~ msgid "|upgrade/clone-overview]]"
+#~ msgstr "|upgrade/clone-overview]]"
+
+#, fuzzy
+#~| msgid "Upgrade inside Tails"
+#~ msgid "Upgrade inside Tails (or Linux)"
+#~ msgstr "Atualizar dentro do Tails"
+
+#~ msgid ""
+#~ "Another empty USB stick <small>(at least 8 GB)</small>&nbsp;[[!toggle id="
+#~ "\"why_extra\" text=\"Why?\"]] [[!toggleable id=\"why_extra\" text="
+#~ "\"\"\" [[!toggle id=\"why_extra\" text=\"X\"]] [[!inline pages=\"install/"
+#~ "inc/router/why_extra.inline\" raw=\"yes\" sort=\"age\"]] \"\"\"]]"
+#~ msgstr ""
+#~ "Outra memória USB vazia <small>(mínimo 8 GB)</small>&nbsp;[[!toggle id="
+#~ "\"why_extra\" text=\"Porque?\"]] [[!toggleable id=\"why_extra\" text="
+#~ "\"\"\" [[!toggle id=\"why_extra\" text=\"X\"]] [[!inline pages=\"install/"
+#~ "inc/router/why_extra.inline.pt\" raw=\"yes\" sort=\"age\"]] \"\"\"]]"
+
+#~ msgid ""
+#~ "1 hour to download Tails (<small class=\"remove-extra-space\">[[!inline "
+#~ "pages=\"inc/stable_amd64_iso_size\" raw=\"yes\" sort=\"age\"]]</small>)"
+#~ msgstr ""
+#~ "1 hora para baixar o Tails (<small class=\"remove-extra-space\">[[!inline "
+#~ "pages=\"inc/stable_amd64_iso_size\" raw=\"yes\" sort=\"age\"]]</small>)"
+
+#~ msgid "½ hour to upgrade"
+#~ msgstr "½ hora para atualizar"
+
+#, fuzzy
+#~| msgid "upgrade inside Tails"
+#~ msgid "upgrade inside Tails (or Linux)"
+#~ msgstr "atualizar dentro do Tails"
+
+#~ msgid "|upgrade/tails-overview]]"
+#~ msgstr "|upgrade/tails-overview]]"
+
+#~ msgid "<small> You can also:"
+#~ msgstr "<small> Você pode também:"
+
+#~ msgid "[[Burn a new Tails DVD|install/dvd]]"
+#~ msgstr "[[Gravar um novo DVD do Tails|install/dvd]]"
+
+#~ msgid "[[Upgrade your virtual machine|install/vm-download]]"
+#~ msgstr "[[Atualizar a sua máquina virtual|install/vm-download]]"
+
+#~ msgid "</small>"
+#~ msgstr "</small>"
+
+#~ msgid ""
+#~ "The following set of instructions is quite new. If you face problems "
+#~ "following them:"
+#~ msgstr ""
+#~ "O seguinte conjunto de instruções é relativamente novo. Se você encontrar "
+#~ "problemas ao seguí-las:"
+
+#~ msgid "[[Report your problem.|support/talk]]"
+#~ msgstr "[[Relate o seu problema.|support/talk]]"
+
+#~ msgid ""
+#~ "Try following our old instructions for [[downloading|install]] or "
+#~ "[[upgrading|doc/upgrade]] instead."
+#~ msgstr ""
+#~ "Tente, ao invés disto, as nossas instruções antigas para [[instalar|"
+#~ "install]] ou [[atualizar|doc/upgrade]]."
+
+#~ msgid "Another USB stick with Tails up-to-date"
+#~ msgstr "Outra memória USB com o Tails atualizado"

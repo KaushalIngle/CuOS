@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2022-03-14 18:03+0000\n"
+"PO-Revision-Date: 2020-01-15 21:26+0000\n"
+"Last-Translator: emmapeel <emma.peel@riseup.net>\n"
+"Language-Team: \n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.5.1\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta title=\"How can I trust Tails?\"]]\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta stylesheet=\"donate/testimonials.inline\" rel=\"stylesheet\" title=\"\"]]\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"Tails will never try harm to you or any of our users, as a core principle of "
+"[[our social contract|about/social_contract]]. As part of that commitment, "
+"we have written this page to help you make an informed decision about "
+"whether you can trust Tails."
+msgstr ""
+
+#. type: Plain text
+msgid "We think that Tails is a trustworthy project because:"
+msgstr ""
+
+#. type: Plain text
+msgid "- **Our source code is public**"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  Tails is [[Free Software|about/license]] and security researchers worldwide\n"
+"  can examine our [[!tails_gitlab desc=\"source code\"]].\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  The most sensitive parts of Tails are explained in our [[design\n"
+"  documents|contribute/design]].\n"
+msgstr ""
+
+#. type: Plain text
+msgid "- **Tails is based on Tor and Debian**"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  Most of the software included in Tails has not been written by us, but is\n"
+"  inherited from Tor and Debian:\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+msgid ""
+"[Debian](https://debian.org/) is one of the oldest Linux distributions and "
+"the one with the most derivatives, including Ubuntu. Debian and its "
+"derivatives are [the most popular Linux distributions on web servers]"
+"(https://w3techs.com/technologies/details/os-linux) across the Internet. The "
+"Debian project is coordinated over the Internet by a team of volunteers "
+"whose work is entirely public. All this makes Debian one of the Free "
+"Software projects under the most scrutiny by security researchers."
+msgstr ""
+
+#. type: Bullet: '  * '
+msgid ""
+"[Tor](https://torproject.org/) is the best anonymity network available. Tor "
+"has partnered with leading research institutions and has been subjected to "
+"intensive academic research. Tor has received awards from institutions such "
+"as the [EFF](https://www.eff.org/awards/pioneer/2012) and the [Free Software "
+"Foundation](https://www.fsf.org/news/2010-free-software-awards-announced).  "
+"Even the NSA qualified Tor as \"[the King of high secure, low latency "
+"Internet Anonymity](https://www.theguardian.com/world/interactive/2013/"
+"oct/04/tor-high-secure-internet-anonymity).\""
+msgstr ""
+
+#. type: Plain text
+msgid "- **Our downloads are verifiable**"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  Making sure that our users are really downloading an unmodified version of\n"
+"  our work is also critical to trust and security:\n"
+msgstr ""
+
+#. type: Bullet: '  * '
+msgid ""
+"Our downloads are [[reproducible|contribute/build/reproducible]] to make "
+"sure that the process of building the downloads from our source code was not "
+"altered by our own infrastructure."
+msgstr ""
+
+#. type: Bullet: '  * '
+msgid ""
+"We provide [[strong and easy-to-use verification mechanisms|contribute/"
+"design/download_verification]] to make sure that our users are downloading a "
+"genuine copy of Tails."
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"- **Tails is recommended by renown and diverse people and organizations**"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "  See also our list of [[sponsors]].\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!inline pages=\"donate/testimonials.inline\" raw=\"yes\" sort=\"age\"]]\n"
+msgstr ""
+
+#, no-wrap
+#~ msgid "[[!toc levels=2]]\n"
+#~ msgstr "[[!toc levels=2]]\n"

@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2017-09-19 17:29+0200\n"
+"PO-Revision-Date: 2021-05-18 10:51+0000\n"
+"Last-Translator: Boy Ska <piuttosto@logorroici.org>\n"
+"Language-Team: ita <transitails@inventati.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta title=\"Using the screen keyboard\"]]\n"
+msgstr "[[!meta title=\"Utilizzare la tastiera a schermo\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"If you think that the computer that you are using is not trustworthy,\n"
+"for example when using a public computer in a library, everything that\n"
+"you type might be recorded by a hardware [[!wikipedia Keystroke_logging\n"
+"desc=\"keylogger\"]].\n"
+msgstr ""
+"Se pensi che il computer che stai usando non sia affidabile\n"
+"come per esempio quando utilizzi un computer pubblico in una biblioteca,\n"
+"ogni cosa che scrivi può essere registrata da un hardware[[!wikipedia "
+"Keystroke_logging\n"
+"desc=\"keylogger\"]].\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"You can use the [<span\n"
+"class=\"application\">GNOME screen keyboard</span>](https://help.gnome.org/users/gnome-help/stable/keyboard-osk.html.en)\n"
+"to protect you against a hardware keylogger when typing\n"
+"passwords and sensitive text. To display the screen keyboard,\n"
+"[[see the corresponding documentation|first_steps/accessibility]].\n"
+msgstr ""
+"Puoi utilizzare la [<span class=\"application\">tastiera a schermo "
+"GNOME</span>\n"
+"](https://help.gnome.org/users/gnome-help/stable/keyboard-osk.html.it)\n"
+"per proteggerti contro un keylogger hardware quando digiti\n"
+"password e testo sensibile. Per mostrare la tastiera a schermo\n"
+"[[guarda la documentazione corrispondente|first_steps/accessibility]].\n"

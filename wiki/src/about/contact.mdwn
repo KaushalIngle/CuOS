@@ -1,0 +1,188 @@
+[[!meta title="Contact"]]
+
+There are many ways to contact us, depending on what you want
+to talk about.
+
+All mailing lists are in English unless specified otherwise.
+
+[[!toc levels=2]]
+
+<h1 id="public-mailing-lists">Public mailing lists</h1>
+
+<div class="caution">
+
+<p>These mailing lists are public: subscription is open to anyone. Don't
+send compromising information. Please respect the
+[[code of conduct|contribute/working_together/code_of_conduct/]].</p>
+
+</div>
+
+<h2 id="amnesia-news">amnesia-news</h2>
+
+amnesia-news@boum.org is the mailing list where we send our [[news]] by
+email. It has a low traffic and it is the right place to stay
+up-to-date with the releases and security announcements.
+
+<p>
+<form method="POST" action="https://www.autistici.org/mailman/subscribe/amnesia-news">
+	<input name="email" value=""/>
+	<input type="submit" value="Subscribe"/>
+</form>
+</p>
+
+Public archive of amnesia-news: <https://lists.autistici.org/list/amnesia-news.html>.
+
+<p>
+<form action="https://lists.autistici.org/cgi-lurker/keyword.cgi" accept-charset="UTF-8">
+    <input type="hidden" name="doc-url" value="https://lists.autistici.org">
+	<input type="hidden" name="format" value="en.html">
+	<input type="text"   name="query" value="" placeholder="ml:amnesia-news search terms" onclick="value='ml:amnesia-news '">
+	<input type="submit" name="submit" value="Search archive">
+</form>
+</p>
+
+<h2 id="tails-dev">tails-dev</h2>
+
+tails-dev@boum.org is the mailing list where the project is coordinated:
+technical design questions, upcoming events, monthly reports, and user
+experience.
+
+<p>
+<form method="POST" action="https://www.autistici.org/mailman/subscribe/tails-dev">
+	<input name="email" value=""/>
+	<input type="submit" value="Subscribe"/>
+</form>
+</p>
+
+Public archive of tails-dev: <https://lists.autistici.org/list/tails-dev.html>.
+
+<p>
+<form action="https://lists.autistici.org/cgi-lurker/keyword.cgi" accept-charset="UTF-8">
+    <input type="hidden" name="doc-url" value="https://lists.autistici.org">
+	<input type="hidden" name="format" value="en.html">
+	<input type="text"   name="query" value="" placeholder="ml:tails-dev search terms" onclick="value='ml:tails-dev '">
+	<input type="submit" name="submit" value="Search archive">
+</form>
+</p>
+
+<h2 id="tails-testers">tails-testers</h2>
+
+tails-testers@boum.org is the mailing list for people who want to help
+[[test|contribute/how/testing]] new releases or features.
+
+<p>
+<form method="POST" action="https://www.autistici.org/mailman/subscribe/tails-testers">
+	<input name="email" value=""/>
+	<input type="submit" value="Subscribe"/>
+</form>
+</p>
+
+Public archive of tails-testers: <https://lists.autistici.org/list/tails-testers.html>.
+
+<p>
+<form action="https://lists.autistici.org/cgi-lurker/keyword.cgi" accept-charset="UTF-8">
+    <input type="hidden" name="doc-url" value="https://lists.autistici.org">
+	<input type="hidden" name="format" value="en.html">
+	<input type="text"   name="query" value="" placeholder="ml:tails-testers search terms" onclick="value='ml:tails-testers '">
+	<input type="submit" name="submit" value="Search archive">
+</form>
+</p>
+
+<h2 id="tails-l10n">tails-l10n</h2>
+
+[[!inline pages="contribute/how/translate/tails-l10n.inline" raw="yes" sort="age"]]
+
+<h1 id="private-email-addresses">Private email addresses</h1>
+
+<a id="tails-support-private"></a>
+
+<h2 id="tails-support-private">tails-support-private</h2>
+
+You can write encrypted emails to <tails-support-private@boum.org> if
+you need help in private.
+
+[[OpenPGP key|tails-bugs.key]]
+([[details|doc/about/openpgp_keys#support]]).
+
+[[!inline pages="support/talk/languages.inline" raw="yes" sort="age"]]
+
+<h2 id="tails-press">tails-press</h2>
+
+If you are a journalist and want to write about Tails, or if you want to
+send us links to [[press articles|press]] about Tails, write to
+<tails-press@boum.org>.
+
+[[OpenPGP key|tails-press.key]]
+([[details|doc/about/openpgp_keys#press]]).
+
+<h2 id="tails-accounting">tails-accounting</h2>
+
+If you want to contact our accounting team, write to <tails-accounting@boum.org>.
+
+[[OpenPGP key|tails-accounting.key]]
+([[details|doc/about/openpgp_keys#accounting]]).
+
+<h2 id="tails-fundraising">tails-fundraising</h2>
+
+If you want to contact our fundraising team, write to <tails-fundraising@boum.org>.
+
+[[OpenPGP key|tails-fundraising.key]]
+([[details|doc/about/openpgp_keys#fundraising]]).
+
+<h2 id="tails-foundations">tails-foundations</h2>
+
+To get in touch with the Tails [[Foundations
+Team|contribute/working_together/roles/foundations_team]], write to
+<tails-foundations@boum.org>.
+
+[[OpenPGP key|tails-foundations.key]]
+([[details|doc/about/openpgp_keys#foundations]]).
+
+<h2 id="tails-mirrors">tails-mirrors</h2>
+
+If you want to operate a Tails mirror, see [[contribute/how/mirror]].
+
+To get in touch with the team that manages our pool of mirror,
+write to <tails-mirrors@boum.org>.
+
+[[OpenPGP key|tails-mirrors.key]]
+([[details|doc/about/openpgp_keys#mirrors]]).
+
+<h2 id="tails-sysadmins">tails-sysadmins</h2>
+
+To talk about our infrastructure (servers, test suite, repositories,
+mirrors, etc.), write to <tails-sysadmins@boum.org>.
+
+[[OpenPGP key|tails-sysadmins.key]]
+([[details|doc/about/openpgp_keys#sysadmins]]).
+
+<h2 id="tails-weblate">tails-weblate</h2>
+
+To talk about the [[Tails translation platform|contribute/how/translate/with_translation_platform]], write to <tails-weblate@boum.org>.
+
+[[OpenPGP key|tails-weblate.key]]
+([[details|doc/about/openpgp_keys#weblate]]).
+
+<h2 id="board">tails-board</h2>
+
+You can write to the Board at <tails-board@boum.org> about sponsorship requests
+and governance issues.
+
+[[OpenPGP key|tails-board.key]]
+([[details|doc/about/openpgp_keys#board]]).
+
+<h2 id="tails">tails</h2>
+
+For matters that are listed in none of the above and for
+vulnerabilities disclosures, you can write encrypted emails to
+<tails@boum.org>.
+
+[[OpenPGP key|tails-email.key]]
+([[details|doc/about/openpgp_keys#private]]).
+
+<h1 id="chat">Chat rooms</h1>
+
+You can join our [[users chat room|support/chat]] and
+[[developers chat room|contribute/chat]]. Only a few Tails
+developers hang out there, so email is preferred for anything that
+might be of interest for the larger community.

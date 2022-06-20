@@ -1,0 +1,1183 @@
+/*
+Tails custom colors: see tails_ticket#14836
+dark purple: #3a2354 hsl(268,58,33)
+medium purple (logo): #56347c hsl(268,58,49)
+light purple: #9f73d2 hsl(269,45,82)
+dark green: #276426 hsl(119,62,39)
+medium dark green (links): #3b833a hsl(119,98,94) // Passes WebAIM contrast check for small text on white background
+medium light green (buttons): #53b351 hsl(119,55,70)
+light green: #73d171 hsl(119,46,82)
+
+Tails font style:
+Some text sizing use ems with decimals to calculate round pixel numbers by
+default, when the user does not resize the text.
+See: http://www.alistapart.com/articles/howtosizetextincss/
+*/
+
+/*
+Table of Content:
+
+  - Fonts
+  - Base
+  - Basic Typography
+  - Tables
+  - Images
+  - Forms
+  - Layout
+  - Banner
+  - Search box and Donate button
+  - Translation hack
+  - Top bar
+  - Actions menu
+  - Breadcrumbs
+  - Languages
+  - Page title
+  - Trail
+  - Links
+  - Support page
+  - News
+  - Columns
+  - Calls for action
+  - Download buttons
+  - Toggleable
+  - Icons
+  - Documentation styling
+  - Code, preformatted text, and command lines
+  - Inlined icons
+  - Contribute section
+  - Highlight
+  - Donate buttons outside of sidebar
+  - Charts
+
+*/
+
+/* Load RTL stylesheet */
+
+@import url("local.rtl.css");
+
+/* Fonts */
+
+@font-face { font-family: "Source Sans Pro Regular"; src: url("lib/SourceSansPro-Regular.ttf"); }
+@font-face { font-family: "Source Code Pro Regular"; src: url("lib/SourceCodePro-Regular.ttf"); }
+
+/* Base */
+
+/* Include padding and border in width calculations (like Bootstrap does) */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px !important;
+}
+
+body {
+  font-family: "DejaVu Sans", "Verdana", sans-serif;
+  color: black;
+  background: url(lib/strip.png);
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic typography */
+/* This section implements the ideas of typographic scale and rythm as
+ * explained on http://lamb.cc/typograph/. */
+
+/* Set the main font-size to 14px.
+ * Set the main line-height, λ to 21px.
+ * All this section is calculated so that each element measures in height a
+ * multiple of λ. This allows, for exemple, to keep parallel threads of text
+ * in a same vertical rythm. */
+body {
+  font-size: 87.5%; /* 16×87.5%=14px */
+  line-height: 1.5em; /* 14×1.5=21px=λ */
+}
+
+/* The bottom margin of all elements is fixed to a multiple of λ so that they
+ * don't brake the rythm when they overlap. We set all top margin to 0. */
+p {
+  margin: 0 0 1.5em 0; /* 14×1.5=21px=λ */
+}
+
+h1, h2, h3 {
+  font-family: "Source Sans Pro Regular", "DejaVu Sans", "Verdana", sans-serif;
+  font-weight: normal;
+}
+
+/* The size h1, h2 and h3 follows a traditional scale of 1, 1.5 and 2.
+   Their line-height are adjusted to a multiple of λ. */
+
+h1 {
+  font-size: 28px;
+  line-height: 1em;
+  margin: 1.5em 0 1em;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1em;
+  margin: 1em 0 1em 0;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0.75em 0 0.75em 0;
+}
+
+/* avoid super-long lines */
+.donate-button,
+p, ul, ol, h1, h2, h3, h4, h5, h6 {
+  max-width: 45em;
+}
+
+blockquote {
+  max-width: 42em;
+}
+
+li>p {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+code, kbd, samp, pre, tt, var, p.pre, p.code {
+  font-family: "Source Code Pro Regular", "Courier", monospace;
+  font-size: 1em; /* 14px */
+}
+pre code { font-size: 1em; } /* ikiwiki adds <code> tags inside <pre> */
+
+p+p, table+p {
+  margin-top: 18px;
+}
+
+ol, ul {
+  padding: 0;
+  margin-left: 1.5em;
+}
+
+.remove-extra-space {
+  margin: 0 -0.3em;
+}
+
+.remove-extra-space-right {
+  margin: 0 -0.3em 0 0;
+}
+
+.clearfix {
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+#footer {
+  padding-top: 36px;
+}
+
+#pageinfo {
+  border-top: 0;
+}
+
+div#feedlink {
+  margin-top: 18px;
+}
+
+.toc {
+  border-top: thin solid dimgray;
+  border-left: thin solid dimgray;
+  border-bottom: thin dotted darkgrey;
+  border-right: thin dotted darkgrey;
+  float: none;
+  margin: 1em 0;
+  max-width: 38em;
+  padding: 0 1em 0 1em;
+}
+
+blockquote > p {
+  border-left: 2px solid #53b351;
+  padding-left: 5px;
+  background: #f5f5f5;
+}
+
+blockquote > p:hover {
+  background: #eeeeee;
+}
+
+/* Tables */
+
+table {
+  margin: 1.5em 0;
+  border-collapse: collapse;
+}
+
+th.w30 {
+  width: 30%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 0.5em 1em;
+}
+
+th {
+  background: #9f73d2;
+}
+
+tr:nth-child(odd) {
+  background: #eee;
+}
+
+td.check, td.cross {
+  padding-left: 42px;
+}
+
+td.check {
+  background: url(lib/check.png) no-repeat 10px 8px;
+}
+
+td.cross {
+  background: url(lib/cross.png) no-repeat 10px 6px;
+}
+
+/* Images */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img.img { /* overwrite style.css */
+  margin: 0em;
+}
+
+img.top-margin { /* overwrite style.css */
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+img.right-margin { /* overwrite style.css */
+  margin-right: 4em;
+}
+
+/* Images with caption */
+
+table.img, table.img td {
+  border: none;
+}
+
+table.img caption, .image .caption {
+  font-size: 90%;
+  font-style: italic;
+  color: #58595b;
+  margin: 1em 0;
+  max-width: 100%;
+}
+
+.image {
+  text-align: center;
+}
+
+/* Videos */
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Forms */
+
+label {
+  display: block;
+  margin-bottom: 0;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  margin-right: 5px !important;
+  vertical-align: bottom;
+  position: relative;
+  top: -4px;
+}
+
+button, input, textarea {
+  padding: 5px;
+  border-radius: 0.5em;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid #53b351;
+}
+
+/* Layout */
+
+.page {
+  margin: 0 auto;
+  padding: 0 30px 30px 30px;
+  max-width: 986px;
+  position: relative;
+  border: 0px solid black;
+  background: white;
+}
+
+div.header { /* override style.css */
+  font-size: 1em;
+  font-weight: normal;
+  padding: 30px 0;
+}
+
+/* Banner */
+
+.banner {
+  background: #56347c url(lib/logo.svg) no-repeat 30px 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  max-width: 986px;
+  border: none;
+  position: relative;
+}
+
+.banner a span {
+  display: none;
+}
+
+.banner .tails {
+  display: block;
+  height: 110px;
+}
+
+/* Search box and Donate button */
+
+#search-and-donate {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#searchform {
+  position: relative;
+  margin: 10px auto 0 auto;
+  width: 150px;
+  display: flex;
+  height: 28px;
+  width: 180px;
+}
+
+#searchform input {
+  background: white;
+  padding: 6px;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  font-size: 13px;
+  color: black;
+  width: 140px;
+}
+
+#searchform button {
+  background: #53b351 url(lib/search.png) no-repeat center;
+  width: 40px;
+  border: 0;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  box-shadow: 1px 1px 1px #170036, 1px 1px 4px #280a4d, inset 1px 1px 1px #a8ffa0;
+}
+
+#searchform button span {
+  display: none;
+}
+
+label[for="searchbox"]{
+  visibility: hidden;
+  position: absolute;
+}
+
+#searchbox {
+  width: 100%;
+}
+
+.donate a {
+  background: #53b351;
+  color: black !important;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 0.5em;
+  padding: 0.2em;
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 1px 1px #170036, 1px 1px 4px #280a4d, inset 1px 1px 1px #a8ffa0;
+  width: 180px;
+  height: 28px;
+}
+
+.donate {
+  margin: 10px auto 0 auto;
+}
+
+.donate a span {
+  background: url(lib/heart.svg) no-repeat top 40% left 0 !important;
+  display: block;
+  padding-left: 18px;
+}
+
+@media (min-width: 450px) {
+  #search-and-donate {
+    flex-direction: row;
+    margin: 10px 30px 0 30px;
+    gap: 30px;
+  }
+  #searchform, .donate {
+    margin: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  #search-and-donate {
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    height: 120px;
+    gap: 0;
+  }
+  #searchform, .donate a {
+    width: 240px;
+  }
+  #searchform input {
+    width: 200px;
+  }
+  #searchform input, .donate a {
+    font-size: 16px;
+  }
+}
+
+/* Top bar */
+
+.topbar {
+  background: white;
+  max-width: 986px;
+  margin: 0 auto;
+  padding-left: 30px;
+  border-bottom: 1px solid #eee;
+}
+
+.topbar ul {
+  margin: 0;
+  max-width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.topbar ul li {
+  display: inline-block;
+}
+
+.topbar a, .topbar .selflink {
+  display: block;
+  padding: 4px 0;
+  font-family: "Source Sans Pro Regular", "DejaVu Sans", "Verdana", sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  border-bottom: 5px solid white;
+}
+
+.topbar a {
+  color: black;
+}
+
+.topbar a:hover {
+  text-decoration: none;
+  border-bottom: 5px solid #73d171 !important;
+}
+
+.topbar .selflink {
+  border-bottom: 5px solid #276426;
+}
+
+@media (min-width: 810px) {
+  .topbar a, .topbar .selflink {
+    padding-top: 8px;
+    font-size: 16px;
+  }
+  .topbar ul {
+    gap: 30px;
+  }
+}
+
+/* Breadcrumbs */
+
+#crumbs ul, #crumbs li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#crumbs {
+  border-bottom: 1px solid #dedede;
+  margin: 0 -2em;
+  padding-left: 30px;
+  max-width: 110%;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+  white-space: nowrap;
+  font-size: 0.9rem;
+  line-height: 2.2em;
+  height: 33px;
+}
+
+#crumbs li {
+  display: inline-block;
+  color: #666;
+  padding-right: 12px;
+}
+
+#crumbs li:first-child img {
+  top: 5px;
+  position: relative;
+  vertical-align: top;
+}
+
+#crumbs li a {
+  background: url(lib/crumbs.gif) no-repeat right center;
+  display: block;
+  padding: 0 15px 0 0;
+}
+
+#crumbs li a:link,
+#crumbs li a:visited {
+  color: #666;
+  text-decoration: none;
+}
+
+#crumbs li a:hover,
+#crumbs li a:focus {
+}
+
+/* Languages */
+
+.pageheader #otherlanguages {
+  position: absolute;
+  top: 33px;
+  right: 30px;
+  border: none;
+}
+
+.pageheader #otherlanguages ul {
+  margin: 0;
+  padding: 0;
+  border-bottom: none;
+  display: inline;
+  float: right;
+}
+
+.pageheader #otherlanguages li {
+  display: inline;
+  padding: 4px 8px;
+  margin-right: 0.0em;
+  position: relative;
+  float: left;
+}
+
+.pageheader #otherlanguages li a {
+  color: #666;
+  text-decoration: none;
+}
+
+.pageheader #otherlanguages ul li {
+  background: white;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  border-bottom: 1px solid white;
+}
+
+.pageheader #otherlanguages ul li:hover, .pageheader #otherlanguages ul li.current{
+  border-bottom: 2px solid green;
+  text-decoration: none;
+  background: #EEEEEE;
+}
+
+.pageheader #otherlanguages ul li.master, .pageheader #otherlanguages ul li:hover.master  {
+  font-weight: bold;
+}
+
+.pageheader #otherlanguages ul li:hover a {
+  transition: all 0.5s ease-out;
+  color: black;
+}
+
+.current > .visible {
+text-transform: none !important;
+}
+
+.pageheader #otherlanguages ul li span.visible {
+  display: inline !important;
+  text-transform: uppercase;
+}
+
+.pageheader #otherlanguages ul li span.hidden {
+  display: none !important;
+}
+
+.pageheader #otherlanguages ul li:hover span.visible {
+  display: none !important;
+}
+
+.pageheader #otherlanguages ul li:hover span.hidden {
+  display: inline !important;
+}
+
+/* Page title */
+
+span.title {
+  font-family: "Source Sans Pro Regular", "DejaVu Sans", "Verdana", sans-serif;
+  font-size: 2.8em;
+  line-height: 1em;
+  display: block;
+  color: #56347c;
+  border-left: 10px solid #444444;
+  padding-left: 18px;
+  margin-left: -28px;
+}
+
+div.header span.date {
+  display: block;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* Trail */
+
+div.trails {
+  margin-top: 0;
+}
+
+div.trail {
+  height: 2em;
+  border: solid 1px #bbb;
+  margin-bottom: 1.5em;
+}
+
+div.trail span.trailup {
+  display: none;
+}
+
+div.trail .trailprev, div.trail .trailnext {
+  top: 3px;
+}
+
+div.trail .trailprev {
+  left: 7px;
+}
+
+div.trail .trailnext {
+  right: 7px;
+}
+
+/* Links */
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+#pagebody a {
+  color: #3b833a;
+  border-bottom: 1px solid #3b833a;
+}
+
+#pagebody a:hover {
+  text-decoration: none;
+}
+
+#pagebody a:visited {
+  color: #276426;
+  border-color: #276426;
+}
+
+/* test inside and outside links */
+#pagebody a[href^="http"] {
+  padding-right: 13px;
+  background: url(lib/link_out.gif) no-repeat right bottom;
+}
+
+#pagebody a[href^="http://localhost"],
+#pagebody a[href^="http://tails.boum.org"],
+#pagebody a[href^="https://tails.boum.org"],
+#pagebody a[href^="http://dl.amnesia.boum.org"],
+#pagebody a[href^="https://dl.amnesia.boum.org"],
+#pagebody a.noicon,
+#pagebody a.use-mirror-pool {
+  background-image: none;
+  padding-right: 0;
+}
+
+/* Support page */
+
+#talk h1, #bugs h1, #wishlist h1, #tools h1 {
+  margin-top: 18px;
+  color: #56347c;
+  line-height: 1.6em;
+  border-bottom: 5px solid #56347c;
+}
+
+#talk h1 {
+  width: 90%;
+}
+
+/* News */
+
+div.inlinepage {
+  margin-bottom: 18px;
+}
+
+.inlinepage .inlineheader .header {
+  font-size: 36px;
+  top: 5px;
+  line-height: 1.5em;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.inlinepage h1 {
+  font-size: 28px;
+  top: 8px;
+}
+
+.inlinepage h2 {
+  font-size: 22px;
+  top: 1px;
+}
+
+.inlinepage h3 {
+  font-size: 18px;
+  top: 2px;
+}
+
+.inlinepage h4 {
+  font-size: 15px;
+  top: 4px;
+}
+
+.inlinepage h5 {
+  font-size: 13px;
+  top: 5px;
+}
+
+.inlinepage img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Columns */
+
+div.blocks {
+  display: inline-block;
+  margin: 0 5% 0 0;
+  text-align: center;
+  vertical-align: top;
+}
+
+div.two-blocks {
+  width: 44%;
+  margin-top: 2em;
+}
+
+div.blocks p, div.blocks ul, div.blocks h1, div.blocks div {
+  text-align: left;
+}
+
+div.blocks img {
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto
+}
+
+/* Buttons and calls for action */
+
+.button {
+  color: black !important;
+  background: #53b351 !important;
+  border: none !important;
+  padding: 6px 12px !important;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #777, 2px 2px 10px #bbb, inset 2px 2px 2px #a8ffa0;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 1.5em;
+}
+
+.cfa {
+  width: 300px;
+  margin: 1em auto;
+}
+
+.cfa a {
+  background: #53b351 !important;
+  color: black !important;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 0.5em;
+  padding: 1em 0.5em;
+  display: block;
+  text-align: center;
+  box-shadow: 2px 2px 2px #777, 2px 2px 10px #bbb, inset 2px 2px 2px #a8ffa0;
+  width: 100%;
+}
+
+/* Toggleable */
+
+#pagebody div.toggleable {
+  position: relative;
+  background: #f3edf9;
+  border-top: solid 5px black;
+  border-bottom: solid 5px black;
+  padding: 15px 2em;
+  margin: 2em 0;
+}
+
+#pagebody div.toggleable span.hide a.toggle, span.hide-button {
+  display: block;
+  height: 48px;
+  width: 78px;
+  position: absolute;
+  right: 0;
+  background: url('lib/close.png') no-repeat 15px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+#pagebody .floating-toggleable div.toggleable {
+  display: none;
+  background: white;
+  border: 1px solid #53b351;
+  box-shadow: 5px 5px #53b351;
+  padding: 15px 30px;
+  margin: 0;
+  position: absolute;
+  text-align: left;
+  z-index: 1;
+  width: 37em;
+}
+
+/* X for closing the toggle */
+#pagebody .floating-toggleable a.toggle {
+  border: none !important;
+  cursor: pointer;
+  position: absolute;
+  right: 7px;
+  top: 5px;
+}
+
+/* Icons */
+
+div.icon {
+  margin-bottom: 1.5em;
+  position: relative;
+}
+
+div.icon img {
+  display: inline-block;
+}
+
+div.icon div.text {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 1em;
+}
+
+/* Documentation styling */
+
+span.application { font-style: italic; }
+span.bold { font-weight: bold; }
+span.code, span.command {
+  font-family: "Source Code Pro Regular", "Courier", monospace;
+  font-size: 1.071em; /* 14×1.071=15px */
+  border: 1px solid #E0E0DF;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+span.emphasis { font-style: italic; }
+span.filename { font-style: italic; display: inline-block; }
+span.guilabel { font-weight: bold; }
+span.guimenu { font-weight: bold; }
+span.guisubmenu { font-weight: bold; }
+span.guimenuitem { font-weight: bold; }
+span.keycap { font-weight: bold; }
+span.menuchoice { font-weight: bold; }
+span.replaceable { font-style: italic; }
+div.bug, div.caution, div.next, div.note, div.tip, div.trophy, div.attack {
+  background-color: #FFFFF0;
+  border: 1px solid #E0E0DF;
+  border-radius: 4px;
+  padding: 1.5em 6px 0em;
+  background-position: 6px 0.5em;
+  background-repeat: no-repeat;
+  min-height: 48px;
+  padding-left: 66px;
+  margin: 1.5em 0;
+  max-width: 52em;
+}
+div.bug {
+  background-image: url(lib/admon-bug.png);
+}
+div.caution {
+  background-image: url(lib/dialog-warning.png);
+}
+div.next {
+  background-image: url(lib/go-next.png);
+}
+div.note {
+  background-image: url(lib/admon-note.png);
+}
+div.tip {
+  background-image: url(lib/admon-tip.png);
+}
+div.trophy {
+  background-image: url(lib/trophy-gold.png);
+}
+div.attack {
+  background-image: url(lib/weather-showers-scattered.png);
+}
+
+div.bug pre, div.caution pre, div.next pre, div.note pre, div.tip pre, div.trophy pre,
+div.bug p.pre, div.caution p.pre, div.next p.pre, div.note p.pre, div.tip p.pre, div.trophy p.pre {
+  width: 37em !important;
+}
+
+div.bug > *:first-child, div.caution > *:first-child, div.next > *:first-child, div.note > *:first-child, div.tip > *:first-child, div.trophy > *:first-child {
+  margin-top: 0;
+}
+
+div.bug > *:last-child, div.caution > *:last-child, div.next > *:last-child, div.note > *:last-child, div.tip > *:last-child, div.trophy > *:last-child {
+  margin-bottom: 1.5em;
+}
+
+/* Code, preformatted text, and command lines */
+
+code {
+  line-height: 18px;
+  white-space: pre;
+}
+
+pre, p.pre {
+  background-color: #eee;
+  border: thin solid #ccc;
+  color: #444;
+  margin: 1.5em 1em 1.5em 1.5em;
+  padding: 0.25em 0.5em;
+  max-width: 61em !important;
+  width: 61em !important;
+  max-width: 90%;
+}
+
+p.command-example, p.command-output {
+  white-space: pre;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+span.command-placeholder {
+  color: #ec407a;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Inlined icons */
+
+img.symbolic {
+  display: inline-block;
+  position: relative;
+  top: 4px;
+}
+
+/* Contribute section */
+
+div.contribute-roles-1 {
+  display: inline-block;
+  margin-right: 2em;
+  width: 31%;
+}
+
+div.contribute-roles-3 div.contribute-role {
+  width: 29%;
+}
+
+div.contribute-role {
+  display: inline-block;
+  margin-right: 2em;
+  vertical-align: top;
+}
+
+div.contribute-role p {
+  font-style: italic;
+}
+
+div.contribute-role img {
+  display: block;
+  margin: 0 auto 0.5em;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Highlight */
+
+div#highlight {
+  border: 5px solid #56347c;
+  width: 44em;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+div#highlight p {
+  margin: 0.5em 0;
+}
+
+/* Donate buttons outside of sidebar */
+
+.donate-button a {
+  border-bottom: none;
+  width: 100%;
+  display: block;
+  box-shadow: 1px 1px 5px #ccc;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  background: #53b351 url('lib/donate.png') no-repeat scroll 10px 50% !important;
+  font-size: 26px;
+  padding-left: 70px;
+  line-height: 1em;
+  font-weight: normal;
+  color: black !important;
+}
+
+/* Charts */
+
+.chart {
+  display: flex !important;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .chart {
+    flex-direction: row;
+  }
+}
+
+.chart-content, .chart-key {
+  flex: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-self: center;
+}
+
+.chart-content svg {
+  height: auto;
+}
+
+.chart-key-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chart-key-list li {
+  margin: 0 0 8px;
+  padding: 0;
+  font-size: 14px;
+  min-height: 3em;
+}
+
+.chart-key-list li div {
+  display: inline-block;
+}
+
+.chart-key-list li p {
+  margin: 5px 0 20px;
+}
+
+.key-label:before {
+  content: " ";
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 2px;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  margin-left: -18px;
+  left: -12px;
+}
+
+.key-label {
+  margin-right: 8px;
+}
+
+.key-label, .key-percent {
+  font-weight: bold;
+}
+
+/* Accessible color palette */
+
+.blue   .key-label:before { background-color: #5da5da; }
+.orange .key-label:before { background-color: #faa43a; }
+.green  .key-label:before { background-color: #60bd68; }
+.pink   .key-label:before { background-color: #f17cb0; }
+.brown  .key-label:before { background-color: #b2912f; }
+.purple .key-label:before { background-color: #b276b2; }
+.yellow .key-label:before { background-color: #decf3f; }
+
+/* Tails color palette */
+
+.purple-1 .key-label:before { background-color: #7a478b; }
+.purple-2 .key-label:before { background-color: #9c6bad; }
+.purple-3 .key-label:before { background-color: #af97c7; }
+.green    .key-label:before { background-color: #53b351; }
+.gray     .key-label:before { background-color: #dadbdc; }
+
+.embedded {
+  display: none;
+}
+
+/* Footer */
+
+#footer {
+  background: #58595b;
+  margin: 0 auto;
+  max-width: 986px;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  font-size: 12px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+#footer h3 {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+#footer ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+#footer a {
+  color: white;
+}
+
+#footer img {
+  margin-top: 30px;
+}
+
+#footer p a {
+  text-decoration: underline;
+}

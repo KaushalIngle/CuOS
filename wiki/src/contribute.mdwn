@@ -1,0 +1,209 @@
+[[!meta title="Contributing to Tails"]]
+[[!meta stylesheet="hide-breadcrumbs" rel="stylesheet" title=""]]
+
+There are many ways you can contribute to Tails. No effort is too
+small and whatever you bring to this community will be appreciated.
+So read on to find out how you can make a difference in Tails.
+
+<div class="contribute-roles-1">
+<h2>Share your experience</h2>
+<div class="contribute-role" id="user">
+  [[!img user.png link=no]]
+  <p>Every user can help others or provide developers with useful information.</p>
+  <ul>
+    <li>[[Report bugs|doc/first_steps/bug_reporting]]</li>
+    <li>[[Test experimental Tails images|contribute/how/testing]]</li>
+    <li>[[Provide input to developers|contribute/how/input]]</li>
+    <li>[[Help other Tails users|contribute/how/help]]</li>
+  </ul>
+</div>
+</div>
+
+<div class="contribute-roles-1">
+<h2>Donate</h2>
+<div class="contribute-role" id="donate">
+  [[!img donate.png link=no]]
+  <p>Donating speeds up the development of Tails.</p>
+  <ul>
+    <li><a href="https://tails.boum.org/donate/?r=contribute">Make a donation</a></li>
+  </ul>
+</div>
+</div>
+
+<div class="contribute-roles-3">
+<h2>Contribute your language skills</h2>
+<div class="contribute-role" id="content-writer">
+  <h3>Writer</h3>
+  [[!img writer.png link=no]]
+  <p>Good writers can make Tails accessible to more people.</p>
+  <ul>
+    <li>[[Improve our documentation|contribute/how/documentation]]</li>
+  </ul>
+</div>
+<div class="contribute-role" id="translator">
+  <h3>Translator</h3>
+  [[!img translator.png link=no]]
+  <p>Translators can allow more people around the world to use Tails.</p>
+  <ul>
+    <li>[[Improve Tails in your own language|contribute/how/translate]]</li>
+  </ul>
+</div>
+<div class="contribute-role" id="speaker">
+  <h3>Speaker</h3>
+  [[!img speaker.png link=no]]
+  <p>Speakers can advocate Tails to all kinds of public.</p>
+  <ul>
+    <li>[[Outreach material: logo, leaflets, stickers, etc.|contribute/how/promote]]</li>
+    <li>[[Press and media information|press]]</li>
+  </ul>
+</div>
+</div>
+
+<div class="contribute-roles-3">
+<h2>Contribute your computer skills</h2>
+<div class="contribute-role" id="developer">
+  <h3>Developer or maintainer</h3>
+  [[!img software_developer.png link=no]]
+  <p>Software people with very diverse skills can improve Tails.</p>
+  <ul>
+    <li>[[Work on the source code|contribute/how/code]]</li>
+    <li>[[Improve Tails by working on Debian|contribute/how/debian]]</li>
+  </ul>
+</div>
+<div class="contribute-role" id="sysadmin">
+  <h3>System administrator</h3>
+  [[!img system_administrator.png link=no]]
+  <p>System administrators can contribute to the infrastructure behind Tails.</p>
+  <ul>
+    <li>[[Run a HTTP mirror|contribute/how/mirror]]</li>
+    <li>[[Improve Tails infrastructure|contribute/how/sysadmin]]</li>
+  </ul>
+</div>
+<div class="contribute-role" id="designer">
+  <h3>Designer</h3>
+  [[!img designer.png link=no]]
+  <p>Designers can make Tails easier to use and more appealing.</p>
+  <ul>
+    <li>[[Improve the website|contribute/how/website]]</li>
+    <li>[[Design graphics|contribute/how/graphics]]</li>
+    <li>[[Improve the Tails user experience|contribute/how/user_experience]]</li>
+  </ul>
+</div>
+</div>
+
+<div class="toc">
+
+	<h1>Table of contents</h1>
+
+	<ol>
+		<li class="L2"><a href="#reference-documents">Reference documents</a></li>
+		<li class="L2"><a href="#tools">Tools for contributors</a></li>
+		<li class="L2"><a href="#release-cycle">Release cycle</a></li>
+		<li class="L2"><a href="#upstream">Relationship with upstream</a></li>
+		<li class="L2"><a href="#collective-process">Collective process</a></li>
+		<li class="L2"><a href="#talk">Talk with us</a></li>
+	</ol>
+
+</div> <!-- .toc -->
+
+<div class="note">
+
+This section is only in English, because there is currently no way to
+contribute to Tails if you do not understand English.
+
+</div>
+
+<a id="reference-documents"></a>
+
+Reference documents
+===================
+
+  - [[Mission and values|contribute/mission]]
+  - [[Design documents|contribute/design]]
+  - [Blueprints](https://gitlab.tails.boum.org/tails/blueprints/-/wikis/) to help structuring ideas for future improvements
+  - [[Merge policy|contribute/merge_policy]]
+  - [[!tails_website contribute/how/promote/material/logo desc="Logo"]]
+  - [[Personas|contribute/personas]]
+
+<a id="tools"></a>
+
+Tools for contributors
+======================
+
+  - Source code: [[Git repositories|contribute/git]]
+  - [[!tails_roadmap desc="Roadmap"]]
+  - [[GitLab source code and bug tracker|contribute/working_together/GitLab]]
+  - [[Starter tasks|starter_tasks]] for new contributors
+  - [[Building a Tails image|contribute/build]]
+    - [[Build a local copy of the website|contribute/build/website]]
+    - [[Customize Tails|contribute/customize]]
+    - [Nightly Tails image builds](https://nightly.tails.boum.org)
+    - [[Jenkins CI|contribute/working_together/roles/sysadmins/Jenkins]]
+  - Debian packages
+    - [[APT repository|contribute/APT_repository]], to store our custom Debian packages
+    - How we manage and upgrade the [[Linux kernel|contribute/Linux_kernel]].
+    - How we manage and upgrade [[contribute/tor]].
+  - Tips to develop and debug [[contribute/Tor_Connection]]
+  - [[Glossary for contributors|contribute/glossary]]
+
+<a id="release-cycle"></a>
+
+Release cycle
+=============
+
+  - [[Release schedule|contribute/release_schedule]]
+  - [[Release process|contribute/release_process]]
+    - [[Manual test suite|contribute/release_process/test]]
+    - [[Automated test suite|contribute/release_process/test/automated_tests]]
+    - [[Verification JavaScript|contribute/release_process/verification_javascript]]
+
+<a id="upstream"></a>
+
+Relationship with upstream and derivatives
+==========================================
+
+  - [[Relationship with upstream|contribute/relationship_with_upstream]]
+  - [[Improve Tails by working on Debian|contribute/how/debian]]
+  - [[About creating Tails derivatives|contribute/derivatives]]
+
+<a id="collective-process"></a>
+
+Collective process
+==================
+
+  - [[Calendar|contribute/calendar]] of releases, meetings, working sessions, etc.
+  - [[Code of conduct|contribute/working_together/code_of_conduct]]
+  - [[Social contract|doc/about/social_contract]]
+  - [[People|contribute/working_together/people]]
+  - [[Marking a task as Starter|contribute/working_together/criteria_for_starter_tasks]]
+  - [[Document progress|contribute/working_together/GitLab#document-progress]]
+  - Reimbursements
+    - [[Organizing a sprint|contribute/sprint]]
+    - [[Sponsorship to attend events on behalf of Tails|contribute/sponsorship_to_attend_events]]
+    - [[Hardware and other reimbursements|contribute/reimbursements]]
+  - Teams
+    - [[Accounting team|contribute/working_together/roles/accounting]]
+    - [[Foundations team|contribute/working_together/roles/foundations_team]]
+    - [[Fundraising team|contribute/working_together/roles/fundraising]]
+    - [[Help desk|contribute/working_together/roles/help_desk]]
+    - [[Management team|contribute/working_together/roles/management]]
+    - [[Release managers|contribute/working_together/roles/release_manager]]
+    - [[Ticket gardeners|contribute/working_together/roles/ticket_gardener]]
+    - [[Sysadmins|contribute/working_together/roles/sysadmins]]
+    - [[Technical writers|contribute/working_together/roles/technical_writer]]
+    - [[Test suite maintainers|contribute/working_together/roles/test_suite]]
+    - [[Translation platform maintainers|contribute/working_together/roles/translation_platform]]
+    - [[UX designers|contribute/working_together/roles/ux]]
+  - Interfaces between roles and teams
+    - [[Developers and Release Managers|contribute/working_together/interfaces/developers_and_release_managers]]
+  - Roles for sponsor deliverables:
+      - [[Team manager|contribute/working_together/roles/sponsor_deliverables/team_manager]]
+      - [[Worker|contribute/working_together/roles/sponsor_deliverables/worker]]
+
+<a id="talk"></a>
+
+Contact us
+==========
+
+To talk to other Tails contributors, subscribe to
+[[the relevant mailing lists|about/contact]].

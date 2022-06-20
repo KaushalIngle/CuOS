@@ -1,0 +1,51 @@
+--- a/usr/share/gnome-shell/extensions/window-list@gnome-shell-extensions.gcampax.github.com/stylesheet.css	2020-12-02 23:14:58.000000000 +0000
++++ a/usr/share/gnome-shell/extensions/window-list@gnome-shell-extensions.gcampax.github.com/stylesheet.css	2021-10-14 11:54:59.875759317 +0000
+@@ -28,12 +28,7 @@
+ 
+ .window-button > StWidget,
+ .window-picker-toggle > StWidget {
+-  color: #bbb;
+-  background-color: black;
+-  border-radius: 4px;
+   padding: 3px 6px 1px;
+-  box-shadow: inset 1px 1px 4px rgba(255,255,255,0.5);
+-  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+ }
+ 
+ .window-picker-toggle {
+@@ -52,32 +47,18 @@
+ .window-button:hover > StWidget,
+ .window-picker-toggle:hover > StWidget {
+   color: white;
+-  background-color: #1f1f1f;
+-}
+-
+-.window-button:active > StWidget,
+-.window-button:focus > StWidget {
+-  box-shadow: inset 2px 2px 4px rgba(255,255,255,0.5);
+ }
+ 
+ .window-button.focused > StWidget,
+ .window-picker-toggle:checked > StWidget {
+   color: white;
+-  box-shadow: inset 1px 1px 4px rgba(255,255,255,0.7);
+-}
+-
+-.window-button.focused:active > StWidget,
+-.window-picker-toggle:checked:active > StWidget {
+-  box-shadow: inset 2px 2px 4px rgba(255,255,255,0.7);
++  background-color: rgba(0, 0, 0, 0.01);
++  box-shadow: inset 0 2px 0px #256ab1;
+ }
+ 
+ .window-button.minimized > StWidget {
+   color: #666;
+-  box-shadow: inset -1px -1px 4px rgba(255,255,255,0.5);
+-}
+-
+-.window-button.minimized:active > StWidget {
+-  box-shadow: inset -2px -2px 4px rgba(255,255,255,0.5);
++  font-weight: bold;
+ }
+ 
+ .window-button-icon {

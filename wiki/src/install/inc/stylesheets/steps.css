@@ -1,0 +1,147 @@
+/* Headings */
+
+h1 {
+  color: #56347C;
+}
+
+/* Step counter */
+
+body {
+  counter-reset: step;
+}
+
+h1.step, span.next-counter {
+  counter-increment: step;
+}
+
+h1.step:before {
+  position: relative;
+  font-size: 0.75em;
+  display: inline-block;
+  width: 60px;
+}
+
+/* Step image */
+
+.step-image {
+  margin-left: 60px;
+}
+
+.step-image img {
+  border: 1px solid black;
+  margin-bottom: 2em;
+  width: 150px;
+  height: auto;
+}
+
+/* Trophy */
+
+div.trophy {
+  border: 5px solid #56347C;
+  font-size: 17px;
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-right: 20px;
+  position: relative;
+  background-color: white;
+}
+
+div.trophy p {
+  color: black;
+  font-family: "Source Sans Pro Regular", "DejaVu Sans", "Verdana", "sans-serif";
+}
+
+div.trophy img {
+  margin: 10px;
+}
+
+.state-image {
+  margin-top: 0px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* Recommendations */
+
+#recommendations div.warning, #recommendations div.help {
+  background-color: #9f73d2;
+  border: 1px solid #56347C;
+  border-radius: 4px;
+  padding: 1.5em 6px 0em;
+  background-position: 1em 50%;
+  background-repeat: no-repeat;
+  padding-left: 80px;
+  margin: 1.5em 0;
+}
+
+#recommendations div.warning {
+  background-image: url(../../../lib/dialog-warning.png);
+}
+
+#recommendations div.help {
+  background-image: url(../../../lib/apps/help-browser.png);
+}
+
+#recommendations div a {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+/* Toggleable */
+
+div.toggleable .hide {
+  display: block !important;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+  div.trophy {
+    background-position: center 0.5em;
+    padding: 60px 1em 1em;
+  }
+
+}
+
+@media print {
+  /* from http://www.alsacreations.com/astuce/lire/1160-une-feuille-de-styles-de-base-pour-le-media-print.html */
+
+  body {
+    width: auto !important;
+    margin: auto !important;
+    font-size: 12pt;
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+
+  p, h1, h2, h3, h4, h5, h6, blockquote, ul, ol {
+    color: #000 !important;
+  }
+
+  .print {
+    display: block;
+  }
+
+  a {
+    color: #000 !important;
+  }
+
+  /* Tails specifics */
+
+  #content {
+    padding-left: 0px;
+  }
+
+  h1 {
+    font-size: 25px;
+    margin-left: 50px !important;
+  }
+
+  img {
+    page-break-before: auto; /* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
+    page-break-after: auto; /* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
+    page-break-inside: avoid; /* or 'auto' */
+  }
+
+}

@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-05-31 09:30+0200\n"
+"PO-Revision-Date: 2022-04-23 20:23+0000\n"
+"Last-Translator: _ignifugo <ignifugo@insicuri.net>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9.1\n"
+
+#. type: Content of: outside any tag (error?)
+msgid "[[!meta robots=\"noindex\"]]"
+msgstr "[[!meta robots=\"noindex\"]]"
+
+#. type: Content of: <ol><li><p>
+msgid "Make sure that you have installed Tails using either:"
+msgstr "Assicurati di aver installato Tails usando o:"
+
+#. type: Content of: <ol><li><ul><li>
+#, fuzzy
+#| msgid "[[<i>balenaEtcher</i> from Windows|install/win/usb]]"
+msgid "[[<i>balenaEtcher</i> from Windows|install/windows#etcher]]"
+msgstr "[[<i>balenaEtcher</i> da  Windows|install/win/usb]]"
+
+#. type: Content of: <ol><li><ul><li>
+#, fuzzy
+#| msgid "[[<i>balenaEtcher</i> from macOS|install/mac/usb]]"
+msgid "[[<i>balenaEtcher</i> from macOS|install/mac#etcher]]"
+msgstr "[[<i>balenaEtcher</i> da macOS|install/mac/usb]]"
+
+#. type: Content of: <ol><li><ul><li>
+#, fuzzy
+#| msgid "[[<i>GNOME Disks</i> from Linux|install/linux/usb]]"
+msgid "[[<i>GNOME Disks</i> from Linux|install/linux#install]]"
+msgstr "[[<i>GNOME Disks</i> da Linux|install/linux/usb]]"
+
+#. type: Content of: <ol><li><ul><li>
+#, fuzzy
+#| msgid "[[the Linux command line|install/expert/usb]]"
+msgid "[[the Linux command line|install/expert#install]]"
+msgstr "[[ linea di comando di Linux|install/expert/usb]]"
+
+#. type: Content of: <ol><li><p>
+#, fuzzy
+#| msgid ""
+#| "Click on the <span class=\"guimenu\">Start [[!img lib/start.png alt=\"\" "
+#| "link=\"no\"]]</span> button."
+msgid ""
+"Click on the <span class=\"guimenu\">Start [[!img lib/start.png alt=\"\" "
+"class=\"symbolic\" link=\"no\"]]</span> button."
+msgstr ""
+"Clicca il pulsante <span class=\"guimenu\">Start [[!img lib/start.png "
+"alt=\"\" link=\"no\"]]</span>."
+
+#. type: Content of: <ol><li><p>
+#, fuzzy
+#| msgid ""
+#| "Press and hold the <strong>Shift</strong> key while you choose "
+#| "<strong>Power</strong>&nbsp;▸ <strong>Restart</strong>."
+msgid ""
+"Press and hold the <strong>Shift</strong> key while you choose "
+"<strong>Power</strong>&nbsp;▸ <strong>Restart</strong>."
+msgstr ""
+"Tieni premuto il tasto <strong>Shift</strong> mentre selezioni "
+"<strong>Power</strong>&nbsp;▸ <strong>Riavvia il sistema</strong>."
+
+#. type: Content of: <ol><li><p>
+msgid ""
+"In the <strong>Choose an option</strong> screen, choose <strong>Use a "
+"device</strong>."
+msgstr ""
+"Nella schermata <strong>Scegli un'opzione</strong>, seleziona "
+"<strong>Utilizza un dispositivo</strong>."
+
+#. type: Content of: <ol><li>
+msgid ""
+"[[!img install/inc/screenshots/choose_an_option.png link=\"no\" alt=\"\"]]"
+msgstr ""
+"[[!img install/inc/screenshots/choose_an_option.png link=\"no\" alt=\"\"]]"
+
+#. type: Content of: <ol><li><div><p>
+msgid ""
+"If the <strong>Choose an option</strong> screen does not appear, refer to "
+"the [[instructions on starting Tails using the Boot Menu key|doc/first_steps/"
+"start/pc#boot-menu-key]]."
+msgstr ""
+"Se la schermata <strong>Scegli un'opzione</strong> non appare,  fai "
+"riferimento alle [[istruzioni per avviare Tails utilizzando il tasto del "
+"menù di avvio|doc/first_steps/start/pc#boot-menu-key]]."
+
+#. type: Content of: <ol><li><p>
+msgid ""
+"In the <strong>Use a device</strong> screen, choose <strong>Boot Menu</"
+"strong>."
+msgstr ""
+"Nella schermata <strong>Usa un dispositivo</strong>, scegli <strong>Menu di "
+"avvio</strong>."
+
+#. type: Content of: <ol><li><div><p>
+msgid "Windows shuts down, the computer restarts, and a Boot Menu appears."
+msgstr "Windows si spegne, il computer si riavvia e appare un menu di avvio."
+
+#. type: Content of: <ol><li><div><p>
+msgid ""
+"Plug in your Tails USB stick shortly after choosing <strong>Boot Menu</"
+"strong> and while Windows is shutting down."
+msgstr ""
+"Inserisci la tua chiavetta USB Tails poco dopo aver scelto il <strong>Menù "
+"di avvio</strong> e mentre Windows si sta spegnendo."
+
+#. type: Content of: <ol><li><div><p>
+msgid ""
+"<span class=\"windows upgrade-windows\">In the future, we</span> <span "
+"class=\"standalone\">We</span> recommend that you only plug in your Tails "
+"USB stick while Windows is shutting down. Otherwise, a virus in Windows "
+"could infect your Tails USB stick and break its security."
+msgstr ""
+"<span class=\"windows upgrade-windows\">In futuro, noi</span> <span "
+"class=\"standalone\">noi</span> raccomandiamo di inserire la tua chiavetta "
+"USB Tails solo mentre Windows è spento. Altrimenti, un virus in Windows "
+"potrebbe infettare la tua chiavetta USB Tails e rompere la sua sicurezza."
+
+#. type: Content of: <ol><li><div><p>
+msgid ""
+"Such an attack is possible in theory but very unlikely in practice. We don't "
+"know of any virus capable of infecting Tails.  <span "
+"class=\"standalone\">See our [[warning on plugging Tails in untrusted "
+"systems|doc/about/warnings/computer#software]].</span>"
+msgstr ""
+
+#. type: Content of: <ol><li><p>
+msgid ""
+"The Boot Menu is a list of possible devices to start from. The following "
+"screenshot is an example of a Boot Menu:"
+msgstr ""
+"Il Boot Menu è una lista di possibili dispositivi da cui partire. La "
+"seguente schermata è un esempio di un menu di avvio:"
+
+#. type: Content of: <ol><li><p>
+msgid "[[!img install/inc/screenshots/boot_menu.png link=\"no\" alt=\"\"]]"
+msgstr "[[!img install/inc/screenshots/boot_menu.png link=\"no\" alt=\"\"]]"
+
+#. type: Content of: <ol><li><p>
+msgid ""
+"In the Boot Menu, select your USB stick and press <strong>Enter</strong>."
+msgstr ""
+"Nel menu di avvio, seleziona la tua chiavetta USB e premi <strong>Invio</"
+"strong>."
+
+#. type: Content of: <ol><li><p>
+msgid ""
+"If the computer starts on Tails, the Boot Loader appears and Tails starts "
+"automatically after 4 seconds."
+msgstr ""
+"Se il computer si avvia con Tails, appare il Boot Loader e Tails si avvia "
+"automaticamente dopo 4 secondi."
+
+#. type: Content of: <ol><li><p>
+msgid ""
+"[[!img install/inc/screenshots/grub.png link=\"no\" alt=\"Black screen ('GNU "
+"GRUB') with Tails logo and 2 options: 'Tails' and 'Tails (Troubleshooting "
+"Mode)'.\"]]"
+msgstr ""
+"[[!img install/inc/screenshots/grub.png link=\"no\" alt=\"Schermo nero ('GNU "
+"GRUB') con il logo Tails e 2 opzioni: 'Tails' e 'Tails (Troubleshooting "
+"Mode)'.\"]]"

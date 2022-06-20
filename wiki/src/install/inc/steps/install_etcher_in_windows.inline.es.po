@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-02-25 15:41-0600\n"
+"PO-Revision-Date: 2022-06-07 16:40+0000\n"
+"Last-Translator: emmapeel <emma.peel@riseup.net>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9.1\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta robots=\"noindex\"]]\n"
+msgstr "[[!meta robots=\"noindex\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "<h1 id=\"etcher\" class=\"step\">Download <em>balenaEtcher</em></h1>\n"
+msgstr "<h1 id=\"etcher\" class=\"step\">Descargar <em>balenaEtcher</em></h1>\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "<div class=\"step-image\">[[!img inc/infography/install-etcher.png link=\"no\" alt=\"\"]]</div>\n"
+msgstr ""
+"<div class=\"step-image\">[[!img inc/infography/install-etcher.png link=\"no"
+"\" alt=\"\"]]</div>\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<p class=\"upgrade\">In the following steps, you will install an intermediary Tails using the Tails USB\n"
+"image that you downloaded earlier.</p>\n"
+msgstr ""
+"<p class=\"upgrade\">En los siguientes pasos, instalarás un Tails intermedio "
+"usando la imagen USB\n"
+"de Tails que descargaste anteriormente.</p>\n"
+
+#. type: Bullet: '1. '
+msgid "Click on the following button to download <em>balenaEtcher</em>:"
+msgstr "Haz click en el siguiente botón para descargar <em>balenaEtcher</em>:"
+
+#. type: Plain text
+#, fuzzy, no-wrap
+#| msgid "   <a href='https://tails.boum.org/etcher/Etcher-Portable.exe'>Download balenaEtcher for Windows</a>\n"
+msgid "   <a href=\"https://tails.boum.org/etcher/Etcher-Portable.exe\" class=\"button\">Download balenaEtcher for Windows</a>\n"
+msgstr "   <a href='https://tails.boum.org/etcher/Etcher-Portable.exe'>Descargar balenaEtcher para Windows</a>\n"
+
+#, no-wrap
+#~ msgid "<div class=\"hidden-step-1\"></div>\n"
+#~ msgstr "<div class=\"hidden-step-1\"></div>\n"
+
+#~ msgid "These instructions require:"
+#~ msgstr "Estas instrucciones requieren:"
+
+#~ msgid "Windows 7 (64-bit) or later"
+#~ msgstr "Windows 7 (64-bit) o posterior"
+
+#, no-wrap
+#~ msgid ""
+#~ "<h1 class=\"step usb\">Install Tails using <span class=\"application\">balenaEtcher</span></h1>\n"
+#~ "<h1 class=\"step upgrade\">Install an intermediary Tails using <span class=\"application\">balenaEtcher</span></h1>\n"
+#~ msgstr ""
+#~ "<h1 class=\"step usb\">Instalar Tails usando <span class=\"application\">balenaEtcher</span></h1>\n"
+#~ "<h1 class=\"step upgrade\">Instalar un Tails intermedio usando <span class=\"application\">balenaEtcher</span></h1>\n"
+
+#, no-wrap
+#~ msgid "<p class=\"start\">Start in Windows.</p>\n"
+#~ msgstr "<p class=\"start\">Iniciar en Windows.</p>\n"

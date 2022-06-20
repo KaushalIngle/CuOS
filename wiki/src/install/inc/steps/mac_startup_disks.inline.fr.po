@@ -1,0 +1,351 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Tails\n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2022-05-31 09:30+0200\n"
+"PO-Revision-Date: 2022-01-07 19:15+0000\n"
+"Last-Translator: Chre <tor@renaudineau.org>\n"
+"Language-Team: Tails translators <tails@boum.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.11.3\n"
+
+#. type: Content of: outside any tag (error?)
+msgid "[[!meta robots=\"noindex\"]]"
+msgstr "[[!meta robots=\"noindex\"]]"
+
+#. type: Content of: <ol><li><p>
+msgid "Make sure that you have installed Tails using either:"
+msgstr ""
+"S'assurer d'avoir installé Tails à l'aide de l'une des méthodes suivantes :"
+
+#. type: Content of: <ol><li><ul><li>
+#, fuzzy
+#| msgid "[[<i>balenaEtcher</i> from macOS|install/mac/usb]]"
+msgid "[[<i>balenaEtcher</i> from macOS|install/mac#etcher]]"
+msgstr "[[<i>balenaEtcher</i> depuis macOS|install/mac/usb]]"
+
+#. type: Content of: <ol><li><ul><li>
+#, fuzzy
+#| msgid "[[<i>balenaEtcher</i> from Windows|install/win/usb]]"
+msgid "[[<i>balenaEtcher</i> from Windows|install/windows#etcher]]"
+msgstr "[[<i>balenaEtcher</i> depuis Windows|install/win/usb]]"
+
+#. type: Content of: <ol><li><ul><li>
+#, fuzzy
+#| msgid "[[<i>GNOME Disks</i> from Linux|install/linux/usb]]"
+msgid "[[<i>GNOME Disks</i> from Linux|install/linux#install]]"
+msgstr "[[<i>GNOME Disks</i> depuis Linux|install/linux/usb]]"
+
+#. type: Content of: <ol><li><ul><li>
+#, fuzzy
+#| msgid "[[the Linux command line|install/expert/usb]]"
+msgid "[[the Linux command line|install/expert#install]]"
+msgstr "[[la ligne de commande Linux|install/expert/usb]]"
+
+#. type: Content of: <ol><li><p>
+msgid "Shut down the computer."
+msgstr "Éteindre l'ordinateur."
+
+#. type: Content of: <ol><li><p>
+msgid "Shut down the computer while leaving the USB stick plugged in."
+msgstr "Éteindre l'ordinateur tout en laissant la clé USB branchée."
+
+#. type: Content of: <ol><li><p>
+msgid "Plug in the other Tails USB stick that you want to install from."
+msgstr ""
+"Branchez l'autre clé USB Tails depuis laquelle vous souhaitez réaliser "
+"l'installation."
+
+#. type: Content of: <ol><li><p>
+msgid "Plug in your Tails USB stick."
+msgstr "Connecter votre clé USB Tails."
+
+#. type: Content of: <ol><li><p>
+msgid "Switch on the computer."
+msgstr "Allumer l'ordinateur."
+
+#. type: Content of: <ol><li><p>
+msgid ""
+"Immediately press-and-hold the <span class=\"keycap\">Option</span> key "
+"(<span class=\"keycap\">Alt</span> key) when the startup chime is played."
+msgstr ""
+"Appuyer immédiatement sur la touche <span class=\"keycap\">Option</span> "
+"(touche <span class=\"keycap\">Alt</span>) lorsque la musique de démarrage "
+"est jouée."
+
+#. type: Content of: <ol><li><p>
+msgid "Hold the key pressed until a list of possible startup disks appears."
+msgstr ""
+"Maintenir la touche enfoncée jusqu'à ce que la liste des disques de "
+"démarrage possibles apparaisse."
+
+#. type: Content of: <ol><li><p>
+msgid ""
+"[[!img install/inc/screenshots/mac_option_key.png link=\"no\" alt=\"'Option' "
+"or 'alt' key in the bottom left of Mac keyboard\"]]"
+msgstr ""
+"[[!img install/inc/screenshots/mac_option_key.png link=\"no\" alt=\"Touche "
+"'Option' ou 'alt' en bas à gauche du clavier Mac\"]]"
+
+#. type: Content of: <ol><li><p>
+msgid ""
+"Choose the USB stick and press <span class=\"keycap\">Enter</span>. The USB "
+"stick appears as an external hard disk and might be labeled <span "
+"class=\"guilabel\">EFI Boot</span> or <span class=\"guilabel\">Windows</"
+"span> like in the following screenshot:"
+msgstr ""
+"Choisir la clé USB et appuyer sur <span class=\"keycap\">Entrée</span>. La "
+"clé USB apparaît comme un disque externe et peut être nommée <span "
+"class=\"guilabel\">EFI Boot</span> ou <span class=\"guilabel\">Windows</"
+"span> comme dans la capture d'écran suivante :"
+
+#. type: Content of: <ol><li><p>
+msgid ""
+"[[!img install/inc/screenshots/mac_startup_usb.png link=\"no\" alt=\"Screen "
+"with the logo of an internal hard disk labeled 'Macintosh HD' and an "
+"external hard disk labelled 'Windows' (selected)\"]]"
+msgstr ""
+"[[!img install/inc/screenshots/mac_startup_usb.png link=\"no\" alt=\"Écran "
+"avec le logo d'un disque dur interne nommé 'Macintosh HD' et un disque dur "
+"externe nommé 'Windows' (sélectionné)\"]]"
+
+#. type: Content of: <ol><li><div><p>
+msgid "If the USB stick does not appear in the list of startup disks:"
+msgstr "Si la clé USB n'apparaît pas dans la liste des disques de démarrage :"
+
+#. type: Content of: <ol><li><div>
+msgid ""
+"[[!inline pages=\"install/inc/steps/basic_troubleshooting.inline\" "
+"raw=\"yes\" sort=\"age\"]]"
+msgstr ""
+"[[!inline pages=\"install/inc/steps/basic_troubleshooting.inline.fr\" "
+"raw=\"yes\" sort=\"age\"]]"
+
+#. type: Content of: <ol><li><div><p>
+msgid ""
+"If your computer still does not display the Boot Loader, it might currently "
+"be impossible to start Tails on your computer."
+msgstr ""
+"Si votre ordinateur n'affiche toujours pas le chargeur d'amorçage, il se "
+"peut qu'il soit actuellement impossible de démarrer Tails sur votre "
+"ordinateur."
+
+#. type: Content of: <ol><li><p>
+msgid "If your Mac displays the following error:"
+msgstr "Si votre Mac affiche l'erreur suivante :"
+
+#. type: Content of: <ol><li><pre>
+#, no-wrap
+msgid "Security settings do not allow this Mac to use an external startup disk."
+msgstr "Vos réglages de sécurité ne permettent pas de démarrer ce Mac depuis un disque de démarrage externe."
+
+#. type: Content of: <ol><li><p>
+msgid ""
+"Then you have to change the settings of the <em>Startup Security Utility</"
+"em> of your Mac to authorize starting from Tails."
+msgstr ""
+"Alors vous devez changer les paramètres de l'<em>utilitaire Sécurité au "
+"démarrage</em> de votre Mac pour autoriser le démarrage depuis Tails."
+
+#. type: Content of: <ol><li><p>
+msgid "To open <em>Startup Security Utility</em>:"
+msgstr "Pour ouvrir l'<em>utilitaire Sécurité au démarrage</em> :"
+
+#. type: Content of: <ol><li><ol><li><p>
+#, fuzzy
+#| msgid ""
+#| "Turn on your Mac, then press and hold <strong>Command(⌘)+R</strong> "
+#| "immediately after you see the Apple logo. Your Mac starts up from <a "
+#| "href=\"https://support.apple.com/kb/HT201314\">macOS Recovery</a>."
+msgid ""
+"Turn on your Mac, then press and hold <strong>Command(⌘)+R</strong> "
+"immediately after you see the Apple logo. Your Mac starts up from <a "
+"href=\"https://support.apple.com/kb/HT201314\">macOS Recovery</a>."
+msgstr ""
+"Allumer votre Mac, puis maintenir les touches <strong>Commande (⌘) + R</"
+"strong> enfoncées immédiatement après l’apparition du logo Apple. Votre Mac "
+"démarre à partir de la <a href=\"https://support.apple.com/fr-fr/"
+"HT201314\">fonctionnalité de récupération de macOS</a>."
+
+#. type: Content of: <ol><li><ol><li><p>
+#, fuzzy
+#| msgid ""
+#| "When you see the macOS <em>Utilities</em> window, choose "
+#| "<strong>Utilities&nbsp;▸ Startup Security Utility</strong> from the menu "
+#| "bar."
+msgid ""
+"When you see the macOS <em>Utilities</em> window, choose "
+"<strong>Utilities&nbsp;▸ Startup Security Utility</strong> from the menu bar."
+msgstr ""
+"Lorsque la fenêtre <em>Utilitaires</em> macOS apparaît, sélectionner "
+"<strong>Utilitaires&nbsp;▸ Utilitaire Sécurité</strong> au démarrage dans la "
+"barre des menus."
+
+#. type: Content of: <ol><li><ol><li><p>
+msgid ""
+"When you are asked to authenticate, click <strong>Enter macOS Password</"
+"strong>, then choose an administrator account and enter its password."
+msgstr ""
+"Lorsque vous êtes invité à vous authentifier, cliquer sur <strong>Saisir le "
+"mot de passe macOS</strong>, puis choisir un compte d’administration et "
+"saisir le mot de passe associé."
+
+#. type: Content of: <ol><li><p>
+msgid ""
+"[[!img install/inc/screenshots/startup-security-utility.png link=\"no\" "
+"alt=\"Startup Security Utility\"]]"
+msgstr ""
+"[[!img install/inc/screenshots/startup-security-utility.png link=\"no\" "
+"alt=\"Utilitaire sécurité au démarrage\"]]"
+
+#. type: Content of: <ol><li><p>
+msgid "In the <em>Startup Security Utility</em>:"
+msgstr "Dans l'<em>utilitaire Sécurité au démarrage</em> :"
+
+#. type: Content of: <ol><li><ul><li><p>
+msgid ""
+"Choose <strong>No Security</strong> in the <strong>Secure Boot</strong> "
+"section."
+msgstr ""
+"Choisir <strong>Aucune sécurité</strong> dans les réglages de "
+"<strong>démarrage sécurisé</strong>."
+
+#. type: Content of: <ol><li><ul><li><p>
+msgid ""
+"Choose <strong>Allow booting from external media</strong> in the "
+"<strong>External Boot</strong>."
+msgstr ""
+"Choisir <strong>Autoriser le démarrage à partir de supports externes</"
+"strong> dans les réglages de <strong>démarrage externe</strong>."
+
+#. type: Content of: <ol><li><div><p>
+msgid ""
+"To still protect your Mac from starting on untrusted external media, you can "
+"set a firmware password, available on macOS Mountain Lion or later. A "
+"firmware password prevents users who do not have the password from starting "
+"up from any media other than the designated startup disk."
+msgstr ""
+"Pour que votre Mac soit encore protégé contre le démarrage sur des supports "
+"externes non fiables, vous pouvez définir un mot de passe de programme "
+"interne, disponible sur macOS Mountain Lion ou une version ultérieure. Un "
+"mot de passe de programme interne empêche toute personne tierce ne "
+"connaissant pas ce mot de passe de démarrer l’ordinateur à partir d’un autre "
+"disque que celui que vous avez défini."
+
+#. type: Content of: <ol><li><div><p>
+msgid ""
+"<strong>If you forget your firmware password you will require an in-person "
+"service appointment with an Apple Store or Apple Authorized Service Provider."
+"</strong>"
+msgstr ""
+"<strong>Si vous ne vous souvenez pas du mot de passe de votre programme "
+"interne, vous devrez prendre rendez-vous dans un magasin Apple Store ou dans "
+"un centre de services agréé Apple.</strong>"
+
+#. type: Content of: <ol><li><p>
+msgid "Read more on Apple Support about:"
+msgstr "L'assistance Apple contient plus d'informations à ce sujet :"
+
+#. type: Content of: <ol><li><ul><li>
+msgid ""
+"<a href=\"https://support.apple.com/en-us/HT208198\">Startup Security "
+"Utility</a>"
+msgstr ""
+"<a href=\"https://support.apple.com/fr-fr/HT208198\">Utilitaire Sécurité au "
+"démarrage</a>"
+
+#. type: Content of: <ol><li><ul><li>
+msgid ""
+"<a href=\"https://support.apple.com/en-us/HT204455\">How to set a firmware "
+"password on your Mac</a>"
+msgstr ""
+"<a href=\"https://support.apple.com/fr-fr/HT204455\">Comment configurer un "
+"mot de passe de programme interne sur votre Mac</a>"
+
+#. type: Content of: <ol><li><p>
+msgid ""
+"If the computer starts on Tails, the Boot Loader appears and Tails starts "
+"automatically after 4 seconds."
+msgstr ""
+"Si l'ordinateur démarre sur Tails, le chargeur d'amorçage apparaît et Tails "
+"démarre automatiquement après 4 secondes."
+
+#. type: Content of: <ol><li><p>
+msgid ""
+"[[!img install/inc/screenshots/grub.png link=\"no\" alt=\"Black screen ('GNU "
+"GRUB') with Tails logo and 2 options: 'Tails' and 'Tails (Troubleshooting "
+"Mode)'.\"]]"
+msgstr ""
+"[[!img install/inc/screenshots/grub.png link=\"no\" alt=\"Écran noir ('GNU "
+"GRUB') avec le logo Tails. Le menu du chargeur d'amorçage avec deux options "
+"'Tails' et 'Tails (Troubleshooting Mode)'.\"]]"
+
+#~ msgid ""
+#~ "Make sure that you have [[verified your download of Tails|install/mac/usb-"
+#~ "download]]."
+#~ msgstr ""
+#~ "Assurez-vous que vous avez [[vérifié votre téléchargement de Tails|"
+#~ "install/mac/usb-download]]."
+
+#~ msgid "Try installing again on the same USB stick."
+#~ msgstr "Essayez d'installer à nouveau sur la même clé USB."
+
+#~ msgid "Try installing on a different USB stick."
+#~ msgstr "Essayez d'installer sur une autre clé USB."
+
+#~ msgid "Try using the same USB stick to start on a different computer."
+#~ msgstr ""
+#~ "Essayez d'utiliser la même clé USB pour démarrer sur un autre ordinateur."
+
+#~ msgid ""
+#~ "If the same USB stick works on a different computer, please [[!toggle "
+#~ "id=\"report-toggle-1\" text=\"report the problem to our help desk\"]]."
+#~ msgstr ""
+#~ "Si la même clé USB fonctionne sur un autre ordinateur, merci de [[!toggle "
+#~ "id=\"report-toggle-1\" text=\"signaler le problème à notre centre "
+#~ "d'assistance\"]]."
+
+#, fuzzy
+#~| msgid ""
+#~| "[[!toggleable id=\"report-toggle-1\" text=\"\"\" <span class=\"hide\">[[!"
+#~| "toggle id=\"report-toggle-1\" text=\"\"]]</span> [[!inline "
+#~| "pages=\"install/inc/steps/reporting.inline\" raw=\"yes\"]] \"\"\"]]"
+#~ msgid ""
+#~ "[[!toggleable id=\"report-toggle-1\" text=\"\"\" <span class=\"hide\">[[!"
+#~ "toggle id=\"report-toggle-1\" text=\"\"]]</span>"
+#~ msgstr ""
+#~ "[[!toggleable id=\"report-toggle-1\" text=\"\"\" <span class=\"hide\">[[!"
+#~ "toggle id=\"report-toggle-1\" text=\"\"]]</span> [[!inline "
+#~ "pages=\"install/inc/steps/reporting.inline.fr\" raw=\"yes\"]] \"\"\"]]"
+
+#~ msgid ""
+#~ "Please [[!toggle id=\"report-toggle\" text=\"report the problem to our "
+#~ "help desk\"]]."
+#~ msgstr ""
+#~ "Merci de [[!toggle id=\"report-toggle\" text=\"signaler le problème à "
+#~ "notre centre d'assistance\"]]."
+
+#, fuzzy
+#~| msgid ""
+#~| "[[!toggleable id=\"report-toggle\" text=\"\"\" <span class=\"hide\">[[!"
+#~| "toggle id=\"report-toggle\" text=\"\"]]</span> [[!inline pages=\"install/"
+#~| "inc/steps/reporting.inline\" raw=\"yes\"]] \"\"\"]]"
+#~ msgid ""
+#~ "[[!toggleable id=\"report-toggle\" text=\"\"\" <span class=\"hide\">[[!"
+#~ "toggle id=\"report-toggle\" text=\"\"]]</span>"
+#~ msgstr ""
+#~ "[[!toggleable id=\"report-toggle\" text=\"\"\" <span class=\"hide\">[[!"
+#~ "toggle id=\"report-toggle\" text=\"\"]]</span> [[!inline pages=\"install/"
+#~ "inc/steps/reporting.inline\" raw=\"yes\"]] \"\"\"]]"
+
+#~ msgid "<a id=\"startup-security\"></a>"
+#~ msgstr "<a id=\"startup-security\"></a>"

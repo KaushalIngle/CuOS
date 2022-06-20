@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2022-05-24 14:10+0200\n"
+"PO-Revision-Date: 2021-07-16 19:05+0000\n"
+"Last-Translator: Ed Medvedev <edward.medvedev@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.11.3\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta title=\"System requirements\"]]\n"
+msgstr "[[!meta title=\"Системные требования\"]]\n"
+
+#. type: Plain text
+msgid "Tails works on most computers less than 10 years old."
+msgstr "Tails работает на большинстве компьютеров, которым меньше 10 лет."
+
+#. type: Plain text
+#, no-wrap
+msgid "<div class=\"note\">\n"
+msgstr "<div class=\"note\">\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "<p>Tails might not work on:</p>\n"
+msgstr "<p>Tails может не работать на:</p>\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<ul>\n"
+"<li>Some older computers, for example, if they don't have enough\n"
+"RAM.</li>\n"
+"<li>Some newer computers, for example, if their [[graphics card is\n"
+"not compatible with Linux|support/known_issues/graphics]].</li>\n"
+"</ul>\n"
+msgstr ""
+"<ul>\n"
+"<li>некоторых старых компьютерах, которым, например, не хватает оперативной памяти;</li>\n"
+"<li>некоторых сравнительно новых компьютерах, например, если их [[видеокарта несовместима с Linux|support/known_issues/graphics]].</li>\n"
+"</ul>\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<p>See the [[known hardware compatibility\n"
+"issues|support/known_issues]].</p>\n"
+msgstr "<p>Смотрите раздел [[о проблемах совместимости оборудования|support/known_issues]].</p>\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "</div>\n"
+msgstr "</div>\n"
+
+#. type: Plain text
+msgid "Hardware requirements:"
+msgstr "Аппаратные требования:"
+
+#. type: Plain text
+msgid "- A USB stick of 8 GB minimum or a recordable DVD."
+msgstr "- USB-флешка (минимум 8 Гб) или записываемый DVD."
+
+#. type: Plain text
+#, no-wrap
+msgid "  All the data on this USB stick or DVD will be lost when installing Tails.\n"
+msgstr "  При установке Tails все данные на USB-флешке или DVD будут утеряны.\n"
+
+#. type: Plain text
+msgid "- The ability to start from a USB stick or a DVD reader."
+msgstr "- Возможность загрузки компьютера с USB-флешки или DVD."
+
+#. type: Bullet: '- '
+msgid ""
+"A 64-bit <span class=\"definition\">[[!wikipedia x86-64]]</span> compatible "
+"processor:"
+msgstr ""
+
+#. type: Bullet: '  - '
+msgid ""
+"<span class=\"definition\">[[!wikipedia IBM_PC_compatible]]</span> but not "
+"<span class=\"definition\">[[!wikipedia PowerPC]]</span> nor <span "
+"class=\"definition\">[[!wikipedia ARM_architecture desc=\"ARM\"]]</span>."
+msgstr ""
+
+#. type: Bullet: '  - '
+msgid "Most Mac computers are IBM PC compatible since 2006."
+msgstr ""
+
+#. type: Bullet: '  - '
+msgid ""
+"Tails does not work with Mac models that use the [[!wikipedia Apple M1]] "
+"chip."
+msgstr ""
+
+#. type: Bullet: '  - '
+msgid ""
+"Tails does not work on 32-bit computers since [[Tails 3.0|news/"
+"Tails_3.0_will_require_a_64-bit_processor]] (June 2017)."
+msgstr ""
+
+#. type: Bullet: '  - '
+#, fuzzy
+#| msgid "Tails works on most computers less than 10 years old."
+msgid "Tails does not work on most tablets and phones."
+msgstr "Tails работает на большинстве компьютеров, которым меньше 10 лет."
+
+#. type: Plain text
+msgid "- 2 GB of RAM to work smoothly."
+msgstr "- 2 Гб оперативной памяти для стабильной работы."
+
+#. type: Plain text
+#, no-wrap
+msgid "  Tails can work with less than 2 GB RAM but might behave strangely or crash.\n"
+msgstr "  На устройствах с объёмом памяти меньше  2 Гб Tails может работать нестабильно или не работать вообще.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "- A 64-bit <span class=\"definition\">[[!wikipedia x86-64]]</span>\n"
+#~ "  compatible processor:\n"
+#~ "  - <span class=\"definition\">[[!wikipedia IBM_PC_compatible]]</span> but not\n"
+#~ "    <span class=\"definition\">[[!wikipedia PowerPC]]</span> nor\n"
+#~ "    <span class=\"definition\">[[!wikipedia ARM_architecture desc=\"ARM\"]]</span>.\n"
+#~ "  - Most Mac computers are IBM PC compatible since 2006.\n"
+#~ "  - Tails does not work with Mac models that use the [[!wikipedia Apple M1]] chip.\n"
+#~ "  - Tails does not work on 32-bit computers since [[Tails 3.0|news/Tails_3.0_will_require_a_64-bit_processor]] (June 2017).\n"
+#~ "  - Tails does not work on most tablets and phones.\n"
+#~ msgstr ""
+#~ "- 64-битный <span class=\"definition\">[x86-64](https://ru.wikipedia.org/wiki/X86-64)</span>-совместимый процессор:\n"
+#~ "  - <span class=\"definition\">[IBM-PC-совместимая архитектура](https://ru.wikipedia.org/wiki/IBM-PC-%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B8%D0%BC%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80)</span>, но не <span class=\"definition\">[PowerPC](https://ru.wikipedia.org/wiki/PowerPC)</span> или <span class=\"definition\">[ARM](https://ru.wikipedia.org/wiki/ARM_(%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0)</span>.\n"
+#~ "  - Большинство компьютеров Mac совместимы с IBM PC, начиная с 2006 года.\n"
+#~ "  - Tails не работает с устройствами Mac, в которых используется чип [Apple M1](https://ru.wikipedia.org/wiki/Apple_M1).\n"
+#~ "  - Tails не работает на 32-битных компьютерах, начиная с версии [[Tails 3.0|news/Tails_3.0_will_require_a_64-bit_processor]] (июнь 2017 года).\n"
+#~ "  - Tails не работает на большинстве планшетов и смартфонов.\n"
+
+#~ msgid ""
+#~ "Tails works on most reasonably recent computers, say manufactured after "
+#~ "2008.  Here is a detailed list of requirements:"
+#~ msgstr ""
+#~ "Tails läuft auf den meisten halbwegs aktuellen Computern (d.h. solche, "
+#~ "die nach 2008 hergestellt wurden). Folgende Voraussetzungen muss der "
+#~ "Rechner jedoch erfüllen:"
+
+#~ msgid ""
+#~ "Either **an internal or external DVD reader** or the possibility to "
+#~ "**boot from a USB stick**."
+#~ msgstr ""
+#~ "Ein **internes oder externes DVD-Laufwerk**, oder die Möglichkeit von "
+#~ "einem **USB-Stick zu starten**."

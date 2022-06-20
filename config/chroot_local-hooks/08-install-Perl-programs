@@ -1,0 +1,32 @@
+#!/bin/sh
+
+set -e
+set -u
+
+echo "Installing Perl programs"
+
+# Import ensure_hook_dependency_is_installed()
+. /usr/local/lib/tails-shell-library/build.sh
+
+ensure_hook_dependency_is_installed \
+   cpanminus \
+   libdist-zilla-perl \
+   libdist-zilla-plugin-test-notabs-perl \
+   libdist-zilla-plugin-test-perl-critic-perl
+
+for dist in perl5lib persistence-setup iuk; do
+   dist_dir="/usr/src/${dist}"
+   cd "$dist_dir"
+   PERL5LIB=/usr/src/perl5lib/lib PERL_CPANM_OPT=--notest dzil install
+   cd
+   rm -r "$dist_dir"
+done
+rm -r /root/.cpanm
+
+# dzil installs the tails-persistence-setup Perl program to
+# /usr/local/bin/; we move it to /usr/bin/ and replace it in
+# /usr/local/bin/ with a wrapper that runs it as the
+# tails-persistence-setup user
+mv /usr/local/bin/tails-persistence-setup /usr/bin/
+mv /usr/local/bin/tails-persistence-setup.wrapper \
+   /usr/local/bin/tails-persistence-setup

@@ -1,0 +1,706 @@
+[[!meta title="Finances"]]
+
+[[!toc levels=2]]
+
+<a id="sponsors"></a>
+
+Sponsors
+========
+
+Grants, awards, corporate donations, and substantial
+donations from individuals are listed in a more
+visual way on our [[sponsors page|sponsors]].
+
+<a id="2021"></a>
+
+Income statement for 2021
+=========================
+
+        Revenues:
+
+        - Donations
+                    12326.23€  via CCT
+                    $6312.49   via Riseup Labs
+                    $1998.88   via Benevity
+                   $43621.50   via PayPal
+
+        - Donations in cryptocurrencies
+                        8.92Ƀ  bitcoin
+                       26.33Ξ  ethereum
+                      345.69ɱ  moneros
+                    22250.19L  lumens
+                       11.30Z  zcash
+
+        - Restricted funds (funder deliverables)
+                    50000€     RIPE Network Coordination Center
+                   $24805      Internews UXFund
+                   $15933.50   Bureau of Democracy, Human Rights, and Labor
+
+        - Sponsors
+                    $2475      Tor
+                    $1400      Word Solver
+                     1100€     Freiheitsfoo
+                        0.02Ƀ  ThinkPenguin
+                    $1000      Exam Success
+                    $1000      SVKH
+        --------------------
+                   $98546.37
+                    63426.23€
+                        8.94Ƀ
+                       26.33Ξ
+                      345.69ɱ
+                    22250.19L
+                       11.30Z
+
+        Expenses:
+
+        - Infrastructure
+                   $-2431.08   hardware
+                    -1810.25€  hardware
+                   $-1575      Internet hosting
+                    -2151€     Internet hosting
+
+        - Subcontracting
+                  -257918.69€  subcontracting
+
+        - Travel & meetings
+                    -4025.19€  meetings
+
+        - Running costs
+                   $-8560.53   administration
+                    -2413.22€  administration
+                   $-4681.40   banking fees
+                       -0.01Ƀ  banking fees
+                    -2824.30€  banking fees
+                     -351.77€  health care
+
+         - Misc
+                      -12.32€  exceptional_expenses
+                     -282.70€  non_stored_purchases
+                     $-23.66   shipping
+                     -324.40€  shipping
+                    -4316.13€  T-shirts
+
+         - Taxes
+                    -5139.21€  VAT
+
+        --------------------
+                  $-17271.67
+                       -0.01Ƀ
+                  -281569.18€
+
+        Total:
+        --------------------
+                  -218142.95€
+                   $43383.06
+                        8.93Ƀ
+                       26.33Ξ
+                      345.69ɱ
+                    22250.19L
+                       11.30Z
+
+<a id="2020"></a>
+
+Income statement for 2020
+=========================
+
+	Revenues:
+
+	- Donations
+	            62416.65€  via CCT
+	           $42326.89   via PayPal
+	           $18114.83   via Riseup Labs
+	           $13018.55   via Benevity
+	              243.52€  cash
+	                2.99Ƀ  bitcoins
+	              244.06ɱ  moneros
+	             9515.81L  lumens
+	               11.28Z  zcash
+
+	- Restricted fund (funder deliverables)
+	          $120310.00   Mozilla Open Source Support
+	             9448.00€  The ISC Project
+
+	- Sponsors
+	            $1408.20   Freiheitsfoo
+	            $1040.00   Look to the Right
+	            $1000.00   Domains4Bitcoins
+	            $1000.00   Exam Success
+	            $1000.00   Login Lockdown
+	            $1000.00   Wordable
+	             $900.00   Tor
+	--------------------
+	          $201118.47
+	            72108.17€
+	             9515.81L
+	              244.06ɱ
+	               11.28Z
+	                2.99Ƀ
+
+	Expenses:
+
+	- Infrastructure
+	              -15.23€  hardware
+	            -1186.94€  Internet hosting
+	            $-997.50   Internet hosting
+
+	- Travel & meetings
+	             -500.55€  travel
+	              -12.45€  food and drinks
+	             -981.61€  hosting
+
+	- Subcontracting
+	          -252240.25€  subcontracting
+
+	- Running costs
+	          $-10010.92   administration
+	            -3589.64€  administration
+	           $-3493.81   banking fees
+	               -0.02Ƀ  banking fees
+	             -131.74€  banking fees
+
+	- Misc
+	             -191.56€  shipping
+	            $-102.17   shipping
+	              -20.10€  office supplies
+	              -77.48€  others
+
+	- Taxes
+	           -10397.13€  VAT
+	--------------------
+	          -269344.68€
+	          $-14604.40
+	               -0.02Ƀ
+
+	Total:
+	--------------------
+	          -197236.51€
+	          $186514.07
+	                2.97Ƀ
+	              244.06ɱ
+	             9515.81L
+	               11.28Z
+
+<a id="2019"></a>
+
+Income statement for 2019
+=========================
+
+	Revenues:
+
+	- Donations
+	           $32176.74   via PayPal
+	            22881.61€  via CCT
+	            $5702.00   via Riseup Labs
+	            $1128.64   via Coinbase
+	              354.32€  via Zwiebelfreunde
+	             $839.85   via Benevity
+	              222.70€  via Flattr
+	             2129.00€  cash
+	                8.05Ƀ  bitcoins
+	              324.82ɱ  moneros
+
+	- Restricted funds (funder deliverables)
+	            12445.80€  The ISC Project
+	           $26220.00   Mozilla Open Source Support
+	          $114890.00   Open Technology Fund
+
+	- Sponsors
+	                6.00Ƀ  PrivCoin
+	            $1200.00   ThinkPenguin
+	            $1000.00   Cooltechzone
+	            $1000.00   TOP10VPN
+	            $1000.00   The Best VPN
+	            $1000.00   VPN Review
+	             $900.00   Tor
+
+	- T-shirts
+	               61.88€  T-shirts
+	--------------------
+	          $187057.23
+	               14.05Ƀ
+	              324.82ɱ
+	            38095.31€
+
+	Expenses:
+
+	- Infrastructure
+	            -1564.65€  hardware
+	           $-1080.00   Internet hosting
+	            -1082.13€  Internet hosting
+
+	- Travel & meetings
+	            -4650.76€  travel
+	            -1885.74€  food and drinks
+	            -1074.34€  hosting
+	             -120.08€  tickets to events
+
+	- Subcontracting
+	          -228589.69€  subcontracting
+
+	- Running costs
+	           $-4546.48   administration
+	            -6866.93€  administration
+	           $-3067.86   banking fees
+	             -328.47€  banking fees
+	               -0.01Ƀ  banking fees
+
+	- Misc
+	              -15.29€  office supplies
+	             -112.52€  promotion material
+
+	- Taxes
+	           -12403.96€  VAT
+	--------------------
+	           $-8694.34
+	               -0.01Ƀ
+	          -258694.56€
+
+	Total:
+	--------------------
+	          $178362.89
+	              324.82ɱ
+	               14.04Ƀ
+	          -220599.25€
+
+<a id="2018"></a>
+
+Income statement for 2018
+=========================
+
+	Revenues:
+
+	- Donations
+	           $47094.97   via the DuckDuckGo Challenge
+	           $29535.47   via Riseup Labs
+	            $3954.00   via Freedom of the Press Foundation
+	            12052.72€  via CCT
+	              960.80€  cash
+	                3.56Ƀ  bitcoins
+
+	- Restricted funds (funder deliverables)
+	             8297.20€  The ISC Project
+	           $37500.00   Open Technology Fund
+
+	- Sponsors
+	                0.15Ƀ  DeepOnion
+	          $200000.00   Handshake_Foundation
+	            $3900.00   Tor
+	--------------------
+	          $321984.44
+	                3.71Ƀ
+	            21310.72€
+
+	Expenses:
+
+	- Infrastructure
+	           $-1761.58   hardware
+	            -4522.03€  hardware
+	           $-1380.00   Internet hosting
+	             -558.67€  Internet hosting
+
+	- Travel & meetings
+	             $-60.24   food and drinks
+	            -3781.38€  food and drinks
+	            -4295.95€  hosting
+	             -395.00€  tickets to events
+	            $-898.82   travel
+	            -7875.89€  travel
+
+	- Subcontracting
+	           $-2585.50   subcontracting
+	          -138132.81€  subcontracting
+
+	- Running costs
+	          $-15428.92   administration
+	            -2545.39€  administration
+	            $-911.73   banking fees
+	               -0.02Ƀ  banking fees
+	             -107.04€  banking fees
+
+	- Misc
+	             -190.17€  office supplies
+	             -108.29€  T-shirts
+
+	- Taxes
+	            -6371.36€  VAT
+	--------------------
+	          $-23026.79
+	               -0.02Ƀ
+	          -168883.98€
+
+	Total:
+	--------------------
+	          $298957.65
+	                3.69Ƀ
+	          -147573.26€
+
+<a id="2017"></a>
+
+Income statement for 2017
+=========================
+
+	Revenues:
+
+	- Donations
+	           $23579.15   via Riseup Labs
+	             8246.82€  via CCT
+	             2045.81€  cash
+	               24.33Ƀ  bitcoins
+
+	- Sponsors
+	            $1000.00   ExpressVPN
+	                0.10Ƀ  I2P
+
+	- Restricted funds (funder deliverables)
+	            11000.00€  Lush
+
+	- T-shirts
+	             1272.35€  T-shirts
+	--------------------
+	           $24579.15
+	               24.43Ƀ
+	            22564.98€
+
+	Expenses:
+
+	- Infrastructure
+	            -2706.56€  hardware
+	           $-1586.97   hardware
+	             -544.32€  Internet hosting
+	           $-4380.00   Internet hosting
+
+	- Travel & meetings
+	            -9449.31€  travel
+	           $-1720.26   travel
+	            -4388.97€  food and drinks
+	              $41.58   food and drinks
+	            $-382.07   hosting
+	            -2032.33€  hosting
+	             -586.61€  tickets to events
+	              -44.95€  misc
+
+	- Subcontracting
+	          -108079.77€  subcontracting
+	           $-2205.00   subcontracting
+
+	- Running costs
+	          $-13000.96   administration
+	            -3672.65€  administration
+	           $-3901.12   banking fees
+	               -0.18Ƀ  banking fees
+	              -18.00€  banking fees
+
+	- Misc
+	            -3279.64€  T-shirts
+	             -163.57€  office supplies
+
+	- Taxes
+	           -19334.81€  VAT
+	--------------------
+	          $-27217.96
+	               -0.18Ƀ
+	          -154322.32€
+
+	Total:
+	--------------------
+	          -131757.34€
+	           $-2638.81
+	               24.26Ƀ
+
+<a id="2016"></a>
+
+Income statement for 2016
+=========================
+
+	Revenues:
+
+	- Donations
+	           $21908.52   via Riseup Labs
+	            $7586.00   via Freedom of the Press Foundation
+	            13709.76€  via Zwiebelfreunde
+	              784.00€  cash
+	               72.35Ƀ  bitcoins
+
+	- Restricted funds (funder deliverables)
+	          $208000.00   Open Technology Fund
+	           $77000.00   Mozilla Open Source Support
+	            $5000.00   Google Summer of Code
+
+	- Sponsors
+	             2000.00€  Mediapart
+
+	- T-shirts
+	              180.47€  T-shirts
+	--------------------
+	          $319494.52
+	               72.35Ƀ
+	            16674.23€
+
+	Expenses:
+
+	- Infrastructure
+	           $-2351.70   hardware
+	            -2081.40€  hardware
+	             -900.00€  Internet hosting
+
+	- Travel & meetings
+	            -7566.00€  travel
+	            $-526.74   travel
+	            -3789.61€  food and drinks
+	             $-25.75   food and drinks
+	            -2577.00€  hosting
+
+	- Subcontracting
+	          -128135.54€  subcontracting
+	           $-5945.00   subcontracting
+
+	- Running costs
+	            -8038.03€  administration
+	           $-5324.73   administration
+	              -21.00€  banking fees
+	            $-170.00   banking fees
+
+	- Misc
+	             -115.43€  non stored purchases
+	              -30.00€  communication
+
+	- Taxes
+	           -12034.02€  VAT
+	          $-37544.00   income taxes
+	--------------------
+	          $-51887.92
+	          -165288.03€
+
+	Total:
+	--------------------
+	          $268406.60
+	               72.35Ƀ
+	          -148613.80€
+
+<a id="2015"></a>
+
+Income statement for 2015
+=========================
+
+	Revenues:
+
+	- Donations
+	           $35000.00   via Riseup Labs
+	            $8599.00   via Freedom of the Press Foundation
+	             6995.74€  via Zwiebelfreunde
+	             $ 47.70   cash
+	              557.05€  cash
+	               31.00Ƀ  bitcoins
+
+	- Restricted funds (funder deliverables)
+	            70000.00€  Hivos
+
+	- Misc
+	            $1000.00   selling old hardware
+	--------------------
+	           $44646.70
+	               31.00Ƀ
+	            77552.79€
+
+	Expenses:
+
+	- Infrastructure
+	            $-787.23   hardware
+	             -775.41€  hardware
+	             -900.00€  Internet hosting
+	            $-160.00   SSL certificates
+
+	- Travel & meetings
+	            -9279.73€  travel
+	            -8155.21€  food and drinks
+	             -988.00€  hosting
+
+	- Subcontracting
+	          -146365.22€  subcontracting
+	           $-4860.00   subcontracting
+
+	- Running costs
+	           $-2179.95   administration
+	            -3849.79€  administration
+	             $-85.00   banking fees
+	             -106.41€  banking fees
+
+	- Misc
+	            -4151.64€  lost bitcoins
+	               -8.85Ƀ  lost bitcoins
+	            $-702.77   income taxes
+	              -39.90€  promotion material
+	--------------------
+	           $-8774.95
+	          -174611.30€
+	               -8.85Ƀ  lost bitcoins
+
+	Total:
+	--------------------
+	           $35871.75
+	           -97058.51€
+	               22.15Ƀ
+
+<a id="2014"></a>
+
+Income statement for 2014
+=========================
+
+	Revenues:
+
+	- Donations
+	           $33376.83   via Freedom of the Press Foundation
+	               71.67Ƀ  via bitcoin
+	             7150.19€  via Zwiebelfreunde
+	              803.50€  misc
+
+	- Restricted funds (funder deliverables)
+	           $50000.00   Access Now
+	             5000.00€  FFIS
+	            70000.00€  Hivos
+	           $34884.00   NDI
+	           $25800.00   OpenITP
+	            $5000.00   Tor
+
+	- Misc
+	            $3775.00   reverse reversal
+	--------------------
+	          $152835.83
+	               71.67Ƀ
+	            82953.69€
+
+	Expenses:
+
+	- Infrastructure
+	           $-7856.38   hardware
+	             -897.84€  hardware
+	             -630.00€  Internet hosting
+	            $-160.00   SSL certificates
+
+	- Travel & meetings
+	            -4907.08€  travel
+	            -3724.35€  hosting
+	            -4112.27€  food and drinks
+	            $-400.00   guests
+	             -330.30€  guests
+
+	- Subcontracting
+	          $-53414.00   subcontracting
+	           -20131.85€  subcontracting
+
+	- Running costs
+	            $-568.53   banking fees
+	             -174.53€  banking fees
+	           $-3707.33   administration
+	            -5439.61€  administration
+
+	- Misc
+	              -65.00€  stickers
+	             -414.17€  non stored purchases
+	              -20.00€  communication
+	--------------------
+	          $-66106.24
+	           -40847.00€
+
+	Total:
+	--------------------
+	           $86729.59
+	               71.67Ƀ
+	            42106.69€
+
+Income statement for 2013
+=========================
+
+	Revenues:
+	           $21000.00   NDI
+	           $20000.00   Tor (bounties program)
+	               29.58Ƀ  bitcoin
+	              330.00€  tax
+	--------------------
+	           $41000.00
+	               29.58Ƀ
+	              330.00€
+
+	Expenses:
+	              -60.00€  banking fees
+	          $-17000.00   bounties
+	           $-1194.69   hardware
+	             -499.65€  hardware
+	             -390.00€  hosting
+	            -2341.00€  meeting
+	          $-21000.00   work
+	--------------------
+	          $-39194.69
+	            -3290.65€
+
+	Total:
+	--------------------
+	            $1805.31
+	               29.58Ƀ
+	            -2960.65€
+
+Income statement for 2012
+=========================
+
+	Revenues:
+	              137.30€  tax
+	--------------------
+	              137.30€
+	
+	Expenses:
+	           $-3810.71   hardware
+	             -856.79€  hardware
+	             -300.00€  hosting
+	            -3128.39€  meeting
+	            $-479.00   SSL certificates
+	--------------------
+	           $-4289.71
+	            -4285.18€
+
+	Total:
+	--------------------
+	           $-4289.71
+	            -4147.88€
+
+In addition, one developer was paid full-time by the Tor Project, and
+NDI sponsored 40 days of development work.
+
+Income statement for 2011
+=========================
+
+	Revenues:
+	             7500.00€  Tor
+	--------------------
+	             7500.00€
+	
+	Expenses:
+	            $-555.00   hardware
+	            -1075.00€  hosting
+	            -3163.32€  meeting
+	--------------------
+	            $-555.00
+	            -4238.32€
+	
+	Total:
+	--------------------
+	            $-555.00
+	             3261.68€
+
+Income statement for 2010
+=========================
+
+	Revenues:
+	            $8500.00   Tor
+	--------------------
+	            $8500.00
+	
+	Expenses:
+	            -2025.00€  hardware
+	--------------------
+	            -2025.00€
+	
+	Total:
+	--------------------
+	            $8500.00
+	            -2025.00€

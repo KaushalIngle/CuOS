@@ -1,0 +1,160 @@
+#!/bin/sh
+
+set -e
+set -u
+
+. gettext.sh
+TEXTDOMAIN="tails"
+export TEXTDOMAIN
+
+# Import the TBB_EXT variable.
+. /usr/local/lib/tails-shell-library/tor-browser.sh
+
+# Import localized_tails_doc_page().
+. /usr/local/lib/tails-shell-library/localization.sh
+
+# Import setup_chroot_for_browser(), configure_chroot_browser(),
+# and run_browser_in_chroot().
+. /usr/local/lib/tails-shell-library/chroot-browser.sh
+
+# Import unsafe_browser_is_enabled and persistence_is_enabled
+. /usr/local/lib/tails-shell-library/tails-greeter.sh
+
+# Import nm_is_connected
+. /usr/local/lib/tails-shell-library/network.sh
+
+error () {
+    local cli_text dialog_text
+    cli_text="${CMD}: $(gettext "error:") ${*}"
+    dialog_text="<b><big>$(gettext "Error")</big></b>
+
+${*}"
+    echo "${cli_text}" >&2
+    sudo -u "${SUDO_USER}" zenity --error --ellipsize --title "" --text "${dialog_text}"
+    exit 1
+}
+
+verify_start () {
+    # Make sure the user really wants to start the browser
+    local dialog_msg launch exit
+    dialog_msg="<b><big>$(gettext "Launch the Unsafe Browser?")</big></b>
+
+$(gettext "The Unsafe Browser is not anonymous and the websites that you visit can see your real IP address.\n\nOnly use the Unsafe Browser to sign in to a network using a captive portal.")"
+    launch="$(gettext "_Launch")"
+    exit="$(gettext "_Exit")"
+    if ! sudo -u "${SUDO_USER}" \
+         zenity --question --ellipsize --title "" --text "${dialog_msg}" --default-cancel \
+         --ok-label "${launch}"  --cancel-label "${exit}"; then
+        exit 0
+    fi
+}
+
+exit_because_disabled() {
+    local msg restart cancel confirm_msg confirm_button
+    msg="$(gettext "The Unsafe Browser was not enabled in the Welcome Screen.\n\n\
+To <a href='file:///usr/share/doc/tails/website/doc/anonymous_internet/unsafe_browser.en.html#use'>use the Unsafe Browser</a>, restart Tails and enable \
+the Unsafe Browser in the additional settings of the Welcome Screen.")"
+    # Only mention the Persistent Storage if there is one (see #18551)
+    if persistence_is_enabled; then
+	msg="${msg}""$(gettext "\n\nTo always enable the Unsafe Browser, turn on the Welcome Screen feature of the Persistent Storage.")"
+    fi
+
+    restart="$(gettext "_Restart")"
+    cancel="$(gettext "_Cancel")"
+    confirm_msg="$(gettext "Do you really want to restart Tails now?\n\nAll your current work will be lost.")"
+    confirm_button="$(gettext "Restart Now")"
+    if sudo -u "${SUDO_USER}" \
+             zenity --question --ellipsize --title "" --text "${msg}" --icon-name="dialog-error" \
+                    --ok-label "${restart}"  --cancel-label "${cancel}" --default-cancel \
+       && \
+       sudo -u "${SUDO_USER}" \
+            zenity --question --width=300 --title "" --text "${confirm_msg}" \
+                   --ok-label "${confirm_button}" --cancel-label "${cancel}" --default-cancel
+    then
+        /sbin/reboot || error "$(gettext "Failed to restart the system.")"
+    fi
+
+    exit 1
+}
+
+show_start_notification () {
+    local title body
+    title="$(gettext "Starting the Unsafe Browser...")"
+    body="$(gettext "This may take a while, so please be patient.")"
+    tails-notify-user "${title}" "${body}" 10000
+}
+
+show_shutdown_notification () {
+    local title body
+    title="$(gettext "Shutting down the Unsafe Browser...")"
+    body="$(gettext "This may take a while, and you may not restart the Unsafe Browser until it is properly shut down.")"
+    tails-notify-user "${title}" "${body}" 10000
+}
+
+# Main script:
+
+CMD="$(basename "${0}")"
+LOCK="/var/lock/${CMD}"
+CONF_DIR="/var/lib/unsafe-browser"
+COW="${CONF_DIR}/cow"
+CHROOT="${CONF_DIR}/chroot"
+BROWSER_NAME="unsafe-browser"
+BROWSER_USER="clearnet"
+HUMAN_READABLE_NAME="$(gettext "Unsafe Browser")"
+if [ -f /run/tor-has-bootstrapped/done ]; then
+    WARNING_PAGE='/usr/share/doc/tails/website/misc/unsafe_browser_warning'
+else
+    WARNING_PAGE='/usr/share/doc/tails/website/misc/captive_portal_warning'
+fi
+HOME_PAGE="$(localized_tails_doc_page "${WARNING_PAGE}")"
+
+# Check if the Unsafe Browser was disabled in the startup options
+unsafe_browser_is_enabled || exit_because_disabled
+
+# Prevent multiple instances of the script.
+exec 9>"${LOCK}"
+if ! flock -x -n 9; then
+    error "$(gettext "Another Unsafe Browser is currently running, or being cleaned up. Please retry in a while.")"
+fi
+
+verify_start
+show_start_notification
+
+echo "* Setting up chroot"
+setup_chroot_for_browser "${CHROOT}" "${COW}" "${BROWSER_USER}" || \
+    error "$(gettext "Failed to setup chroot.")"
+
+echo "* Configuring chroot"
+configure_chroot_browser "${CHROOT}" "${BROWSER_USER}" "${BROWSER_NAME}" \
+    "${HUMAN_READABLE_NAME}" "${HOME_PAGE}" \
+    "${TBB_EXT}"/langpack-*.xpi \
+    /usr/share/tails/chroot-browsers/unsafe-browser/extensions/*.xpi || \
+        error "$(gettext "Failed to configure browser.")"
+# If /etc/resolv-over-clearnet.conf file is empty or doesn't exist, we
+# have no clearnet DNS server.
+if grep --quiet "^nameserver\s" /etc/resolv-over-clearnet.conf; then
+    mount --bind /etc/resolv-over-clearnet.conf "${CHROOT}"/etc/resolv.conf
+fi
+if ! nm_is_connected; then
+    error "$(gettext "You are not connected to a local network yet.\n\nTo be able to start the Unsafe Browser, you first need to connect to a Wi-Fi, wired, or mobile network.")"
+fi
+
+# Disable some Firefox "phone home" features
+# (https://bugzilla.mozilla.org/show_bug.cgi?id=1598562)
+echo '127.0.0.42 firefox.settings.services.mozilla.com' \
+     >> "${CHROOT}"/etc/hosts
+
+echo "* Starting Unsafe Browser"
+# Do not localize the 5th argument: it becomes WM_CLASS and then GNOME
+# displays the localized app name found in the matching .desktop file;
+# if WM_CLASS were localized then not only string encoding problems
+# would happen, but GNOME would pick the wrong icon.
+run_browser_in_chroot "${CHROOT}" "${BROWSER_NAME}" "${BROWSER_USER}" \
+    "${SUDO_USER}" \
+    'Unsafe Browser' || \
+    error "$(gettext "Failed to run browser.")"
+
+echo "* Exiting the Unsafe Browser"
+show_shutdown_notification
+
+exit 0

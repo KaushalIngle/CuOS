@@ -1,0 +1,117 @@
+#!/bin/sh
+
+echo "- configuring APT sources"
+
+sed -i 's,^\(\#\?\s*deb\(-src\)\?\s\+\)http://,\1tor+http://,' \
+           /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+
+sed -E -i 's,\s+non-free$,,' \
+           /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+
+sed -E -i '/^deb(-src)?\s+\S+\s+\S+-proposed-updates\s+/d' \
+           /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+
+# shellcheck disable=SC2016
+echo '
+
+### Time-based snapshots
+
+s{
+   ^
+   (deb(?:-src)?\s+)
+   tor[+]https?://time-based[.]snapshots[.]deb[.]tails[.]boum[.]org
+   /debian
+   /[0-9]{10} # serial
+   /?
+   (\s+)
+}{$1tor+https://cdn-fastly.deb.debian.org/debian/$2}xms;
+
+s{
+   ^
+   (deb(?:-src)?\s+)
+   tor[+]https?://time-based[.]snapshots[.]deb[.]tails[.]boum[.]org
+   /debian-security
+   /[0-9]{10} # serial
+   /?
+   (\s+)
+}{$1tor+https://cdn-fastly.deb.debian.org/debian-security/$2}xms;
+
+s{
+   ^
+   (deb(?:-src)?\s+)
+   tor[+]https?://time-based[.]snapshots[.]deb[.]tails[.]boum[.]org
+   /torproject
+   /[0-9]{10} # serial
+   /?
+   (\s+)
+}{$1tor+http://apow7mjfryruh65chtdydfmqfpj5btws7nbocgtaovhvezgccyjazpqd.onion/torproject.org/$2}xms;
+
+### Tagged snapshots
+
+s{
+   ^
+   (deb(?:-src)?\s+)
+   tor[+]https?://tagged[.]snapshots[.]deb[.]tails[.]boum[.]org
+   /[0-9a-z.-]+ # tag
+   /debian
+   /?
+   (\s+)
+}{$1tor+https://cdn-fastly.deb.debian.org/debian/$2}xms;
+
+s{
+   ^
+   (deb(?:-src)?\s+)
+   tor[+]https?://tagged[.]snapshots[.]deb[.]tails[.]boum[.]org
+   /[0-9a-z.-]+ # tag
+   /debian-security
+   /?
+   (\s+)
+}{$1tor+https://cdn-fastly.deb.debian.org/debian-security/$2}xms;
+
+s{
+   ^
+   (deb(?:-src)?\s+)
+   tor[+]https?://tagged[.]snapshots[.]deb[.]tails[.]boum[.]org
+   /[0-9a-z.-]+ # tag
+   /torproject
+   /?
+   (\s+)
+}{$1tor+http://apow7mjfryruh65chtdydfmqfpj5btws7nbocgtaovhvezgccyjazpqd.onion/torproject.org/$2}xms;
+
+### Custom APT repository
+
+s{
+   ^
+   (deb(?:-src)?\s+)
+   tor[+]https?://deb[.]tails[.]boum[.]org
+   /?
+   (\s+)
+}{$1tor+http://umjqavufhoix3smyq6az2sx4istmuvsgmz4bq5u5x56rnayejoo6l2qd.onion/$2}xms;
+
+' | perl -pi - /etc/apt/sources.list /etc/apt/sources.list.d/*.list
+
+echo "- configuring APT preferences"
+
+# shellcheck disable=SC2016
+echo '
+### Custom APT repository
+
+s{
+   ^
+   (Pin:\s+origin\s+)
+   deb[.]tails[.]boum[.]org
+   $
+}{$1umjqavufhoix3smyq6az2sx4istmuvsgmz4bq5u5x56rnayejoo6l2qd.onion}xms;
+
+### Fix origin for backports
+
+s{
+   ^
+   (Pin:\s+release\s+)
+   o=Debian
+   (,[an]=bullseye-backports)
+   $
+}{$1o=Debian Backports$2}xms;
+' | perl -pi - /etc/apt/preferences
+
+find /etc/apt/sources.list* -size 0 -delete

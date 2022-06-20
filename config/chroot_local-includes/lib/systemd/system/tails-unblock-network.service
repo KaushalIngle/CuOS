@@ -1,0 +1,17 @@
+[Unit]
+Description=Unblock network device drivers
+Documentation=https://tails.boum.org/contribute/design/MAC_address/
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+
+# We sync to make sure the blacklist has disappeared from the
+# filesystem
+ExecStart=/bin/sh -c \
+    '. /usr/local/lib/tails-shell-library/tails-greeter.sh ; \
+     if tails_network_enabled ; then \
+         /bin/rm -f /etc/modprobe.d/all-net-blacklist.conf ; \
+         /bin/touch /etc/modprobe.d ; \
+         /bin/sync ; \
+     fi'

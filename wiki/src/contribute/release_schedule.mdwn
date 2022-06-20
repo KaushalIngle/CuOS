@@ -1,0 +1,84 @@
+[[!meta title="Release schedule"]]
+
+[[!toc levels=2]]
+
+Tails has a time-based release schedule, aligned with
+[Tor Browser release schedule](https://gitlab.torproject.org/tpo/applications/tor-browser/-/wikis/Release-Schedule),
+which itself depends on the
+[Firefox ESR
+(Extended Support Release) release schedule](https://wiki.mozilla.org/Release_Management/Calendar).
+In the examples below we'll assume a 4-weeks release cycle.
+
+We generally publish 2 or 3 major Tails releases every year.
+Between two consecutive major releases, we publish as many bugfix
+releases as required by Mozilla's release schedule: generally,
+between 1 and 4 bugfix releases.
+
+On top of that, we occasionally publish an extra emergency release in
+order to quickly fix a critical security vulnerability that became
+publicly known or is being used in the wild. The most common example
+of this is when Mozilla publishes a ["chemspill"
+release](https://wiki.mozilla.org/Release_Management/Chemspill)
+of Firefox.
+
+See our actual [[release schedule|contribute/calendar]].
+
+Schedule
+========
+
+	  /          2w       \/   2w    /4d\
+	                                     
+	previous            freeze        Tor Browser
+	ESR + Tails         + RC1         ready for QA
+	release                |                |
+	  |                    |                |  new ESR
+	  |                    |                |  + Tails release
+	  ↓                    ↓                ↓  ↓
+	._________._________._________._________._________.
+	0         1         2         3         4
+
+In the above:
+
+* *Tor Browser ready for QA* means that binaries for the upcoming Tor Browser
+  are available, ready for testing, but they are not officially out yet: it has to go
+  through Tor's QA process first.
+* *ESR + Tails release* means Mozilla announces the new Firefox ESR,
+  and we release a new version of Tails (roughly) the same day.
+  This usually happens on Tuesday.
+
+What if things go wrong?
+========================
+
+Postponing the final release causes problems for those who have
+scheduled time for post-release user support, press work, etc..
+
+Also, changing our mind (i.e. releasing a bugfix release instead of
+a major one) => switching bugfix/major release schedule for the future
+is probably not an option either.
+
+So we need to have a pessimistic enough RC->final schedule to handle
+unexpected issues.
+
+Reverting the faulty feature branch is an option too.
+
+<a id="versioning"></a>
+
+Versioning scheme
+=================
+
+* We always increment the first number when switching to a new major
+  release of Debian. When we do this we reset the second number to zero.
+* We also increment the first number whenever it make sense for Tails
+  only (user-visible changes).
+* The second number is incremented for every release that does not
+  increment the first number.
+* We add an extra, third number for emergency releases.
+
+Release candidates and beta releases
+====================================
+
+Most Tails stable releases are published directly, without a prior beta release
+or release candidate (RC). But some changes deserve more caution, in which case
+we often choose to release a beta or RC. See how to [[decide whether to release
+a beta or
+a RC|contribute/working_together/interfaces/developers_and_release_managers#beta-or-rc]].

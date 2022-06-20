@@ -1,0 +1,94 @@
+[[!meta title="Guidelines for usability testing"]]
+
+Usability testing is an irreplaceable tool to understand user experience and
+take decisions while doing design iterations. Here are a few guidelines
+to take the most of it.
+
+Checklist
+=========
+
+    - [ ] Screening
+      - [ ] Create screening survey
+      - [ ] Test screening survey
+      - [ ] Send link to screening survey
+      - [ ] Select participants using [screening spreadsheet](https://gitlab.tails.boum.org/tails/ux/-/raw/master/tools/participants_screener.fods) in `ux/private`
+      - [ ] Answer to all candidates using [email templates](https://tails.boum.org/contribute/how/user_experience/screening)
+      - [ ] Only confirm after sound check
+    - [ ] Preparation
+      - [ ] Prepare the tasks
+      - [ ] Adapt [research information sheet](https://gitlab.tails.boum.org/tails/ux/-/raw/master/tools/research_information_sheet.fodt)
+      - [ ] Adapt [consent form](https://gitlab.tails.boum.org/tails/ux/-/raw/master/tools/consent_form.fodt)
+      - [ ] Adapt [checklist](https://gitlab.tails.boum.org/tails/ux/-/raw/master/tools/user_testing_checklist.fodt)
+      - [ ] Bring mouse and keyboard
+      - [ ] Test the [recording setup](https://tails.boum.org/contribute/how/user_experience/recording)
+      - [ ] Prepare incentives
+      - [ ] Print
+        - [ ] Research information sheet
+        - [ ] Consent forms
+        - [ ] Tasks
+    - [ ] Analysis
+      - [ ] Create [rainbow table](https://gitlab.tails.boum.org/tails/ux/-/raw/master/tools/rainbow_table.fods)
+      - [ ] Prioritize work together with the developers
+      - [ ] Prepare [video clips](https://tails.boum.org/contribute/how/user_experience/clip)
+      - [ ] Share highlights on tails-dev
+      - [ ] Save candidates in email database
+      - [ ] Add to achievements.mdwn
+      - [ ] Get reimbursed for travel, incentives, etc.
+      - [ ] Improve [checklist](https://tails.boum.org/contribute/how/user_experience/testing/)
+
+During the tests
+================
+
+1. Welcome the participant:
+
+   - Do a little icebreaker to present yourself, gather context information about the tester and make everybody at ease.
+   - Explain the context of the user experience up to the point where the test starts.
+   - Don't explain what you are going to test, nor its intended results.
+   - Explain the methodology of the test:
+       - Designers are not testing the participant but the product.
+       - Designers will not answer the participant's questions.
+       - Tester should speak out loud.
+       - Tester should express their doubts.
+       - Designers want to read the participant's mind.
+
+1. Conduct the test:
+
+   - Designers should be two people working in a team:
+     - One interacting with the participant:
+       - Presents the test.
+       - Ask questions:
+         - Always ask open questions.
+         - Ask questions about past information (possibly after closing the screen).
+       - Never answers to questions.
+     - One taking notes:
+       - Describe the tester.
+       - What is the tester saying or experiencing.
+       - What is the tester doing, step by step.
+       - Do not interpret yet what's going on.
+
+   - Debrief the test with the participant:
+     - Global feeling
+     - Go back to key points
+     - Listen to ideas only to better understand problems
+
+   - Doing multiple tests:
+     - If testing different prototypes, alternate the order.
+     - All tests after the first one will be biased.
+     - Don't reuse participants to test the same design.
+
+1. Debrief after each test:
+
+   - Check notes.
+   - List issues or points of interest from note taking:
+     - In a spreadsheet (called *rainbow table*):
+       - Lines are issues.
+       - Columns are testers.
+     - See these examples rainbow tables from testing
+       the [Welcome Screen](https://tails.boum.org/blueprint/greeter_revamp_UI/rainbow_-_greeter_-_20151105.ods), aka "Tails Greeter"
+       and the [*Installation Assistant*](https://redmine.tails.boum.org/code/attachments/download/1245/ux-testing-20151120.ods)
+   - Compact information.
+
+1. Interpret the results after all tests:
+
+   - Sort issues by frequency.
+   - Target the three most frequent issues in your next design iteration.

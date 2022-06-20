@@ -1,0 +1,607 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-05-31 09:31+0200\n"
+"PO-Revision-Date: 2022-05-04 21:23+0000\n"
+"Last-Translator: Chre <tor@renaudineau.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.9.1\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta title=\"Tails 4.0 is out\"]]\n"
+msgstr "[[!meta title=\"Tails 4.0 est sorti\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta date=\"Tue, 22 Oct 2019 12:34:56 +0000\"]]\n"
+msgstr "[[!meta date=\"Tue, 22 Oct 2019 12:34:56 +0000\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!pagetemplate template=\"news.tmpl\"]]\n"
+msgstr "[[!pagetemplate template=\"news.tmpl\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!tag announce]]\n"
+msgstr "[[!tag announce]]\n"
+
+#. type: Plain text
+#, fuzzy
+#| msgid ""
+#| "We are especially proud to present you Tails 4.0, the first version of "
+#| "Tails based on Debian 10 (Buster). It brings new versions of most of the "
+#| "software included in Tails and some important usability and performance "
+#| "improvements. Tails 4.0 introduces more changes than any other version "
+#| "since years."
+msgid ""
+"We are especially proud to present you Tails 4.0, the first version of Tails "
+"based on Debian 10 (Buster). It brings new versions of most of the software "
+"included in Tails and some important usability and performance improvements. "
+"Tails 4.0 introduces more changes than any other version since years."
+msgstr ""
+"Nous avons la fierté de vous présenter Tails 4.0, la première version de "
+"Tails basée sur Debian 10 (Buster). Elle apporte de nouvelles versions de la "
+"plupart des logiciels inclus dans Tails et des améliorations importantes "
+"d'utilisabilité et de performance. Tails 4.0 introduit plus de changements "
+"que n'importe quelle autre version depuis des années."
+
+#. type: Plain text
+msgid ""
+"This release also fixes [[many security issues|security/"
+"Numerous_security_holes_in_3.16]]. You should upgrade as soon as possible."
+msgstr ""
+"Cette version corrige également [[plusieurs failles de sécurité|security/"
+"Numerous_security_holes_in_3.16]]. Vous devriez mettre à jour dès que "
+"possible."
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!toc levels=1]]\n"
+msgstr "[[!toc levels=1]]\n"
+
+#. type: Title #
+#, no-wrap
+msgid "Changes and upgrades"
+msgstr "Mises à jour et changements"
+
+#. type: Title ##
+#, no-wrap
+msgid "Major changes to included software"
+msgstr "Changements majeurs dans les logiciels inclus"
+
+#. type: Bullet: '- '
+msgid ""
+"Replace *KeePassX* with [*KeePassXC*](https://keepassxc.org/), which is more "
+"actively developed."
+msgstr ""
+"Remplacement de *KeePassX* par [*KeePassXC*](https://keepassxc.org/) qui est "
+"développé plus activement."
+
+#. type: Plain text
+#, no-wrap
+msgid "  [[!img keepassxc.png link=\"no\" alt=\"\"]]\n"
+msgstr "  [[!img keepassxc.png link=\"no\" alt=\"\"]]\n"
+
+#. type: Bullet: '- '
+msgid ""
+"Update *OnionShare* from 0.9.2 to 1.3.2, which includes a lot of usability "
+"improvements."
+msgstr ""
+"Mise à jour de *OnionShare* de la version 0.9.2 à la version 1.3.2 qui "
+"inclue un grand nombre d'améliorations d'utilisabilité."
+
+#. type: Plain text
+#, no-wrap
+msgid "  [[!img onionshare.png link=\"no\" alt=\"\"]]\n"
+msgstr "  [[!img onionshare.png link=\"no\" alt=\"\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "<a id=\"tor-browser\"></a>\n"
+msgstr "<a id=\"tor-browser\"></a>\n"
+
+#. type: Plain text
+msgid "- Update *Tor Browser* to 9.0:"
+msgstr "- Mise à jour du *Navigateur Tor* vers la version 9.0 :"
+
+#. type: Bullet: '  - '
+msgid ""
+"A gray border, called *letter boxing*, is now displayed around the content "
+"of web pages when you resize the window of Tor Browser."
+msgstr ""
+"Un bord gris, appelé *letter boxing*, s'affiche désormais autour du contenu "
+"des pages web lorsque vous redimensionnez la fenêtre du Navigateur Tor."
+
+#. type: Plain text
+#, no-wrap
+msgid "    [[!img doc/anonymous_internet/Tor_Browser/letter-boxing.png link=\"no\" alt=\"\"]]\n"
+msgstr "    [[!img doc/anonymous_internet/Tor_Browser/letter-boxing.png link=\"no\" alt=\"\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"    Letter boxing prevents websites from identifying your browser based\n"
+"    on the size of its window. Letter boxing replaces the yellow warning that\n"
+"    was displayed until now when maximizing Tor Browser.\n"
+msgstr ""
+"    Le letter boxing empêche les sites web de vous identifier en se basant sur la taille de leurs\n"
+"    fenêtres lors de votre navigation. Le letter boxing remplace l'avertissement jaune qui\n"
+"    était affiché jusqu'à présent lorsque le Navigateur Tor était maximisé.\n"
+
+#. type: Bullet: '  - '
+msgid "The onion icon has been removed from the top bar."
+msgstr "L’icône oignon a été retiré de la barre supérieure."
+
+#. type: Plain text
+#, fuzzy, no-wrap
+#| msgid ""
+#| "    To switch to a new identity, choose\n"
+#| "    <span class=\"menuchoice\">\n"
+#| "      <span class=\"guimenu\">[[!img lib/open-menu.png class=symbolic link=\"no\" alt=\"\"]]</span>&nbsp;▸\n"
+#| "      <span class=\"guimenuitem\">New Identity</span></span>.\n"
+msgid ""
+"    To switch to a new identity, choose\n"
+"    <span class=\"menuchoice\">\n"
+"      <span class=\"guimenu\">[[!img lib/open-menu.png class=symbolic link=\"no\" alt=\"\"]]</span>&nbsp;▸\n"
+"      <span class=\"guimenuitem\">New Identity</span></span>.\n"
+msgstr ""
+"    Pour passer à une nouvelle identité, choisir\n"
+"    <span class=\"menuchoice\">\n"
+"      <span class=\"guimenu\">[[!img lib/open-menu.png class=symbolic link=\"no\" alt=\"\"]]</span>&nbsp;▸\n"
+"      <span class=\"guimenuitem\">Nouvelle Identité</span></span>.\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "<a id=\"mat\"></a>\n"
+msgstr "<a id=\"mat\"></a>\n"
+
+#. type: Plain text
+msgid ""
+"- Update *MAT* from 0.6.1 to [0.8.0](https://0xacab.org/jvoisin/mat2/blob/"
+"master/CHANGELOG.md)"
+msgstr ""
+"- Mise à jour *MAT* de la version 0.6.1 à la version [0.8.0](https://0xacab."
+"org/jvoisin/mat2/blob/master/CHANGELOG.md)"
+
+#. type: Plain text
+#, no-wrap
+msgid "  *MAT* has no graphical interface of its own anymore.\n"
+msgstr "  *MAT* n'a plus d'interface graphique propre.\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "  To clean the metadata of a file:\n"
+msgstr "  Pour nettoyer les métadonnées d'un fichier :\n"
+
+#. type: Bullet: '  1. '
+msgid ""
+"Open the *Files* browser and navigate to the file that you want to clean."
+msgstr ""
+"Ouvrir le navigateur de *Fichiers* et naviguer vers le fichier que vous "
+"voulez nettoyer."
+
+#. type: Bullet: '  1. '
+msgid "Right-click (on Mac, click with two fingers) on the file."
+msgstr ""
+"Faire un clic droit (sur Mac, cliquez avec deux doigts) sur le fichier."
+
+#. type: Bullet: '  1. '
+msgid "Choose **Remove metadata**."
+msgstr "Choisir **Remove metadata**."
+
+#. type: Plain text
+#, no-wrap
+msgid "  [[!img mat.png link=\"no\" alt=\"\"]]\n"
+msgstr "  [[!img mat.png link=\"no\" alt=\"\"]]\n"
+
+#. type: Bullet: '- '
+msgid ""
+"Update *Linux* to 5.3.2. This should also improve the support for newer "
+"hardware (graphics, Wi-Fi, etc.)."
+msgstr ""
+"Mise à jour de *Linux* vers la version 5.3.2. Cela devrait également "
+"améliorer la prise en charge du matériel le plus récent (cartes graphiques, "
+"Wi-Fi, etc.)."
+
+#. type: Plain text
+#, no-wrap
+msgid "<a id=\"electrum\"></a>\n"
+msgstr "<a id=\"electrum\"></a>\n"
+
+#. type: Bullet: '- '
+msgid ""
+"Update *Electrum* from 3.2.3 to [3.3.8](https://github.com/spesmilo/electrum/"
+"blob/master/RELEASE-NOTES).  *Electrum* works again in Tails."
+msgstr ""
+"Mise à jour d'*Electrum* de la version 3.2.3 vers la version [3.3.8](https://"
+"github.com/spesmilo/electrum/blob/master/RELEASE-NOTES).  *Electrum* "
+"fonctionne de nouveau dans Tails."
+
+#. type: Bullet: '- '
+msgid ""
+"Update *Enigmail* to 2.0.12 and *gnupg* to 2.2.12, which mitigate [OpenPGP "
+"certificate flooding](https://dkg.fifthhorseman.net/blog/openpgp-certificate-"
+"flooding.html)."
+msgstr ""
+"Mise à jour d'*Enigmail* vers la version 2.0.12 et *gnupg* vers la version "
+"2.2.12, cela limite également la [saturation de certificat OpenPGP](https://"
+"dkg.fifthhorseman.net/blog/openpgp-certificate-flooding.html)."
+
+#. type: Plain text
+msgid "- Upgrade most other software, for example:"
+msgstr "- Mise à jour de la plupart des logiciels, par exemple :"
+
+#. type: Bullet: '  - '
+msgid ""
+"*Audacity* from 2.1.2 to [2.2.2](https://wiki.audacityteam.org/wiki/"
+"Audacity_Versions#whatsnew)"
+msgstr ""
+"*Audacity* de la version 2.1.2 vers la version [2.2.2](https://wiki."
+"audacityteam.org/wiki/Audacity_Versions#whatsnew)"
+
+#. type: Bullet: '  - '
+msgid ""
+"*GIMP* from 2.8.18 to [2.10.8](https://docs.gimp.org/2.10/en/gimp-"
+"introduction-whats-new.html)"
+msgstr ""
+"*GIMP* de la version 2.8.18 vers la version [2.10.8](https://docs.gimp."
+"org/2.10/en/gimp-introduction-whats-new.html)"
+
+#. type: Bullet: '  - '
+msgid ""
+"*Inkscape* from 0.92.1 to [0.92.4](https://inkscape.org/release/"
+"inkscape-0.92.4/)"
+msgstr ""
+"*Inkscape* de la version 0.92.1 vers la version [0.92.4](https://inkscape."
+"org/release/inkscape-0.92.4/)"
+
+#. type: Bullet: '  - '
+msgid ""
+"*LibreOffice* from 5.2.7 to [6.1.5](https://wiki.documentfoundation.org/"
+"ReleaseNotes/6.0)"
+msgstr ""
+"*LibreOffice* de la version 5.2.7 vers la version [6.1.5](https://wiki."
+"documentfoundation.org/ReleaseNotes/6.0/fr)"
+
+#. type: Bullet: '  - '
+msgid "*git* from 2.11.0 to 2.20.1"
+msgstr "*git* de la version 2.11.0 vers la version 2.20.1"
+
+#. type: Bullet: '  - '
+msgid "*Tor* to 0.4.1.6"
+msgstr "*Tor* vers la version 0.4.1.6"
+
+#. type: Plain text
+msgid "- Remove *Scribus*."
+msgstr "- Suppression de *Scribus*."
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  You can install *Scribus* again using the\n"
+"  *[[Additional Software|doc/first_steps/additional_software]]* feature.\n"
+msgstr ""
+"  Vous pouvez de  nouveau installer *Scribus* à l'aide de\n"
+"  la fonction *[[Logiciels supplémentaires|doc/first_steps/additional_software]]*.\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "<a id=\"greeter\"></a>\n"
+msgstr "<a id=\"greeter\"></a>\n"
+
+#. type: Title ##
+#, no-wrap
+msgid "Usability improvements to the Welcome Screen"
+msgstr "Amélioration de l'utilisabilité de l'Écran de bienvenue"
+
+#. type: Plain text
+msgid ""
+"We improved various aspects of the usability of the Welcome Screen, "
+"especially for non-English users:"
+msgstr ""
+"Nous avons amélioré divers aspects de l'utilisabilité de l'Écran de "
+"bienvenue, notamment pour les personnes non anglophones :"
+
+#. type: Bullet: '- '
+msgid ""
+"To make it easier to select a language, we curated the list of proposed "
+"languages by removing the ones that had too little translations to be "
+"useful. We also clarified how Chinese is listed by having different entries "
+"for simplified and traditional Chinese."
+msgstr ""
+"Pour faciliter la sélection d'une langue, nous avons remanié la liste des "
+"langues proposées en supprimant celles qui sont trop peu traduites pour être "
+"utiles. Nous avons également clarifié la façon dont le chinois est "
+"répertorié en ayant des entrées distinctes pour le chinois simplifié et le "
+"chinois traditionnel."
+
+#. type: Plain text
+#, no-wrap
+msgid "  [[!img languages.png link=\"no\" alt=\"\"]]\n"
+msgstr "  [[!img languages.png link=\"no\" alt=\"\"]]\n"
+
+#. type: Plain text
+msgid "- We simplified the list of keyboard layouts."
+msgstr "- Nous avons simplifié la liste des dispositions de clavier."
+
+#. type: Plain text
+msgid "- We fixed the **Formats** setting, which was not being applied."
+msgstr ""
+"- Nous avons corrigé le paramètre **Formats** qui n'était pas appliqué."
+
+#. type: Bullet: '- '
+msgid ""
+"We prevented additional settings to be applied when clicking on **Cancel** "
+"or **Back**."
+msgstr ""
+"Nous avons empêché que des paramètres supplémentaires soit appliqués lorsque "
+"l'on clique sur **Annuler** ou **Précédent**."
+
+#. type: Bullet: '- '
+msgid ""
+"We fixed the opening of help pages in other languages than English, when "
+"available."
+msgstr ""
+"Nous avons corrigé l'ouverture des pages d'aide dans d'autres langues que "
+"l'anglais, lorsqu'elles sont disponibles."
+
+#. type: Title ##
+#, no-wrap
+msgid "Performance and usability improvements"
+msgstr "Amélioration des performances et de l'utilisabilité"
+
+#. type: Plain text
+msgid "- Tails 4.0 starts 20% faster."
+msgstr "- Tails 4.0 démarre 20% plus rapidement."
+
+#. type: Plain text
+msgid "- Tails 4.0 requires about 250 MB less of RAM."
+msgstr "- Tails 4.0 nécessite autour de 250 Mo de mémoire vive en moins."
+
+#. type: Bullet: '- '
+msgid ""
+"Tails 4.0 is 47 MB smaller to download than Tails 3.16, despite all these "
+"changes."
+msgstr ""
+"Le téléchargement de Tails 4.0 est plus petit de 47 Mo par rapport à Tails "
+"3.16, malgré tous ces changements."
+
+#. type: Plain text
+msgid "- Add support for *Thunderbolt* devices."
+msgstr "- Ajout de la prise en charge des périphériques *Thunderbolt*."
+
+#. type: Plain text
+msgid "- The screen keyboard is easier to use."
+msgstr "- Le clavier visuel est plus facile à utiliser."
+
+#. type: Plain text
+#, no-wrap
+msgid "  [[!img screen-keyboard.png link=\"no\" alt=\"\"]]\n"
+msgstr "  [[!img screen-keyboard.png link=\"no\" alt=\"\"]]\n"
+
+#. type: Bullet: '- '
+msgid ""
+"Make it possible to show the password of the persistent storage when "
+"creating one."
+msgstr ""
+"Permettre l'affichage du mot de passe du stockage persistant lors de sa "
+"création."
+
+#. type: Plain text
+msgid "- Add support for USB tethering from iPhone."
+msgstr "- Ajout de la prise en charge du partage de connexion USB pour iPhone."
+
+#. type: Title ##
+#, no-wrap
+msgid "New documentation pages"
+msgstr "Nouvelles pages de documentation"
+
+#. type: Bullet: '- '
+msgid ""
+"[[How to securely erasing an entire device|doc/encryption_and_privacy/"
+"secure_deletion#erase-device]], including USB sticks and SSDs."
+msgstr ""
+"[[Effacer de manière sécurisée tout un périphérique|doc/"
+"encryption_and_privacy/secure_deletion#erase-device]], dont les clés USB et "
+"les disques SSD."
+
+#. type: Bullet: '- '
+msgid ""
+"[[How to backup your persistent volume|doc/first_steps/persistence/backup]]."
+msgstr ""
+"[[Créer une sauvegarde de votre stockage persistant|doc/first_steps/"
+"persistence/backup]]."
+
+#. type: Title ##
+#, no-wrap
+msgid "Other changes"
+msgstr "Autres changements"
+
+#. type: Plain text
+msgid ""
+"- Use the default bookmarks from *Tor Browser* instead of our own default "
+"bookmarks. ([[!tails_ticket 15895]])"
+msgstr ""
+"- Utilisation des marques-pages par défaut du  *Navigateur Tor* au lieu de "
+"nos propres marques-pages par défaut. ([[!tails_ticket 15895]])"
+
+#. type: Plain text
+msgid ""
+"- Remove the *Home* launcher from the desktop. ([[!tails_ticket 16799]])"
+msgstr ""
+"- Retrait du lanceur *Dossier personnel* du bureau. ([[!tails_ticket 16799]])"
+
+#. type: Plain text
+msgid "- Remove the default accounts in *Pidgin*. ([[!tails_ticket 16744]])"
+msgstr ""
+"- Retrait des comptes par défaut dans *Pidgin*. ([[!tails_ticket 16744]])"
+
+#. type: Title #
+#, no-wrap
+msgid "Fixed problems"
+msgstr "Problèmes corrigés"
+
+#. type: Plain text
+msgid ""
+"For more details, read our [[!tails_gitweb debian/changelog "
+"desc=\"changelog\"]]."
+msgstr ""
+"Pour plus de détails, lisez notre [[!tails_gitweb debian/changelog "
+"desc=\"liste des changements\"]]."
+
+#. type: Plain text
+msgid ""
+"- Allow opening persistent volumes from other Tails USB sticks. ([[!"
+"tails_ticket 16789]])"
+msgstr ""
+"- Autoriser l'ouverture des volumes persistants depuis d'autres clés USB "
+"Tails. ([[!tails_ticket 16789]])"
+
+#. type: Plain text
+msgid "- Fix the delivery of WhisperBack reports. ([[!tails_ticket 17110]])"
+msgstr ""
+"- Correction  de la transmission des rapports WhisperBack. ([[!tails_ticket "
+"17110]])"
+
+#. type: Plain text
+#, no-wrap
+msgid "<a id=\"known-issues\"></a>\n"
+msgstr "<a id=\"known-issues\"></a>\n"
+
+#. type: Title #
+#, no-wrap
+msgid "Known issues"
+msgstr "Problèmes connus"
+
+#. type: Plain text
+#, no-wrap
+msgid "<!--\n"
+msgstr "<!--\n"
+
+#. type: Plain text
+msgid ""
+"Copy the known issues from the previous version if they haven't been solved "
+"or move them to /support/known_issues if more appropriate."
+msgstr ""
+"Copy the known issues from the previous version if they haven't been solved "
+"or move them to /support/known_issues if more appropriate."
+
+#. type: Plain text
+#, no-wrap
+msgid "-->\n"
+msgstr "-->\n"
+
+#. type: Plain text
+msgid "None specific to this release."
+msgstr "Aucun spécifique à cette version."
+
+#. type: Plain text
+msgid "See the list of [[long-standing issues|support/known_issues]]."
+msgstr ""
+"Voir la liste des [[problèmes connus de longue date|support/known_issues]]."
+
+#. type: Title #
+#, no-wrap
+msgid "Get Tails 4.0"
+msgstr "Obtenir Tails 4.0"
+
+#. type: Title ##
+#, no-wrap
+msgid "To upgrade your Tails USB stick and keep your persistent storage"
+msgstr "Pour mettre à jour votre clé USB Tails et conserver votre stockage persistant"
+
+#. type: Plain text
+msgid "Automatic upgrades are not available to 4.0."
+msgstr ""
+"Les mises à jour automatiques ne sont pas disponibles vers la version 4.0."
+
+#. type: Plain text
+msgid "All users must do a [[manual upgrade|doc/upgrade/#manual]]."
+msgstr ""
+"Tous les utilisateurs doivent faire une [[mise à jour manuelle|doc/upgrade/"
+"#manual]]."
+
+#. type: Title ##
+#, no-wrap
+msgid "To install Tails on a new USB stick"
+msgstr "Pour installer Tails sur une nouvelle clé USB"
+
+#. type: Plain text
+msgid "Follow our installation instructions:"
+msgstr "Suivez nos instructions d'installation :"
+
+#. type: Bullet: '  - '
+msgid "[[Install from Windows|install/windows]]"
+msgstr "[[Installer depuis Windows|install/windows]]"
+
+#. type: Bullet: '  - '
+msgid "[[Install from macOS|install/mac]]"
+msgstr "[[Installer depuis macOS|install/mac]]"
+
+#. type: Bullet: '  - '
+msgid "[[Install from Linux|install/linux]]"
+msgstr "[[Installer depuis Linux|install/linux]]"
+
+#. type: Plain text
+#, no-wrap
+msgid "<div class=\"caution\"><p>All the data on this USB stick will be lost.</p></div>\n"
+msgstr "<div class=\"caution\"><p>Toutes les données sur cette clé USB seront perdues.</p></div>\n"
+
+#. type: Title ##
+#, no-wrap
+msgid "To download only"
+msgstr "Pour seulement télécharger"
+
+#. type: Plain text
+msgid ""
+"If you don't need installation or upgrade instructions, you can directly "
+"download Tails 4.0:"
+msgstr ""
+"Si vous n'avez pas besoin d'instructions d'installation ou de mise à jour, "
+"vous pouvez télécharger directement Tails 4.0  :"
+
+#. type: Bullet: '  - '
+msgid "[[For USB sticks (USB image)|install/download]]"
+msgstr "[[Pour clés USB (image USB)|install/download]]"
+
+#. type: Bullet: '  - '
+msgid "[[For DVDs and virtual machines (ISO image)|install/download-iso]]"
+msgstr "[[Pour DVD et machines virtuelles (image ISO)|install/download-iso]]"
+
+#. type: Title #
+#, no-wrap
+msgid "What's coming up?"
+msgstr "Et ensuite ?"
+
+#. type: Plain text
+msgid "Tails 4.1 is [[scheduled|contribute/calendar]] for December 3."
+msgstr "Tails 4.1 est [[prévu|contribute/calendar]] pour le 3 décembre."
+
+#. type: Plain text
+msgid "Have a look at our [[!tails_roadmap]] to see where we are heading to."
+msgstr ""
+"Jetez un œil à notre [[feuille de route|contribute/roadmap]] pour savoir ce "
+"que nous avons en tête."
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"We need your help and there are many ways to [[contribute to\n"
+"Tails|contribute]] (<a href=\"https://tails.boum.org/donate/?r=4.0\">donating</a> is only one of\n"
+"them). Come [[talk to us|about/contact#tails-dev]]!\n"
+msgstr ""
+"Nous avons besoin de votre aide et il y a de nombreuses manières de [[contribuer à\n"
+"Tails|contribute]] (<a href=\"https://tails.boum.org/donate/?r=4.0\">faire un don</a> est seulement l'une\n"
+"d'entre elles). Venez [[discuter avec nous|about/contact#tails-dev]] !\n"

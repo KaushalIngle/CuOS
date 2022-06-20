@@ -1,0 +1,46 @@
+--- a/etc/apparmor.d/abstractions/base	2021-04-03 06:09:19.000000000 +0000
++++ b/etc/apparmor.d/abstractions/base	2021-10-14 11:54:59.871759548 +0000
+@@ -30,6 +30,7 @@
+   /etc/locale/**                 r,
+   /etc/locale.alias              r,
+   /etc/localtime                 r,
++  /etc/tor/torsocks.conf         r,
+   /etc/writable/localtime        r,
+   /usr/share/locale-bundle/**    r,
+   /usr/share/locale-langpack/**  r,
+@@ -68,9 +69,9 @@
+   /opt/*-linux-uclibc/lib/ld-uClibc*so* mr,
+ 
+   # we might as well allow everything to use common libraries
+-  /{usr/,}lib{,32,64}/**                r,
+-  /{usr/,}lib{,32,64}/**.so*       mr,
+-  /{usr/,}lib/@{multiarch}/**            r,
++  /{usr/,}lib{,32,64}/{[^l],l[^i],li[^v],liv[^e],live[^/]}**           r,
++  /{usr/,}lib{,32,64}/{[^l],l[^i],li[^v],liv[^e],live[^/]}**.so*       mr,
++  /{usr/,}lib/@{multiarch}/{[^l],l[^i],li[^v],liv[^e],live[^/]}**      r,
+   /{usr/,}lib/@{multiarch}/**.so*   mr,
+   /{usr/,}lib/tls/i686/{cmov,nosegneg}/*.so*    mr,
+   /{usr/,}lib/i386-linux-gnu/tls/i686/{cmov,nosegneg}/*.so*    mr,
+--- a/etc/apparmor.d/abstractions/ubuntu-helpers	2018-11-01 11:52:15.000000000 +0000
++++ b/etc/apparmor.d/abstractions/ubuntu-helpers	2019-01-05 11:30:54.808397903 +0000
+@@ -65,8 +65,8 @@
+   # in limited libraries so glibc's secure execution should be enough to not
+   # require the santized_helper (ie, LD_PRELOAD will only use standard system
+   # paths (man ld.so)).
+-  /usr/lib/chromium-browser/chromium-browser-sandbox PUxr,
+-  /usr/lib/chromium{,-browser}/chrome-sandbox PUxr,
++  # /usr/lib/chromium-browser/chromium-browser-sandbox PUxr,
++  # /usr/lib/chromium{,-browser}/chrome-sandbox PUxr,
+   /opt/google/chrome{,-beta,-unstable}/chrome-sandbox PUxr,
+   /opt/google/chrome{,-beta,-unstable}/google-chrome Pixr,
+   /opt/google/chrome{,-beta,-unstable}/chrome Pixr,
+@@ -75,7 +75,8 @@
+   # Full access
+   / r,
+   /** rwkl,
+-  /{,usr/,usr/local/}lib{,32,64}/{,**/}*.so{,.*} m,
++  /lib/{[^l],l[^i],li[^v],liv[^e],live[^/]}{,**/}*.so{,.*} m,
++  /usr{/,/local/}lib{,32,64}/{,**/}*.so{,.*} m,
+ 
+   # Dangerous files
+   audit deny owner /**/* m,              # compiled libraries

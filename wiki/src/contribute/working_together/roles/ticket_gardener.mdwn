@@ -1,0 +1,151 @@
+[[!meta title="Ticket gardener"]]
+[[!meta robots="noindex"]]
+
+The aim of ticket gardening is to ensure that items tracked on GitLab stay
+relevant and contain helpful information for bringing a task to completion.  To
+achieve this goal contributors and teams need to be made aware of the existence
+of issues that need their input so they can self-organize and prioritize their
+work. Issues that are not relevant anymore should be closed.
+
+This work should be done every quarter.
+
+[[!toc levels=3]]
+
+# Tasks
+
+<a id="manual"></a>
+
+## Manual tasks
+
+### Go through relevant GitLab views
+
+* [[!tails_gitlab
+  groups/tails/-/issues?label_name%5B%5D=T%3AWait
+  desc="`T:Wait` label"]]:
+  check if what was blocking was eventually resolved outside of Tails.
+  Issues should either have an assignee, their `T:` label
+  requalified, be rejected, or stay in this state.
+
+* [[!tails_gitlab
+  groups/tails/-/issues?scope=all&utf8=✓&state=opened&label_name%5B%5D=Doing&assignee_id=None
+  desc="WIP without assignee"]]:
+  identify issues that have a majority of work completed and could
+  somewhat easily be finished. Create a list of those issues and send
+  them to the responsible team; if that team cannot handle these issues,
+  set the status label to something other than *Doing*.
+
+### Identify and fix inadequate milestone
+
+Some issues are missed by our automated
+setup. These issues are those whose milestone has been
+postponed after the N last releases by the Release Manager: every such
+milestone bump counts as an update so there's no chance the issue will
+ever be identified as stalled. Hence we need to manually
+identify these issues and remove their milestone.
+
+To select the corresponding issues:
+
+1. List [[!tails_gitlab groups/tails/-/issues desc="issues in the `tails` group"]]
+2. Filter the list to only include issues whose milestone is set to the next
+   Tails release.
+3. Filter the list to only include issues that were postponed at least twice
+   in a row by the RM: they have `missed:$version` labels.
+
+#### Criteria
+
+Situations when dropping the milestone would be inadequate:
+
+* If the issue was (re)assigned to the assignee recently.
+* If there's been progress but it's not documented on the issue.
+* If it's part of a sponsor deliverable.
+  - If the official deadline is in the future, most of the time we don't want
+    to touch the milestone.
+
+Whether it's appropriate to drop the milestone depends on:
+
+* When the last action on the issue by the assignee was performed. For
+  example, if they did not update the issue since 3 months or more.
+* If the issue was recently postponed be the RM and not by the assignee
+  themselves — the latter would suggest they have it in mind and are updating
+  their plans.
+* Whether there's an assignee. If there's none but the issue was postponed a few times, then:
+  - Either it's important and it should be put on the plate of a core team.
+  - Or it's unimportant and the milestone should be dropped: keeping it
+    has little value. If someone wants to track
+    those issues, there surely are better ways.
+* Whether the issue is blocked by anything (other issues or what not) that's
+  out of the hands of the assignee.
+* How safe/privileged is the assignee's position in Tails. For contributors
+  that hold more power than average we can assume they know how to revert our
+  changes.
+
+#### Template comment
+
+We have a [[template message|ticket_gardener/inadequate_milestone]]
+that we can use as a basis to explain why we're removing the milestone.
+
+<a id="automated"></a>
+
+## Automated tasks
+
+Make sure dependencies are installed:
+
+    sudo apt install -y python3-django python3-gitlab podman
+
+To avoid unneeded overhead in the next step, it can be good to first run a
+cleanup of GitLab users (see [[!tails_gitlab tails/sysadmin/-/issues/17823]]
+for latest sane parameters):
+
+    GITLAB_NAME=TailsRoot ./bin/gitlab-users-cleanup \
+        --min-creation-age='29 days' \
+        --min-inactivity='28 days' \
+        --active \
+        --max-post-sign-up-activity='120 days' \
+        --max-contribution-events=0 \
+        --action=deactivate-or-block
+
+To run the automated triaging processes described below, execute
+the following commands:
+
+    ./config/gitlab-triage/bin/ensure-up-to-date-container-image && \
+    ./bin/gitlab-triage-gardener \
+        --host-url "$(bin/gitlab-url TailsGardener)" \
+        --token "$(bin/gitlab-api-token TailsGardener)"
+
+This can take a few dozens of minutes to complete.
+You can pass any extra `gitlab-triage` option, such as `--dry-run`.
+
+Implementation:
+
+ - uses [GitLab Triage](https://gitlab.com/gitlab-org/gitlab-triage)
+ - [[!tails_gitweb bin/gitlab-triage-gardener]]
+ - [[!tails_gitweb_dir config/gitlab-triage]]
+
+### Stalled WIP
+
+* Scope = issues assigned to somebody, labeled *Doing*,
+  and not updated for a while
+
+* Output = a summary issue, which:
+   - mentions each GitLab user who has such issues assigned to them;
+     this adds an item to the To-Do list of these users
+   - lists these issues, grouped by assignee
+
+### Stalled validation
+
+* Scope = issues assigned to somebody, labeled *Needs Validation*,
+  and not updated for a while
+
+* Output = a summary issue, which:
+   - mentions each GitLab user who has such issues assigned to them;
+     this adds an item to the To-Do list of these users
+   - lists these issues, grouped by assignee
+
+### Stalled merge requests
+
+* Scope = merge requests assigned to somebody not updated for a while
+
+* Output = a summary issue, which:
+   - mentions each GitLab user who has such MRs assigned to them;
+     this adds an item to the To-Do list of these users
+   - lists these MRs, grouped by assignee

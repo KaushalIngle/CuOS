@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-10-22 02:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sr_Latn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Content of: <div>
+msgid "[[!meta title=\"Tell us about your problem\"]]"
+msgstr ""
+
+#. type: Content of: outside any tag (error?)
+msgid ""
+"[[!meta stylesheet=\"donate/canceled\" rel=\"stylesheet\" title=\"\"]] [[!"
+"meta stylesheet=\"hide-breadcrumbs\" rel=\"stylesheet\" title=\"\"]] [[!meta "
+"stylesheet=\"hide-donate-banner\" rel=\"stylesheet\" title=\"\"]] [[!meta "
+"robots=\"noindex\"]]"
+msgstr ""
+
+#. type: Content of: <div>
+msgid "[[!img canceled.png link=\"no\" alt=\"\"]]"
+msgstr ""
+
+#. type: Content of: <div><div><p>
+msgid "Your payment was canceled."
+msgstr ""
+
+#. type: Content of: <div><div><p>
+msgid ""
+"If you had a technical problem or got annoyed while donating, please leave "
+"us anonymous feedback below. We will do our best to make it easier for you "
+"to support our work."
+msgstr ""
+
+#. type: Content of: <div><div><form><p>
+msgid "<textarea name=\"feedback\"></textarea>"
+msgstr ""
+
+#. type: Content of: <div><div><form><p>
+msgid "<input type=\"submit\" value=\"Send feedback\" />"
+msgstr ""
+
+#. type: Content of: <div><div>
+msgid ""
+"[[!inline pages=\"donate/canceled/others.inline\" raw=\"yes\" sort=\"age\"]]"
+msgstr ""
+
+msgid "[[!meta title=\"Payment canceled\"]]\n"
+msgstr "[[!meta title=\"Bezahlvorgang abgebrochen\"]]\n"
+
+msgid ""
+"If you faced technical problems or were annoyed by something in the process, "
+"we are very interested in hearing about it."
+msgstr ""
+"Falls technische Probleme aufgetreten sind oder Sie durch etwas in dem "
+"Vorgang aufgehalten wurden, wären wir sehr daran interessiert, mehr darüber "
+"zu erfahren."
+
+msgid "Please contact us at <mailto:tails-fundraising@boum.org>."
+msgstr "Bitte kontaktieren Sie uns unter <mailto:tails-fundraising@boum.org>."

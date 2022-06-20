@@ -1,0 +1,53 @@
+This is the SandBox.
+
+----
+
+*emphasised* text.
+
+# GitLab syntax
+
+- MR: !123
+- issue: #18079
+
+# Header
+
+> This is a blockquote.
+>
+> This is the first level of quoting.
+>
+> > This is nested blockquote.
+>
+> Back to the first level.
+
+Numbered list:
+
+1. First item.
+1. Another.
+* nesting them
+* more nests
+1. And another..
+
+Bulleted list:
+
+* *item*
+* item
+  - 1st item in nested list
+  - 2nd item in nested list
+  - 3rd item in nested list
+
+Internal:
+
+* <http://tails.boum.org/bla>
+* <https://tails.boum.org/bla>
+* <http://dl.amnesia.boum.org/bla>
+* <https://dl.amnesia.boum.org/bla>
+* <a href="http://example.com/bla" class="use-mirror-pool">bla</a>
+
+External:
+
+* <a href="http://example.com/bla">bla</a>
+* <a href="http://example.com/ble">ble</a>
+
+## Heading level 2
+
+Another test!

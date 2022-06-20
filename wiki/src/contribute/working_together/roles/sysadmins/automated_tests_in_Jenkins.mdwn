@@ -1,0 +1,143 @@
+[[!meta title="Automated ISO/IMG tests on Jenkins"]]
+[[!meta robots="noindex"]]
+
+[[!toc levels=2]]
+
+# For developers
+
+## Full test suite vs. scenarios tagged `@fragile`
+
+Jenkins generally only runs scenarios that are _not_ tagged `@fragile`
+in Gherkin. But it runs the full test suite, including scenarios that
+are tagged `@fragile`, if the images under test were built:
+
+ - from a branch whose name ends with the `+force-all-tests` suffix
+ - from a tag
+ - from the `devel` branch
+ - from the `testing` branch
+
+Therefore, to ask Jenkins to run the full test suite on your topic
+branch, give it a name that ends `+force-all-tests`.
+
+## Trigger a test suite run without rebuilding images
+
+Every `build_Tails_ISO_*` job run triggers a test suite run
+(`test_Tails_ISO_*`), so most of the time, we don't need
+to manually trigger test suite runs.
+
+However, in some cases, all we want is to run the test suite multiple
+times on a given set of Tails images, that were already built. In such
+cases, it is useless and problematic to trigger a build job, merely to
+get the test suite running eventually:
+
+ - It's a waste of resources: it will keep isobuilders uselessly busy,
+   which makes the feedback loop longer for our other team-mates.
+ - It forces us to wait at least one extra hour before we get the
+   test suite feedback we want.
+
+Thankfully, there is a way to trigger a test suite run without having
+to rebuild images first. To do so:
+
+1. On the corresponding `test_Tail_ISO_*` job page, click _Build with
+   Parameters_.
+2. Set the `UPSTREAMJOB_BUILD_NUMBER` parameter the ID of the `build_Tail_ISO_*`
+   job build you want to test, for example `10`.
+3. Optionally, you may also pass arbitrary arguments to Cucumber
+   via the `EXTRA_CUCUMBER_ARGS` job parameter. For example:
+
+   - If you set this parameter to `features/mac_spoofing.feature`, then Cucumber
+     will run only the scenarios from the `mac_spoofing.feature` feature.
+   - If you set this parameter to `@automatic_upgrade`, then Cucumber
+     will run only the scenarios that are tagged `@automatic_upgrade`.
+
+## Known usability issues
+
+We collect a list of other known CI usability issues on a dedicated
+blueprint: [[!tails_blueprint CI_usability]].
+
+If something feels odd, misleading, or confusing, please check that page:
+perhaps it explains the problem you're experiencing; else, please add it.
+
+# For sysadmins
+
+## Old ISO used in the test suite in Jenkins
+
+Some tests like upgrading Tails are done against a Tails installation made from
+the previously released ISO and USB images. Those images are retrieved
+using wget from <https://iso-history.tails.boum.org>.
+
+In some cases (e.g when the _Tails Installer_ interface has changed), we need to
+temporarily change this behaviour to make tests work. To have Jenkins
+use the ISO being tested instead of the last released one:
+
+1. Set `USE_LAST_RELEASE_AS_OLD_ISO=no` in the
+   `macros/test_Tails_ISO.yaml` file in the
+   `jenkins-jobs` Git repository
+   (`gitolite@git.puppet.tails.boum.org:jenkins-jobs`).
+
+   Documentation and policy to access this repository is the same as
+   for our [[Puppet modules|contribute/git#puppet]].
+
+   See for example
+   [commit 371be73](https://gitlab.tails.boum.org/tails/jenkins-jobs/-/commit/371be73).
+
+   <div class="note">
+   Treat the repositories on GitLab as read-only mirrors:
+   any change pushed there does not affect our infrastructure and will
+   be overwritten.
+   </div>
+
+   Under the hood, once this change is applied Jenkins will pass the
+   ISO being tested (instead of the last released one) to
+   `run_test_suite`'s `--old-iso` argument.
+
+2. File an issue to ensure this temporarily change gets reverted
+   in due time.
+
+## Restarting slave VMs between test suite jobs
+
+For background, see [[!tails_ticket 9486]], [[!tails_ticket 11295]],
+and [[!tails_ticket 10601]].
+
+Our test suite doesn't _always_ clean after itself properly (e.g.
+when tests simply hang and timeout), so we have to reboot
+`isotesterN.lizard` between ISO test jobs. We have [[!tails_ticket
+17216 desc="ideas"]] to solve this problem, but that's where we're at.
+
+We can't reboot these VMs as part of a test job itself: this would
+fail the test job even when the test suite has succeeded.
+
+Therefore, each "build" of a `test_Tail_ISO_*` job runs the test suite,
+and then:
+
+1. Triggers a high priority "build" of the
+   `keep_node_busy_during_cleanup` job, on the same node.
+   That job will ensure the isotester is kept busy until it has
+   rebooted and is ready for another test suite run.
+1. Gives Jenkins some time to add that `keep_node_busy_during_cleanup`
+   build to the queue.
+1. Gives the Jenkins Priority Sorter plugin some time to assign its
+   intended priority to the `keep_node_busy_during_cleanup` build.
+1. Does everything else it should do, such as cleaning up and moving
+   artifacts around.
+1. Finally, triggers a "build" of the `reboot_node` job on the Jenkins
+   master, which will put  the isotester offline, and reboot it.
+1. After the isotester has rebooted, when `jenkins-slave.service` starts,
+   it puts the node back online.
+
+For more details, see the heavily commented implementation in
+[[!tails_gitweb_repo jenkins-jobs]]:
+
+ - `macros/test_Tails_ISO.yaml`
+ - `macros/keep_node_busy_during_cleanup.yaml`
+ - `macros/reboot_node.yaml`
+
+## Executors on the Jenkins master
+
+We need to ensure the Jenkins master has enough executors configured
+so it can run as many `reboot_job` concurrent builds as necessary.
+
+This job can't run in parallel for a given `test_Tails_ISO_*` build,
+so what we strictly need is: as many executors on the master as we
+have nodes allowed to run `test_Tails_ISO_*`. This currently means: as
+many executors on the master as we have isotesters.

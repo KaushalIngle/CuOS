@@ -1,0 +1,75 @@
+[[!meta robots="noindex"]]
+
+<h1 id="install" class="step pc-clone mac-clone">Install Tails by cloning</h1>
+<h1 id="upgrade" class="step upgrade">Upgrade your Tails by cloning</h1>
+
+<div class="step-image">
+[[!img install/inc/infography/clone-tails.png link="no" class="clone upgrade-tails upgrade-os" alt=""]]
+</div>
+
+<p class="upgrade">
+  In this step, you will upgrade your Tails from the
+  <span class="upgrade-clone">other</span>
+  <span class="upgrade-tails upgrade-os">intermediary</span>
+  Tails using
+  <span class="application">Tails Installer</span>.
+</p>
+
+1. Plug
+   <span class="pc-clone mac-clone">the new</span>
+   <span class="upgrade">your Tails</span>
+   USB stick in the computer.
+
+   <div class="caution pc-clone mac-clone">
+   <p>All the data on this USB stick will be lost.</p>
+   </div>
+
+1. Choose
+   <span class="menuchoice">
+     <span class="guimenu">Applications</span>&nbsp;▸
+     <span class="guisubmenu">Tails</span>&nbsp;▸
+     <span class="guimenuitem">Tails Installer</span>
+   </span>
+   to start <span class="application">Tails Installer</span>.
+
+   [[!img install/inc/screenshots/tails_installer.png link="no" class="pc-clone mac-clone" alt="Tails Installer: 'Clone the current Tails'"]]
+   [[!img install/inc/screenshots/tails_installer_upgrade.png link="no" class="upgrade" alt="Tails Installer: 'Clone the current Tails'"]]
+
+1. Choose
+   <span class="pc-clone mac-clone">the new</span>
+   <span class="upgrade">your</span>
+   USB stick in the <span class="guilabel">Target USB stick</span> drop-down list.
+
+1. To start the
+   <span class="pc-clone mac-clone">installation, click on the <b>Install</b> button.</span>
+   <span class="upgrade">upgrade, click on the <b>Upgrade</b> button.</span>
+
+   <div class="note upgrade">
+   <p>The Persistent Storage of your Tails USB stick will be preserved.</p>
+   <p class="upgrade-clone">The Persistent Storage of the other Tails will not be copied.</p>
+   </div>
+
+1. Read the warning message in the confirmation dialog. Click
+   <span class="bold">Yes</span> to confirm.
+
+   The
+   <span class="pc-clone mac-clone">installation</span>
+   <span class="upgrade">upgrade</span>
+   takes a few minutes.
+
+   <div class="bug">
+   <p>The progress bar usually freezes for some time
+   while synchronizing data on disk.</p>
+   </div>
+
+1. After the installation finishes, close <span class="application">Tails Installer</span>.
+
+   [[!img install/inc/screenshots/installation_complete.png link="no" alt=""]]
+
+<div class="trophy upgrade">
+
+<p>You are done upgrading Tails. You can now shutdown and restart on your Tails USB stick.</p>
+
+<p>Thank you for staying safe!</p>
+
+</div>

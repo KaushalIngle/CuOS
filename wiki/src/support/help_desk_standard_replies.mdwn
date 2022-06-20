@@ -1,0 +1,243 @@
+[[!meta title="Help Desk's standard replies"]]
+[[!meta robots="noindex"]]
+
+[[!toc levels=2]]
+
+<a id="standard-reply"></a>
+
+Standard reply
+==============
+
+<pre>
+
+**This is an automated reply.**
+
+Thank you for your report.
+
+The Tails Help Desk is a very small team with very limited resources. Still,
+we read every report. But, it is impossible for us to reply to every report.
+We might take days, sometimes weeks, to reply.
+
+Because there is not much we can do about the following problems, we
+usually do not reply to reports about them:
+
+- Problems with graphics cards
+- Problems with Macs
+- Problems with software that we include
+- Problems with software that we don't include
+- Problems with Tor bridges
+
+If you have not done so already, please check to see if your problem is
+covered in our:
+
+- End-user documentation: https://tails.boum.org/doc/
+- Frequently asked questions: https://tails.boum.org/support/faq/
+- Known issues: https://tails.boum.org/support/known_issues/
+
+If you are experiencing a problem that you were not experiencing in an
+older version of Tails, please reply to this email and let us know the
+last version of Tails in which you were not experiencing the problem.
+
+If you have figured out a way to work around a problem, please let us
+know so that we can document the workaround to help other Tails users.
+
+We are currently receiving frequent reports about the following
+problems:
+
+- Resizing VirtualBox virtual machine window doesn't automatically
+  change the screen resolution of Tails. See:
+  https://tails.boum.org/doc/advanced_topics/virtualization/virtualbox/
+
+- The shared clipboard feature of VirtualBox is unavailable. See:
+  https://tails.boum.org/doc/advanced_topics/virtualization/virtualbox/
+
+</pre>
+
+Hardware support reports we can't help with
+===========================================
+
+<pre>
+
+Dear Tails user,
+
+Thank you for sharing your problem with us.
+
+We are sorry that Tails does not work well on this computer.
+
+It is difficult to investigate most hardware problems without having
+access to the affected computer. Furthermore, even if we managed to
+investigate each problem, unfortunately we often cannot
+solve them.
+
+If you have not yet, please read our support page:
+
+https://tails.boum.org/support/
+
+We will need more information from you in 2 cases:
+
+- **If this problem did not happen with an older version of Tails**:
+
+  Please tell us which older version worked better.
+
+- **If you find a way to workaround the problem**:
+
+  Please tell us, and we will document it so that other affected users
+  benefit from your findings.
+
+Our best hope is that a future Linux driver update solves the problem.
+For advanced Linux users: if you want to dig deeper on your own, you can
+take it upstream after reproducing the issue on a recent Linux system
+other than Tails.
+
+Thank you for your understanding.
+
+</pre>
+
+Apple hardware support (Mac)
+============================
+
+See ticket here for up-to-date details:
+<https://gitlab.tails.boum.org/tails/tails/-/issues/17640>.
+
+Not enough information
+======================
+
+<pre>
+
+Dear Tails user,
+
+Thank you for sharing your problem with us.
+
+Unfortunately, we can't help you at the moment because your description
+doesn't include enough information.
+
+Your problem might be already known, so please consult our known issues
+page:
+
+https://tails.boum.org/support/known_issues/
+
+If you don't find your issue there, please read our bug reporting
+instructions:
+
+https://tails.boum.org/doc/first_steps/bug_reporting
+
+We'd be grateful if you could give us a more complete description of the
+problem:
+
+INSERT SUPPORT QUESTION HERE
+
+</pre>
+
+Reply for users who repeatedly treat us as search engines
+=========================================================
+
+> This reply is not advisable for first time reports, only for
+> users that keep asking questions already covered by our
+> documentation.
+
+<pre>
+
+We are a very small team working on very limited human resources. A lot
+of other people are asking for our help on our various support channels.
+User support is an important task and is high in our priorities.
+
+But all the time that we spend on user support is time that we cannot
+dedicate to improving Tails itself. Please take this into consideration
+when writing to us...
+
+</pre>
+
+Not a Tails-dev question
+========================
+
+<pre>
+
+This is the mailing-list for Tails development.
+
+For usage and support questions, please see instead:
+
+https://tails.boum.org/support/
+
+Thanks!
+
+</pre>
+
+No OpenPGP key on the keyservers
+================================
+
+<pre>
+
+We could not find an OpenPGP key corresponding to your email address.
+
+Please send us a valid OpenPGP public key or publish it to the
+https://keys.openpgp.org/ keyserver and notify us when you do.
+
+Thanks!
+
+</pre>
+
+How to collaborate with Tails
+============================
+
+<pre>
+
+Hi,
+
+Thank you for your interest in contributing to Tails. As a community
+project, we welcome contributions in many forms, from programming to
+writing and translating.
+
+Please see our guide to learn how you can contribute:
+
+https://tails.boum.org/contribute/
+
+Cheers,
+
+</pre>
+
+Tails mirror is broken or scary SSL message
+===========================================
+
+<pre>
+
+Thank you for reporting this. We have transferred these details to the
+team that works on this at tails-mirrors@boum.org.
+
+</pre>
+
+Requesting feedback on GitLab issues
+====================================
+
+## Known issue where we need feedback
+
+<pre>
+
+Thank you for sharing your problems with us.
+
+I think that you are experiencing an issue that has already been
+reported:
+
+INSERT LINK TO ISSUE
+
+Can you confirm if your issue is the same and provide feedback to the
+GitLab issue?
+
+</pre>
+
+## Asking a user to reproduce the issue with Debian-live
+
+<pre>
+
+Could you try to start a live version of Debian on your computer and see
+if you can reproduce the issue?
+
+Please read our instructions on how to reproduce bugs in Debian:
+
+https://tails.boum.org/doc/first_steps/bug_reporting/#debian
+
+With your help, this issue can hopefully be fixed in a future version of
+Linux and thus Tails.
+
+Thanks in advance!
+
+</pre>

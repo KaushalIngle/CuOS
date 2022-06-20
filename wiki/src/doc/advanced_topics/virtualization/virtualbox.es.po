@@ -1,0 +1,345 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: Tails\n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2022-05-31 09:30+0200\n"
+"PO-Revision-Date: 2022-03-16 09:50+0000\n"
+"Last-Translator: Weblate Admin <tails-weblate@boum.org>\n"
+"Language-Team: Spanish <http://translate.tails.boum.org/projects/tails/"
+"advanced_topics_virtualbox/es/>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9.1\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta title=\"VirtualBox\"]]\n"
+msgstr "[[!meta title=\"VirtualBox\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"It is possible to run Tails in a virtual machine using [<span\n"
+"class=\"application\">VirtualBox</span>](https://www.virtualbox.org/) from a\n"
+"Windows, Linux, or macOS host operating system.\n"
+msgstr ""
+"Se puede usar Tails en una máquina virtual usando [<span class=\"application\">VirtualBox</span>](https://www.virtualbox.org/) desde un \n"
+"sistema operativo Windows, Linux, o macOS.\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!inline pages=\"doc/advanced_topics/virtualization.caution\" raw=\"yes\" sort=\"age\"]]\n"
+msgstr "[[!inline pages=\"doc/advanced_topics/virtualization.caution.es\" raw=\"yes\" sort=\"age\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<span class=\"application\">VirtualBox</span> has a free software version,\n"
+"called <span class=\"application\">VirtualBox Open Source Edition</span>\n"
+"and some proprietary components, for example to add support for USB\n"
+"devices.\n"
+msgstr ""
+"<span class=\"application\">VirtualBox</span> tiene una versión de software libre\n"
+"llamada <span class=\"application\">VirtualBox Open Source Edition</span>\n"
+"y algunos componentes propietarios, por ejemplo para añadir soporte para dispositivos\n"
+"USB.\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "<div class=\"caution\">\n"
+msgstr "<div class=\"caution\">\n"
+
+#. type: Plain text
+#, fuzzy, no-wrap
+#| msgid ""
+#| "For security reasons, we recommend you to use only the <span\n"
+#| "class=\"application\">Open Source Edition</span>, though it does not\n"
+#| "allow use of a Persistent Storage.\n"
+msgid ""
+"<p>For security reasons, we recommend you to use only the\n"
+"<i>Open Source Edition</i>, though it does not\n"
+"allow use of a Persistent Storage.</p>\n"
+msgstr "Por razones de seguridad, te recomendamos que uses solamente la <span class=\"application\">Edición de Código Abierto</span>, aunque éste no permite el uso del Almacenamiento Persistente.\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "</div>\n"
+msgstr "</div>\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "<!--\n"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"XXX: VirtualBox Guest Additions has been removed since Tails 4.27. Without "
+"Guest Additions, the shared folders feature of VirtualBox is unavailable.  "
+"Until Guest Additions is added back (#18728), the tip below shouldn't be "
+"displayed."
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "<div class=\"tip\">\n"
+msgstr "<div class=\"tip\">\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<p>With the <a href=\"https://www.virtualbox.org/manual/ch04.html#sharedfolders\">\n"
+"<span class=\"guilabel\">shared folders</span></a> feature of\n"
+"<span class=\"application\">VirtualBox</span> you can access files of your\n"
+"host system from within the guest system.</p>\n"
+msgstr ""
+"<p>Con la opción <a href=\"https://www.virtualbox.org/manual/ch04.html#sharedfolders\">\n"
+"<span class=\"guilabel\">Carpetas compartidas</span></a> de <span class=\"application\">VirtualBox</span> puedes acceder a los archivos de tu sistema anfitrión desde el sistema invitado.</p>\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<p>Make sure to understand the security implications of [[accessing\n"
+"internal hard disks|internal_hard_disk]]\n"
+"from Tails before using this feature.</p>\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "-->\n"
+msgstr ""
+
+#. type: Title =
+#, no-wrap
+msgid "Security considerations for Windows and macOS"
+msgstr "Consideraciones de seguridad para Windows y macOS"
+
+#. type: Plain text
+msgid ""
+"In our [[security warnings about virtualization|virtualization#security]] we "
+"recommend to run Tails in a virtual machine only if the host operating "
+"system is trustworthy."
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<p>Microsoft Windows and macOS being proprietary software, they cannot be considered\n"
+"trustworthy. Only run Tails in a virtual machine on Windows or macOS for testing\n"
+"purposes and do not rely on it for security.</p>\n"
+msgstr ""
+
+#. type: Title =
+#, no-wrap
+msgid "Installation"
+msgstr "Instalación"
+
+#. type: Plain text
+msgid ""
+"To install *VirtualBox* in Debian or Ubuntu, execute the following command:"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "    sudo apt install virtualbox\n"
+msgstr "    sudo apt install virtualbox\n"
+
+#. type: Plain text
+msgid ""
+"For instructions on how to install *VirtualBox* on other operating systems, "
+"refer to the [VirtualBox documentation](https://www.virtualbox.org/wiki/End-"
+"user_documentation)."
+msgstr ""
+"Para instrucciones sobre como instalar *VirtualBox* en otros sistemas "
+"operativos, referirse a [documentación VirtualBox](https://www.virtualbox."
+"org/wiki/End-user_documentation)."
+
+#. type: Title =
+#, no-wrap
+msgid "Running Tails from an ISO image"
+msgstr "Ejecutar Tails desde una imagen ISO"
+
+#. type: Plain text
+msgid "First, start *VirtualBox*."
+msgstr "Primero, inicia *VirtualBox*."
+
+#. type: Plain text
+msgid "To create a new virtual machine:"
+msgstr "Para crear una nueva máquina virtual:"
+
+#. type: Bullet: '  1. '
+msgid ""
+"Choose <span class=\"menuchoice\"> <span class=\"guimenu\">Machine</"
+"span>&nbsp;▸ <span class=\"guimenuitem\">New...</span></span>."
+msgstr ""
+
+#. type: Bullet: '  1. '
+msgid "In the **Name and operating system** screen, specify:"
+msgstr ""
+
+#. type: Bullet: '     - '
+msgid "A name of your choice."
+msgstr ""
+
+#. type: Bullet: '     - '
+msgid "**Type**: **Linux**."
+msgstr ""
+
+#. type: Bullet: '     - '
+msgid "**Version**: **Other Linux (64 bit)**."
+msgstr ""
+
+#. type: Bullet: '     - '
+#, fuzzy
+#| msgid "Click **Start**."
+msgid "Click **Next**."
+msgstr "Haz click en **Iniciar**."
+
+#. type: Bullet: '  1. '
+msgid "In the **Memory size** screen:"
+msgstr ""
+
+#. type: Bullet: '     - '
+msgid "Allocate at least 2048 MB of RAM."
+msgstr ""
+
+#. type: Bullet: '  1. '
+msgid "In the **Hard drive** screen:"
+msgstr ""
+
+#. type: Bullet: '     - '
+msgid "Choose **Do not add a virtual hard drive**."
+msgstr ""
+
+#. type: Bullet: '     - '
+#, fuzzy
+#| msgid "Click **Start**."
+msgid "Click **Create**."
+msgstr "Haz click en **Iniciar**."
+
+#. type: Bullet: '     - '
+msgid ""
+"Click **Continue** in the warning dialog about creating a virtual machine "
+"without a hard drive."
+msgstr ""
+
+#. type: Plain text
+msgid "To configure the virtual machine to start from an ISO image:"
+msgstr "Para configurar que la máquina virtual inicie desde la imagen ISO:"
+
+#. type: Bullet: '  1. '
+msgid "Select the new virtual machine in the left pane."
+msgstr "Elige la nueva máquina virtual desde el panel izquierdo."
+
+#. type: Bullet: '  1. '
+msgid ""
+"Choose <span class=\"menuchoice\"> <span class=\"guimenu\">Machine</"
+"span>&nbsp;▸ <span class=\"guimenuitem\">Settings...</span></span>."
+msgstr ""
+
+#. type: Bullet: '  1. '
+msgid "Select **System** in the left pane."
+msgstr ""
+
+#. type: Bullet: '  1. '
+msgid ""
+"In the **Extended Features** section of the **Motherboard** tab, make sure "
+"that **Enable I/O APIC** is enabled."
+msgstr ""
+
+#. type: Bullet: '  1. '
+msgid "Select **Storage** in the left pane."
+msgstr "Selecciona **Storage** en el panel de la izquierda."
+
+#. type: Bullet: '  1. '
+msgid ""
+"Select **Empty** below **Contoller IDE** in the **Storage Tree** selection "
+"list in the right pane."
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"  1. Click on the **CD** icon on the right of the window and select\n"
+"  **Choose a virtual CD/DVD disk file...** to browse for the ISO image\n"
+"  you want to start Tails from.\n"
+"  1. Check the **Live CD/DVD** option.\n"
+"  1. Click **OK**.\n"
+msgstr ""
+
+#. type: Plain text
+msgid "To start the new virtual machine:"
+msgstr ""
+
+#. type: Bullet: '  1. '
+msgid "Select the virtual machine in the left pane."
+msgstr "Elige la máquina virtual en el panel izquierdo."
+
+#. type: Bullet: '  1. '
+msgid "Click **Start**."
+msgstr "Haz click en **Iniciar**."
+
+#. type: Plain text
+#, no-wrap
+msgid "<div class=\"note\">\n"
+msgstr "<div class=\"note\">\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<p><i>VirtualBox Guest Additions</i> has been removed since Tails 4.27. As a\n"
+"result:</p>\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "<ul>\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<li><p>The\n"
+"<a href=\"https://www.virtualbox.org/manual/ch04.html#guestadd-intro\">shared clipboard</a>\n"
+"feature of <i>VirtualBox</i> is unavailable.</p></li>\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<li><p>The screen resolution of Tails can't be changed by resizing the\n"
+"virtual machine window in the host OS. The screen resolution must be changed\n"
+"from inside Tails.</p>\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<p>To change the screen resolution from inside Tails, choose\n"
+"<b>Applications&nbsp;▸ System Tools&nbsp;▸ Settings&nbsp;▸ Displays&nbsp;▸ Resolution</b>.</p>\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<p>You might also need to adjust the virtual machine window in the host OS to\n"
+"fit the new screen resolution.</p></li>\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "</ul>\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<p>We plan to add back <i>VirtualBox Guest Additions</i> in a future version\n"
+"of Tails. See [[!tails_ticket 18728]].</p>\n"
+msgstr ""

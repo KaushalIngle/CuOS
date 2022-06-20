@@ -1,0 +1,98 @@
+[[!meta title="System administrators"]]
+[[!meta robots="noindex"]]
+
+[[!toc levels=1]]
+
+<a id="goals"></a>
+
+# Goals
+
+The Tails system administrators set up and maintain the infrastructure
+that supports the development and operations of Tails. We aim at
+making the life of Tails contributors easier, and to improve the quality of
+the Tails releases.
+
+# Main responsibilities
+
+These are the main responsibilities of Tails Sysadmins:
+
+* Deal with hardware purchase, upgrades and failures.
+* Install and upgrade operating systems and [[services|contribute/working_together/roles/sysadmins/services]].
+* Organize on [[shifts|contribute/working_together/roles/sysadmins/shifts]].
+* Discuss, support and implement requests from teams.
+* Have root access to all hosts.
+
+# Communication within Tails
+
+In order to maintain good communication with the rest of Tails, Sysadmins should:
+
+* Report once a month in tails-assembly@ about activities.
+* Maintain an up-to-date public [[shift calendar|https://meel.puscii.nl/home/tails-sysadmins@puscii.nl/Calendar.html]].
+* Read e-mail at least twice a week.
+* Triage and garden [issues in the `tails/sysadmin` GitLab project](https://gitlab.tails.boum.org/tails/sysadmin/issues).
+
+<a id="relations"></a>
+
+# External relations
+
+While dealing with organizations and people who are not part of Tails, Sysadmins should:
+
+* Serve as an interface between Tails and hosting providers.
+* Relate to (server-side software) upstream according to the broader [[Tails principles|contribute/relationship_with_upstream]].
+* Treat system administration like a (free) software development project. This
+  is why we try to publish as much as possible of our systems configuration,
+  and to manage our whole infrastructure with configuration management tools.
+  That is, without needing to log into hosts:
+  * We want to enable people to participate without needing an account
+    on the Tails servers.
+  * We want to review the changes that are applied to our systems.
+  * We want to be able to easily reproduce our systems via
+    automatic deployment.
+  * We want to share knowledge with other people.
+* Use Free Software, as defined by the [Debian Free Software
+  Guidelines](https://www.debian.org/social_contract#guidelines).
+  The firmware our systems might need are the only exception to
+  this rule.
+
+<a id="skills"></a>
+
+# Necessary and useful skills and competences
+
+The main tools used to manage the Tails infrastructure are:
+
+* [Debian](https://www.debian.org/) GNU/Linux; in the vast majority of
+  cases, we run the current stable release.
+* [Puppet](http://projects.puppetlabs.com/projects/puppet),
+  a configuration management system.
+* [Git](http://git-scm.com/) to host and deploy configuration,
+  including our [[Puppet code|contribute/git#puppet]]
+
+Other useful skills:
+
+* Patience and diligence.
+* Ability to self-manage (by oneself and within the team), prioritize and plan.
+
+<a id="contact"></a>
+
+# Contact
+
+In order to get in touch with Tails sysadmins, you can:
+
+* Create an issue in the [[!tails_gitlab tails/sysadmin]] project.
+* Ping all sysadmins anywhere in our [[!tails_gitlab desc="GitLab"]] by mentioning the `@sysadmin-team` group.
+* See if one of us is on shift in [[one of our chat rooms|about/contact#chat]].
+* Send an e-mail to [[the sysadmin's mailing list|about/contact#tails-sysadmins]].
+
+The following lists of issues are also of interest to sysadmins:
+
+* [[!tails_gitlab
+  groups/tails/-/issues?label_name%5B%5D=Core+Work%3ASysadmin
+  desc="issues that should be taken care of as part of sysadmin shifts
+  or are on the sysadmin team's roadmap"]]
+* [[!tails_gitlab
+  groups/tails/-/issues?label_name%5B%5D=C%3AInfrastructure
+  desc="tasks that belong to the *Infrastructure* category"]]
+
+# Other pages
+
+[[!map pages="contribute/working_together/roles/sysadmins/*"]]

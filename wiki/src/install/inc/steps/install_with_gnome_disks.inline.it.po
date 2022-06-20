@@ -1,0 +1,234 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-05-31 09:31+0200\n"
+"PO-Revision-Date: 2022-05-23 23:40+0000\n"
+"Last-Translator: _ignifugo <ignifugo@insicuri.net>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9.1\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta robots=\"noindex\"]]\n"
+msgstr "[[!meta robots=\"noindex\"]]\n"
+
+#. type: Bullet: '1. '
+msgid ""
+"Start <span class=\"application\">GNOME Disks</span> (also called <span "
+"class=\"application\">Disks</span>)."
+msgstr ""
+"Avvia <span class=\"application\">GNOME Disks</span> (chiamato anche <span "
+"class=\"application\">Dischi</span>)."
+
+#. type: Plain text
+#, fuzzy, no-wrap
+#| msgid ""
+#| "   <div class=\"linux\">\n"
+#| "     For example, you can press the <span class=\"keycap\">Super</span> key,\n"
+#| "     then type <span class=\"command\">disk</span>, then choose\n"
+#| "     <span class=\"application\">Disks</span>.\n"
+#| "   </div>\n"
+#| "   <div class=\"upgrade\">\n"
+#| "   Choose <span class=\"menuchoice\">\n"
+#| "     <span class=\"guimenu\">Applications</span>&nbsp;▸\n"
+#| "     <span class=\"guisubmenu\">Utilities</span>&nbsp;▸\n"
+#| "     <span class=\"guimenuitem\">Disks</span></span>.\n"
+#| "   </div>\n"
+msgid ""
+"   <div class=\"linux\">\n"
+"     For example, you can press the <span class=\"keycap\">Super</span> key,\n"
+"     then type <span class=\"command\">disk</span>, then choose\n"
+"     <span class=\"application\">Disks</span>.\n"
+"   </div>\n"
+"   <div class=\"upgrade\">\n"
+"   Choose <span class=\"menuchoice\">\n"
+"     <span class=\"guimenu\">Applications</span>&nbsp;▸\n"
+"     <span class=\"guisubmenu\">Utilities</span>&nbsp;▸\n"
+"     <span class=\"guimenuitem\">Disks</span></span>.\n"
+"   </div>\n"
+msgstr ""
+"   <div class=\"linux\">\n"
+"     Ad esempio, puoi premere il tasto <span class=\"keycap\">Super</span>,\n"
+"     poi digita <span class=\"command\">disco</span> e selezionare\n"
+"     <span class=\"application\">Dischi</span>.\n"
+"   </div>\n"
+"   <div class=\"upgrade\">\n"
+"   Seleziona <span class=\"menuchoice\">\n"
+"     <span class=\"guimenu\">Applicazioni</span>&nbsp;▸\n"
+"     <span class=\"guisubmenu\">Utilità</span>&nbsp;▸\n"
+"     <span class=\"guimenuitem\">Dischi</span></span>.\n"
+"   </div>\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "   [[!img install/inc/icons/gnome-disks.png link=\"no\" alt=\"\"]]\n"
+msgstr "   [[!img install/inc/icons/gnome-disks.png link=\"no\" alt=\"\"]]\n"
+
+#. type: Bullet: '1. '
+msgid ""
+"Plug in the <span class=\"upgrade\">intermediary</span> USB stick <span "
+"class=\"linux\">on which you want to install Tails</span>."
+msgstr ""
+"Inserisci la chiavetta USB <span class=\"upgrade\">intermedia</span> <span "
+"class=\"linux\">sulla quale vuoi installare Tails</span>."
+
+#. type: Plain text
+#, no-wrap
+msgid "   <div class=\"caution\"><p>All the data on this USB stick will be lost.</p></div>\n"
+msgstr "   <div class=\"caution\"><p>Tutti i dati su questa chiavetta USB verranno persi.</p></div>\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"   <div class=\"note upgrade\"><p>The Persistent Storage of your Tails USB stick will not be\n"
+"   copied to the temporary Tails.</p></div>\n"
+msgstr ""
+"   <div class=\"note upgrade\"><p>L'Archivio Persistente della tua chiavetta USB con Tails non sarà\n"
+"   copiato nella memoria temporanea di Tails.</p></div>\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "   A new drive appears in the left pane. Click on it.\n"
+msgstr "   Una nuova unità appare nel pannello di sinistra. Fai clic su di essa.\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "   [[!img install/inc/screenshots/gnome_disks_drive.png link=\"no\" alt=\"\"]]\n"
+msgstr "   [[!img install/inc/screenshots/gnome_disks_drive.png link=\"no\" alt=\"\"]]\n"
+
+#. type: Bullet: '1. '
+#, fuzzy
+#| msgid ""
+#| "Click on the [[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+#| "link=\"no\"]] button in the titlebar and choose <span "
+#| "class=\"guimenuitem\">Restore Disk Image&hellip;</span>."
+msgid ""
+"Click on the [[!img lib/view-more.png alt=\"Menu\" class=\"symbolic\" "
+"link=\"no\"]] button in the titlebar and choose <span "
+"class=\"guimenuitem\">Restore Disk Image&hellip;</span>."
+msgstr ""
+"Fai clic sul bottone [[!img lib/open-menu.png alt=\"Menù\" "
+"class=\"symbolic\" link=\"no\"]] nella barra del titolo e seleziona <span "
+"class=\"guimenuitem\">Ripristina immagine disco&hellip;</span>."
+
+#. type: Plain text
+#, no-wrap
+msgid "   [[!img install/inc/screenshots/gnome_disks_menu.png link=\"no\" alt=\"\"]]\n"
+msgstr "   [[!img install/inc/screenshots/gnome_disks_menu.png link=\"no\" alt=\"\"]]\n"
+
+#. type: Bullet: '1. '
+msgid ""
+"In the <span class=\"guilabel\">Restore Disk Image</span> dialog, click on "
+"the file selector button."
+msgstr ""
+"Nella finestra di dialogo <span class=\"guilabel\">Ripristina immagine "
+"disco</span>, fai clic sul bottone di selezione file."
+
+#. type: Plain text
+#, no-wrap
+msgid "   Choose the USB image that you downloaded earlier.\n"
+msgstr "   Seleziona l'immagine USB che hai scaricato in precedenza.\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"   <div class=\"note\">\n"
+"   <p>Make sure that the USB image has an\n"
+"   <span class=\"filename\">.img</span> file extension.</p>\n"
+msgstr ""
+"   <div class=\"note\">\n"
+"   <p>Assicurati che l'immagine USB abbia\n"
+"   un'estensione di file <span class=\"filename\">.img</span>.</p>\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"   <p>If the image has an <i>.iso</i> file\n"
+"   extension, it is not the correct image. Please go back to the\n"
+"   <span class=\"linux\">[[download step|linux#download]].</span>\n"
+"   <span class=\"upgrade-tails\">[[download step|upgrade/tails#download]].</span>\n"
+"   <span class=\"upgrade-linux\">[[download step|upgrade/linux#download]].</span></p>\n"
+"   </div>\n"
+msgstr ""
+"   <p>Se l'immagine ha un'estensione del file <i>.iso</i>,\n"
+"   non è l'immagine giusta. Torna a\n"
+"   <span class=\"linux\">[[scarica per|linux#download]].</span>\n"
+"   <span class=\"aggiorna-tails\">[[scarica|aggiorna/tails#download]].</span>\n"
+"   <span class=\"aggiorna-linux\">[[scarica|aggiorna/linux#download]].</span></p>\n"
+"   </div>\n"
+
+#. type: Bullet: '1. '
+msgid ""
+"Click on the <span class=\"bold\">Start Restoring&hellip;</span> button."
+msgstr ""
+"Clicca sul tasto<span class=\"bold\">Avvia il Ripristino&hellip;</span>."
+
+#. type: Bullet: '1. '
+msgid "In the confirmation dialog click <span class=\"bold\">Restore</span>."
+msgstr ""
+"Nella finestra di dialogo di conferma clicca <span "
+"class=\"bold\">Ripristina</span>."
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"   Depending on your Linux distribution, you might be asked for your\n"
+"   administration password.\n"
+msgstr ""
+"   A seconda della tua distribuzione Linux, potrebbe venirti chiesto di inserire la tua\n"
+"    password di amministratore.\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "   The installation takes a few minutes.\n"
+msgstr "   L'installazione richiede alcuni minuti.\n"
+
+#. type: Bullet: '1. '
+msgid ""
+"After the installation is finished, click on the [[!img lib/media-eject.png "
+"alt=\"Eject\" class=\"symbolic\" link=\"no\"]] button."
+msgstr ""
+"Una volta che l'installazione è terminata, fai clic sul tasto [[!img lib/"
+"media-eject.png alt=\"Espelli\" class=\"symbolic\" link=\"no\"]]."
+
+#, no-wrap
+#~ msgid "   <div class=\"step-image\">\n"
+#~ msgstr "   <div class=\"step-image\">\n"
+
+#, no-wrap
+#~ msgid "     [[!img install/inc/infography/plug-usb.png link=\"no\" class=\"linux\" alt=\"USB stick plugged in the computer\"]]\n"
+#~ msgstr "     [[!img install/inc/infography/plug-usb.png link=\"no\" class=\"linux\" alt=\"Chiavetta USB inserita nel computer\"]]\n"
+
+#, no-wrap
+#~ msgid "     [[!img install/inc/infography/plug-upgrade-usb.png link=\"no\" class=\"upgrade-tails\" alt=\"USB stick plugged on the left\"]]\n"
+#~ msgstr "     [[!img install/inc/infography/plug-upgrade-usb.png link=\"no\" class=\"upgrade-tails\" alt=\"Chiavetta USB inserita a sinistra\"]]\n"
+
+#, no-wrap
+#~ msgid "     [[!img install/inc/infography/plug-upgrade-usb-only.png link=\"no\" class=\"upgrade-linux\" alt=\"USB stick plugged on the left\"]]\n"
+#~ msgstr "     [[!img install/inc/infography/plug-upgrade-usb-only.png link=\"no\" class=\"upgrade-linux\" alt=\"Chiavetta USB inserita a sinistra\"]]\n"
+
+#, no-wrap
+#~ msgid "   </div>\n"
+#~ msgstr "   </div>\n"
+
+#, no-wrap
+#~ msgid "     [[!img install/inc/infography/install-tails.png link=\"no\" class=\"linux\" alt=\"USB image installed on USB stick\"]]\n"
+#~ msgstr "     [[!img install/inc/infography/install-tails.png link=\"no\" class=\"linux\" alt=\"Immagine USB installata sulla chiavetta USB\"]]\n"
+
+#, no-wrap
+#~ msgid "     [[!img install/inc/infography/install-upgrade-usb.png link=\"no\" class=\"upgrade-tails\" alt=\"USB image installed on USB stick on the left\"]]\n"
+#~ msgstr "     [[!img install/inc/infography/install-upgrade-usb.png link=\"no\" class=\"upgrade-tails\" alt=\"Immagine USB installata sulla chiavetta USB di sinistra\"]]\n"
+
+#, no-wrap
+#~ msgid "     [[!img install/inc/infography/install-upgrade-usb-only.png link=\"no\" class=\"upgrade-linux\" alt=\"USB image installed on USB stick on the left\"]]\n"
+#~ msgstr "     [[!img install/inc/infography/install-upgrade-usb-only.png link=\"no\" class=\"upgrade-linux\" alt=\"Immagine USB installata sulla chiavetta USB a sinistra\"]]\n"

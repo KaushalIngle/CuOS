@@ -1,0 +1,30 @@
+{# Jinja2 template used by bin/generate-call-for-manual-testers -#}
+To: tails-manual-testers@boum.org
+Subject: Testing Tails {{version}}
+
+Hi,
+
+Please get ready for the manual testing of Tails {{version}}.
+
+I've just started preparing the images. I will let you know
+on this thread once they're available for download.
+
+Here's the pad for testing coordination:
+
+    {{pad}}
+
+Please "tag" tests that you are doing so we don't duplicate work.
+
+Please test by Tuesday, 14:00 UTC.
+
+I expect feedback on the pad but if you have questions, I'll try to be on XMPP.
+
+After the release, feel free to report to <tails-accounting@boum.org>
+the time you spent on these tests: you can get paid for them.
+
+Meanwhile, you can get an idea of what will be in Tails {{version}} in:
+
+    https://nightly.tails.boum.org/build_Tails_ISO_{{dist}}/
+
+Thanks a lot in advance,
+cheers!

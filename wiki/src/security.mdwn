@@ -1,0 +1,45 @@
+[[!meta title="Security"]]
+[[!meta stylesheet="hide-breadcrumbs" rel="stylesheet" title=""]]
+
+[[!toc levels=3]]
+
+[[!inline pages="page(security/*)
+and !security/fixed and !security/fixed.* and !security/fixed/*
+and !security/audits and !security/audits.* and !security/audits/*
+and currentlang()"
+actions=no archive=yes feedonly=yes show=10 sort="-meta(date) age -path"]]
+
+Since Tails is based on Debian, it takes advantage of all the work done by the
+Debian security team. As quoted from <https://www.debian.org/security/>:
+
+> Debian takes security very seriously. We handle all security
+problems brought to our attention and ensure that they are corrected within a
+reasonable timeframe. Many advisories are coordinated with other free software
+vendors and are published the same day a vulnerability is made public and we
+also have a Security Audit team that reviews the archive looking for new or
+unfixed security bugs.
+
+> Experience has shown that "security through obscurity" does
+not work. Public disclosure allows for more rapid and better solutions to
+security problems. In that vein, this page addresses Debian's status with
+respect to various known security vulnerabilities, which could potentially affect
+Debian.
+
+# Current security vulnerabilities
+
+[[!inline pages="page(security/*)
+and !security/fixed and !security/fixed.* and !security/fixed/*
+and !security/audits and !security/audits.* and !security/audits/*
+and ! tagged(security/fixed) and currentlang()"
+actions=no archive=yes feeds=no show=0 sort="-meta(date) age -path"]]
+
+# Fixed security vulnerabilities
+
+<!-- Keep in sync with security/fixed.mdwn -->
+
+[[!inline pages="page(security/*) and tagged(security/fixed) and (currentlang() or security/Numerous_security_holes_in_* or security/known_security_vulnerabilities_in_*)"
+actions=no archive=yes feeds=no show=5 sort="-meta(date) age -path"]]
+
+# Security audits
+
+[[!inline pages="security/audits" raw="yes"]]

@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Italian translation\n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2022-05-24 14:10+0200\n"
+"PO-Revision-Date: 2022-01-05 19:46+0000\n"
+"Last-Translator: la_r_go* <largo@tracciabi.li>\n"
+"Language-Team: ita <transitails@inventati.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta title=\"System requirements\"]]\n"
+msgstr "[[!meta title=\"Requisiti di sistema\"]]\n"
+
+#. type: Plain text
+msgid "Tails works on most computers less than 10 years old."
+msgstr ""
+"Tails funziona sulla maggior parte dei computer che abbiano meno di 10 anni."
+
+#. type: Plain text
+#, no-wrap
+msgid "<div class=\"note\">\n"
+msgstr "<div class=\"note\">\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "<p>Tails might not work on:</p>\n"
+msgstr "<p>Tails potrebbe non funzionare su:</p>\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<ul>\n"
+"<li>Some older computers, for example, if they don't have enough\n"
+"RAM.</li>\n"
+"<li>Some newer computers, for example, if their [[graphics card is\n"
+"not compatible with Linux|support/known_issues/graphics]].</li>\n"
+"</ul>\n"
+msgstr ""
+"<ul>\n"
+"<li>Alcuni computer più vecchi, ad esempio, se non c'è abbastanza\n"
+"RAM.</li>\n"
+"<li>Alcuni computer più recenti, ad esempio, se la [[scheda grafica non è\n"
+"compatibile con Linux|support/known_issues/graphics]].</li>\n"
+"</ul>\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<p>See the [[known hardware compatibility\n"
+"issues|support/known_issues]].</p>\n"
+msgstr ""
+"<p>Vedere i [[problemi noti di compatibilità\n"
+"hardware|support/known_issues]].</p>\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "</div>\n"
+msgstr "</div>\n"
+
+#. type: Plain text
+msgid "Hardware requirements:"
+msgstr "Requisiti hardware:"
+
+#. type: Plain text
+msgid "- A USB stick of 8 GB minimum or a recordable DVD."
+msgstr "- Una chiavetta USB da almeno 8 GB o un DVD riscrivibile."
+
+#. type: Plain text
+#, no-wrap
+msgid "  All the data on this USB stick or DVD will be lost when installing Tails.\n"
+msgstr "  Tutti i dati presenti sulla chiavetta USB o sul DVD verranno persi quando si installerà Tails.\n"
+
+#. type: Plain text
+msgid "- The ability to start from a USB stick or a DVD reader."
+msgstr "- La capacità di avviare da chiavetta USB o da lettore DVD."
+
+#. type: Bullet: '- '
+msgid ""
+"A 64-bit <span class=\"definition\">[[!wikipedia x86-64]]</span> compatible "
+"processor:"
+msgstr ""
+
+#. type: Bullet: '  - '
+msgid ""
+"<span class=\"definition\">[[!wikipedia IBM_PC_compatible]]</span> but not "
+"<span class=\"definition\">[[!wikipedia PowerPC]]</span> nor <span "
+"class=\"definition\">[[!wikipedia ARM_architecture desc=\"ARM\"]]</span>."
+msgstr ""
+
+#. type: Bullet: '  - '
+msgid "Most Mac computers are IBM PC compatible since 2006."
+msgstr ""
+
+#. type: Bullet: '  - '
+msgid ""
+"Tails does not work with Mac models that use the [[!wikipedia Apple M1]] "
+"chip."
+msgstr ""
+
+#. type: Bullet: '  - '
+msgid ""
+"Tails does not work on 32-bit computers since [[Tails 3.0|news/"
+"Tails_3.0_will_require_a_64-bit_processor]] (June 2017)."
+msgstr ""
+
+#. type: Bullet: '  - '
+#, fuzzy
+#| msgid "Tails works on most computers less than 10 years old."
+msgid "Tails does not work on most tablets and phones."
+msgstr ""
+"Tails funziona sulla maggior parte dei computer che abbiano meno di 10 anni."
+
+#. type: Plain text
+msgid "- 2 GB of RAM to work smoothly."
+msgstr "- 2 GB di RAM per lavorare comodamente."
+
+#. type: Plain text
+#, no-wrap
+msgid "  Tails can work with less than 2 GB RAM but might behave strangely or crash.\n"
+msgstr "  Tails può funzionare con meno di 2 GB di RAM, ma potrebbe presentare anomalie o andare in crash.\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "- A 64-bit <span class=\"definition\">[[!wikipedia x86-64]]</span>\n"
+#~ "  compatible processor:\n"
+#~ "  - <span class=\"definition\">[[!wikipedia IBM_PC_compatible]]</span> but not\n"
+#~ "    <span class=\"definition\">[[!wikipedia PowerPC]]</span> nor\n"
+#~ "    <span class=\"definition\">[[!wikipedia ARM_architecture desc=\"ARM\"]]</span>.\n"
+#~ "  - Most Mac computers are IBM PC compatible since 2006.\n"
+#~ "  - Tails does not work with Mac models that use the [[!wikipedia Apple M1]] chip.\n"
+#~ "  - Tails does not work on 32-bit computers since [[Tails 3.0|news/Tails_3.0_will_require_a_64-bit_processor]] (June 2017).\n"
+#~ "  - Tails does not work on most tablets and phones.\n"
+#~ msgstr ""
+#~ "- Un processore compatibile con \n"
+#~ "l'architettura <span class=\"definition\">[[!wikipedia x86-64]]</span>\n"
+#~ "  - <span class=\"definition\">[[!wikipedia IBM_PC_compatible]]</span> ma non\n"
+#~ "    <span class=\"definition\">[[!wikipedia PowerPC]]</span> non\n"
+#~ "    <span class=\"definition\">[[!wikipedia ARM_architecture desc=\"ARM\"]]</span>.\n"
+#~ "  -  la maggior parte di computer Mac sono  compatibili con IBM PC dal 2006.\n"
+#~ "  - Tails non funziona con i modelli di Mac che usano il chip [[!wikipedia Apple M1]].\n"
+#~ "  - Tails non funziona su computer a 32-bit da [[Tails 3.0|news/Tails_3.0_will_require_a_64-bit_processor]] (Giugno 2017).\n"
+#~ "  - Tails non funziona sulla maggior parte dei tablet e dei telefoni.\n"
+
+#~ msgid ""
+#~ "Tails works on most reasonably recent computers, say manufactured after "
+#~ "2008.  Here is a detailed list of requirements:"
+#~ msgstr ""
+#~ "Tails funziona su qualsiasi computer ragionevolmente recente, diciamo "
+#~ "fabbricato dopo il 2008. Qui c'è la lista dettagliata dei requisiti:"
+
+#~ msgid ""
+#~ "Either **an internal or external DVD reader** or the possibility to "
+#~ "**boot from a USB stick**."
+#~ msgstr ""
+#~ "Un **lettore di DVD integrato o esterno** o un pc che si possa **avviare "
+#~ "da una memoria USB**."

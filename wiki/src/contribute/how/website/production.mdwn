@@ -1,0 +1,39 @@
+[[!meta title="Configuration of the production website"]]
+
+Whenever you work on our website or documentation, you may need to
+modify our ikiwiki configuration. You need to do so in three different
+places:
+
+ - The [[!tails_gitweb ikiwiki.setup]] configuration file that lives
+   in our main Git repository is used primarily for building the
+   offline copy of the website that is included in every Tails
+   release.
+
+ - Our live, [production website](https://tails.boum.org/) uses its
+   own configuration file which is managed differently.
+
+These configuration files must be updated in a coordinated way,
+otherwise one can easily break our production website. Here is how to
+do so:
+
+1. When submitting a merge request with website changes that require
+   ikiwiki configuration changes:
+   - Apply these configuration changes to `ikiwiki.setup`
+     and include them in your merge request.
+   - Make it clear to the reviewer that merging your MR must
+     be coordinated with
+     [[contribute/working_together/roles/sysadmins]].
+
+2. `git clone https://gitlab.tails.boum.org/tails/puppet-tails.git` and apply the
+   same changes to the ikiwiki configuration used by our production
+   website:
+   - [[!tails_gitweb_puppet_tails templates/website/ikiwiki.setup.epp]]
+   - [[!tails_gitweb_puppet_tails manifests/website/params.pp]]
+   - [[!tails_gitweb_puppet_tails files/website/ikiwiki-libdir/IkiWiki/Plugin/sidebar2.pm]]
+
+3. Submit these production website configuration changes to the
+   [[sysadmins team|contribute/working_together/roles/sysadmins]],
+   as a merge request. Make it clear that
+   applying these changes must be coordinated with the person who is
+   responsible for merging the other MR that you've proposed
+   for the main Tails Git repository.

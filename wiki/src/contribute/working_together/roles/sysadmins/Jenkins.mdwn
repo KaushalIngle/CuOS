@@ -1,0 +1,171 @@
+[[!meta title="Automated ISO/IMG builds and tests on Jenkins"]]
+[[!meta robots="noindex"]]
+
+[[!toc levels=1]]
+
+Configuration
+=============
+
+- master:
+  * [[!tails_gitlab tails/puppet-jenkins/-/blob/master/manifests/init.pp
+    desc="`jenkins` class"]]
+  * [[!tails_gitweb_puppet_tails manifests/jenkins/master.pp
+    desc="`tails::jenkins::master` class"]]
+  * a few Jenkins plugins installed with `jenkins::plugin`
+  * YAML jobs configuration lives in a
+    [[!tails_gitweb_repo jenkins-jobs desc="dedicated Git repository"]];
+    [Jenkins Job Builder](https://docs.openstack.org/infra/jenkins-job-builder/)
+    uses it to configure Jenkins
+- slaves:
+  * [[!tails_gitweb_puppet_tails manifests/iso_builder.pp
+    desc="`tails::iso_builder`"]],
+    [[!tails_gitweb_puppet_tails manifests/jenkins/slave.pp
+    desc="`tails::jenkins::slave`"]],
+    [[!tails_gitweb_puppet_tails manifests/jenkins/slave/iso_builder.pp
+    desc="`tails::jenkins::slave::iso_builder`"]],
+    [[!tails_gitweb_puppet_tails manifests/jenkins/slave/iso_tester.pp
+    desc="`tails::jenkins::slave::iso_tester`"]],
+    and [[!tails_gitweb_puppet_tails manifests/tester.pp
+    desc="`tails::tester`"]]
+    classes
+  * signing keys are managed with the `tails_secrets_jenkins` Puppet module
+- web server:
+  * [[!tails_gitweb_puppet_tails manifests/jenkins/reverse_proxy.pp
+    desc="`tails::jenkins::reverse_proxy` class"]]
+
+<a id="upgrade-policy"></a>
+
+Upgrade policy
+==============
+
+Here are some guidelines to triage security vulnerabilities in Jenkins
+and the plugins we have installed:
+
+1. Protecting our infra from folks who have access to Jenkins
+
+   → Upgrading quarterly is sufficient.
+
+2. Protecting our infra from attacks against folks who have access to Jenkins
+
+   For example, XSS that could lead a legitimate user to perform unintended
+   actions with Jenkins credentials (i.e. root in practice).
+
+   → We should stay on top of security advisories and react more quickly than
+   "in less than 3 months".
+
+3. Protecting our infra from other 3rd-parties that affect Jenkins' security
+
+   For example, say some Jenkins plugin, that connects to remote services, has
+   a TLS certificate checking bug. This could potentially allow a MitM to run
+   arbitrary code with Jenkins orchestrator or workers permissions, i.e. root.
+
+   → We should stay on top of security advisories and react more quickly than
+   "in less than 3 months".
+
+Upgrade steps
+=============
+
+- Preparation:
+  - [ ] Go through the [changelog](https://www.jenkins.io/changelog/), paying attention to changes on how agents connect to controller, config changes that may need update, important changes in plugins, etc.
+- Deployment:
+  - [ ] Take note of currently running builds before starting the upgrades.
+  - [ ] Deploy Jenkins upgrade to latest version available using Puppet.
+  - [ ] Generate a list of up-to-date plugins by running [[this Groovy script|contribute/working_together/roles/sysadmins/Jenkins/1.generate-plugins-list.groovy]] in [[the Jenkins Script Console|https://jenkins.tails.boum.org/script]]. Make sure to update the initial list containing actively used plugins if there were changes.
+  - [ ] Generate updated Puppet code for `tails::jenkins::master` using [[this Python3 script|contribute/working_together/roles/sysadmins/Jenkins/2.generate-puppet-code.py]] and the output of the above script.
+  - [ ] Deploy plugin upgrades using the code generated above.
+  - [ ] Restart all agents.
+  - [ ] Manually run the Update jobs script (may be needed so XML is valid with current Jenkins):
+    ```
+    sudo -u jenkins /usr/local/sbin/deploy_jenkins_jobs update
+    ```
+- Wrap up:
+  - [ ] Go through warnings in Jenkins interface.
+  - [ ] Manually remove uneeded plugins from /var/lib/jenkins/plugins.
+  - [ ] Restart builds that were interrupted by Jenkins restart.
+  - [ ] Update the [[Jenkins upgrade steps documentation|https://tails.boum.org/contribute/working_together/roles/sysadmins/Jenkins#upgrade-steps]] in case there were changes.
+  - [ ] Schedule next update.
+
+Agent to controller connections
+===============================
+
+These are the steps a Jenkins agent does when connecting to the controller:
+
+1. Fetch connection info from `http://jenkins.lizard:8080` (see the `tails::jenkins::slave` Puppet class).
+2. Receive the connection URL `https://jenkins.tails.boum.org` ("Jenkins URL", manually configured in [Configure System](https://jenkins.tails.boum.org/configure)).
+3. Resolve `jenkins.tails.boum.org` to `192.168.122.1` (because of libvirt config).
+4. Connect using HTTPS to `jenkins.tails.boum.org:443`.
+5. Learn about port `42585` (fixed "TCP port for inbound agents", manually configured in [Configure Global Security](https://jenkins.tails.boum.org/configureSecurity/)).
+6. Finally, connect using HTTP to `jenkins.tails.boum.org:42585`.
+
+For those steps to work, the following configuration exists outside of Jenkins VMs:
+
+- Firewall rules in Lizard to forward agents traffic to `www.lizard`:
+  - `192.168.122.1:80` → `www.lizard:1180`
+  - `192.168.122.1:443` → `www.lizard:11443`
+  - `192.168.122.1:42585` → `www.lizard:42585`
+- Nginx configs in `www.lizard` to reverse proxy traffic to `jenkins.lizard`:
+  - `www.lizard:1180` → `jenkins.lizard:80`
+  - `www.lizard:11443` → `jenkins.lizard:443`
+  - `www.lizard:42585` → `jenkins.lizard:42585`
+
+What could be improved:
+
+- Ports 1180/80 are probably not needed in the configs above.
+- Port 42585 could be directly forwarded to `jenkins.lizard` as it's not TLS protected.
+
+Generating jobs
+===============
+
+We generate automatically a set of Jenkins jobs for branches that are
+active in the Tails main Git repository.
+
+The first brick extracts the list of active branches and output the
+needed information:
+
+ - [[!tails_gitweb config/chroot_local-includes/usr/lib/python3/dist-packages/tailslib/git.py]]
+ - [[!tails_gitweb config/chroot_local-includes/usr/lib/python3/dist-packages/tailslib/jenkins.py]]
+
+This list is parsed by the `generate_tails_iso_jobs` script run by
+a cronjob and deployed by our [[!tails_gitweb_repo puppet-tails]]
+`tails::jenkins::iso_jobs_generator` manifest.
+
+This script output YAML files compatible with
+[jenkins-job-builder](http://docs.openstack.org/infra/jenkins-job-builder).
+It creates one `project` for each active branch, which in turn uses
+several JJB `job templates` to create jobs for each branch:
+
+ - `build_Tails_ISO_*`
+ - `reproducibly_build_Tails_ISO_*`
+ - `test_Tails_ISO_*`
+
+This changes are pushed to our [[!tails_gitweb_repo jenkins-jobs]] git
+repo by the cronjob, and thanks to their automatic deployment in our
+`tails::jenkins::master` and `tails::gitolite::hooks::jenkins_jobs`
+manifests in our [[!tails_gitweb_repo puppet-tails]] repo, these new
+changes are applied to our Jenkins instance.
+
+Passing parameters through jobs
+===============================
+
+We pass information from build job to follow-up jobs (reproducibility
+testing, test suite) via two means:
+
+ - the Parameterized Trigger plugin, whenever it's sufficient
+
+ - the EnvInject plugin, for more complex cases:
+
+   * In the build job, a script collects the needed information and
+     writes it to a file that's saved as a build artifact.
+   * This file is used by the build job itself, to setup the variables it
+     needs (currently only `$NOTIFY_TO`).
+   * Follow-up jobs imported this file in the workspace along with the
+     build artifacts, then use an EnvInject pre-build step to load it
+     and set up variables accordingly.
+
+# Builds
+
+See [[contribute/working_together/roles/sysadmins/automated_builds_in_Jenkins]].
+
+# Tests
+
+See [[contribute/working_together/roles/sysadmins/automated_tests_in_Jenkins]].

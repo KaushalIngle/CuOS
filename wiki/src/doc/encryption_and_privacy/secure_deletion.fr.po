@@ -1,0 +1,691 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Tails\n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2022-05-31 09:30+0200\n"
+"PO-Revision-Date: 2022-01-03 18:28+0000\n"
+"Last-Translator: nihei <nihei@disroot.org>\n"
+"Language-Team: Tails translators <tails@boum.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.11.3\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta title=\"Securely deleting files and clean diskspace\"]]\n"
+msgstr "[[!meta title=\"Effacement sécurisé des fichiers et nettoyage de l'espace disque\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!toc levels=1]]\n"
+msgstr "[[!toc levels=1]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "<a id=\"why\"></a>\n"
+msgstr "<a id=\"why\"></a>\n"
+
+#. type: Title =
+#, no-wrap
+msgid "Why use secure deletion?"
+msgstr "Pourquoi utiliser l'effacement sécurisé ?"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"**Operating systems do not actually remove the contents of a file when it is\n"
+"deleted**, even after emptying the trash or explicitly removing the file, from\n"
+"the command line for example.\n"
+msgstr ""
+"**Les systèmes d'exploitation n'effacent pas le contenu d'un fichier lorsque\n"
+"celui-ci est supprimé**, même après avoir vidé la corbeille ou supprimé explicitement\n"
+"le fichier, avec une ligne de commande par exemple.\n"
+
+#. type: Plain text
+#, fuzzy
+#| msgid ""
+#| "Instead, they simply remove the file's entry from the file system "
+#| "directory, because this requires less work and is therefore faster. The "
+#| "contents of the file—the actual data—remain on the storage medium. The "
+#| "data will remain there until the operating system reuses the space for "
+#| "new data."
+msgid ""
+"Instead, they simply remove the file's entry from the file system directory, "
+"because this requires less work and is therefore faster. The contents of the "
+"file—the actual data—remain on the storage medium. The data will remain "
+"there until the operating system reuses the space for new data."
+msgstr ""
+"À la place, ils effacent simplement l'entrée du fichier du système de "
+"fichiers car cela demande moins de travail et est donc plus rapide. Le "
+"contenu du fichier —donc les données— restent sur le support de stockage. "
+"Ces données resteront disponibles jusqu'à ce que le système réutilise "
+"l'espace pour de nouvelles données."
+
+#. type: Plain text
+msgid ""
+"Likewise, reformatting, repartitioning or reimaging a system is not always "
+"guaranteed to write to every area of the disk, though all will cause the "
+"disk to appear empty or, in the case of reimaging, empty except for the "
+"files present in the image, to most software."
+msgstr ""
+"De la même manière, reformater, repartitionner ou réinstaller un système "
+"d'exploitation ne garantie pas toujours l'écriture sur toutes les zones du "
+"disque, même si tous ces processus font que le disque apparaîtra vide ou, "
+"dans le cas d'une réinstallation, vide à l'exception des fichiers présents "
+"dans l'image, pour la plupart des logiciels."
+
+#. type: Plain text
+#, fuzzy
+#| msgid ""
+#| "Finally, even when the storage medium is overwritten, physical properties "
+#| "of the medium may make it possible to recover the previous contents. In "
+#| "most cases however, this recovery is not possible by just reading from "
+#| "the storage device in the usual way, but requires using laboratory "
+#| "techniques such as disassembling the device and directly accessing/"
+#| "reading from its components."
+msgid ""
+"Finally, even when the storage medium is overwritten, physical properties of "
+"the medium might make it possible to recover the previous contents. In most "
+"cases however, this recovery is not possible by just reading from the "
+"storage device in the usual way, but requires using laboratory techniques "
+"such as disassembling the device and directly accessing/reading from its "
+"components."
+msgstr ""
+"Enfin, même lorsque le support de stockage est réutilisé, les propriétés "
+"physiques de celui-ci rendent possible d'en récupérer le contenu précédent. "
+"Dans la plupart des cas cependant, cette récupération n'est pas possible par "
+"une simple lecture de manière standard du périphérique mais nécessite "
+"l'utilisation de techniques avancées comme le démontage et accéder / lire "
+"directement ces composants."
+
+#. type: Plain text
+#, fuzzy
+#| msgid ""
+#| "For more details read the corresponding section of the Wikipedia article "
+#| "on [[!wikipedia Data_erasure#Limitations desc=\"Data erasure\"]]."
+msgid ""
+"To learn more, see the Wikipedia article on [[!wikipedia Data_erasure "
+"desc=\"data erasure\"]]."
+msgstr ""
+"Pour plus de détails consultez la section correspondante de l'article "
+"Wikipédia [[!wikipedia_fr Data_erasure#Limitations desc=\"Data erasure\"]]."
+
+#. type: Plain text
+#, no-wrap
+msgid "<a id=\"usb_and_ssd\"></a>\n"
+msgstr "<a id=\"usb_and_ssd\"></a>\n"
+
+#. type: Title =
+#, no-wrap
+msgid "Warning about USB sticks and solid-state disks"
+msgstr "Avertissement concernant les clés USB et les SSD"
+
+#. type: Plain text
+msgid ""
+"The only way to securely delete any data, even a single file, from a USB "
+"stick or an SSD (Solid-State Disk) is to [[securely erase the entire device|"
+"secure_deletion#erase-device]]."
+msgstr ""
+"La seule façon d'effacer de manière sécurisée n'importe quelle donnée, même "
+"un seul fichier, sur une clé USB ou un SSD (Solid-State Disk) est "
+"d'[[effacer de manière sécurisée tout le périphérique|secure_deletion#erase-"
+"device]]."
+
+#. type: Plain text
+#, fuzzy
+#| msgid ""
+#| "For more details read the corresponding section of the Wikipedia article "
+#| "on [[!wikipedia Data_erasure#Limitations desc=\"Data erasure\"]]."
+msgid ""
+"For more details read the corresponding section of the Wikipedia article on "
+"[[!wikipedia Data_erasure#Limitations desc=\"data erasure\"]]."
+msgstr ""
+"Pour plus de détails consultez la section correspondante de l'article "
+"Wikipédia [[!wikipedia_fr Data_erasure#Limitations desc=\"Data erasure\"]]."
+
+#. type: Title =
+#, no-wrap
+msgid "Securely delete files"
+msgstr "Effacement sécurisé de fichiers"
+
+#. type: Plain text
+#, no-wrap
+msgid "<div class=\"caution\">\n"
+msgstr "<div class=\"caution\">\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<p>Securely deleting files does not erase the potential backup copies of\n"
+"the file (for example LibreOffice creates backup copies that allow\n"
+"you to recover your work in case LibreOffice stops responding).</p>\n"
+msgstr ""
+"<p>Supprimer de manière sécurisée des fichiers n’efface pas les copies de sauvegarde potentielles des\n"
+"fichiers (par exemple LibreOffice créé des copies de sauvegarde qui vous permettent\n"
+"de récupérer votre travail si jamais LibreOffice cesse de fonctionner).</p>\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "</div>\n"
+msgstr "</div>\n"
+
+#. type: Bullet: '  1. '
+msgid "Open the <span class=\"application\">Files</span> browser."
+msgstr "Ouvrez le navigateur de <span class=\"application\">Fichiers</span>."
+
+#. type: Bullet: '  1. '
+msgid "Navigate to the folder containing the files that you want to delete."
+msgstr ""
+"Naviguez jusqu'au dossier contenant les fichiers que vous souhaitez effacer."
+
+#. type: Bullet: '  1. '
+msgid "Select the files that you want to delete with the mouse."
+msgstr "Sélectionnez avec la souris les fichiers que vous souhaitez effacer."
+
+#. type: Bullet: '  1. '
+msgid ""
+"Right-click (on Mac, click with two fingers) on the files and choose <span "
+"class=\"guimenuitem\">Wipe</span>."
+msgstr ""
+"Effectuez un clic-droit (sur Mac, cliquez avec deux doigts) sur les fichiers "
+"puis sélectionnez <span class=\"guimenuitem\">Écraser</span>."
+
+#. type: Bullet: '  1. '
+msgid "Confirm."
+msgstr "Confirmez."
+
+#. type: Plain text
+#, fuzzy, no-wrap
+#| msgid ""
+#| "  1. The deletion will start. It can last from a few seconds to several minutes,\n"
+#| "  according to the size of the files. Be patient…\n"
+msgid ""
+"  1. The deletion will start. It can last from a few seconds to several minutes,\n"
+"  according to the size of the files. Be patient…\n"
+msgstr ""
+"  1. La suppression commence. Il peut durer de quelques secondes à plusieurs minutes,\n"
+"  selon la taille des fichiers. Patience…\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "<a id=\"clean_disk_space\"></a>\n"
+msgstr "<a id=\"clean_disk_space\"></a>\n"
+
+#. type: Title =
+#, no-wrap
+msgid "Securely clean available disk space"
+msgstr "Nettoyer en toute sécurité l'espace disque disponible"
+
+#. type: Plain text
+msgid ""
+"In order to clean up the contents of all files that were previously "
+"suppressed but not securely deleted from a disk, it is also possible to "
+"securely clean all the free space on the disk."
+msgstr ""
+"Afin de nettoyer le contenu de tous les fichiers qui furent supprimés mais "
+"de manière non sécurisée, il est également possible de nettoyer de manière "
+"sécurisée tout l'espace disque disponible."
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<p>This method does not work as expected on solid-state disks or USB\n"
+"sticks.</p>\n"
+msgstr ""
+"<p>Cette méthode ne fonctionne pas comme prévu pour les clés USB et les\n"
+"disques SSD.</p>\n"
+
+#. type: Plain text
+#, fuzzy
+#| msgid ""
+#| "The disk or the folder may or may not contain other files. Those files "
+#| "will not be deleted during the operation."
+msgid ""
+"The disk or the folder can contain other files. Those files will not be "
+"deleted during the operation."
+msgstr ""
+"Le disque ou le dossier peut éventuellement contenir d'autres fichiers. Ceux-"
+"ci ne seront pas effacés durant l'opération."
+
+#. type: Bullet: '  1. '
+msgid ""
+"Click on the disk that you want to clean in the left pane to navigate to the "
+"root of this disk."
+msgstr ""
+"Cliquez sur le disque que vous souhaitez nettoyer dans le panneau de gauche "
+"pour vous placer à la racine du périphérique."
+
+#. type: Bullet: '  1. '
+#, fuzzy
+#| msgid ""
+#| "Click on the <span class=\"guimenu\">[[!img lib/pan-down.png alt=\"menu "
+#| "toggle\" class=\"symbolic\" link=\"no\"]]</span> button in the right "
+#| "corner of the title bar and choose <span class=\"guilabel\">Show Hidden "
+#| "Files</span>."
+msgid ""
+"Click on the [[!img lib/open-menu.png alt=\"Menu\" class=\"symbolic\" "
+"link=\"no\"]] button in the right corner of the title bar and choose **Show "
+"Hidden Files**."
+msgstr ""
+"Cliquez sur le bouton <span class=\"guimenu\">[[!img lib/pan-down.png "
+"alt=\"afficher menu\" class=\"symbolic\" link=\"no\"]]</span> dans le partie "
+"droite de la barre de titre et choisissez <span class=\"guilabel\">Afficher "
+"les fichiers cachés</span>."
+
+#. type: Bullet: '  1. '
+msgid ""
+"If you want to empty the trash, delete the <span class=\"filename\">."
+"Trash-1000</span> folder or similar."
+msgstr ""
+"Si vous voulez vider la corbeille, effacez le dossier <span "
+"class=\"filename\">.Trash-1000</span> ou similaire."
+
+#. type: Bullet: '  1. '
+msgid ""
+"Right-click (on Mac, click with two fingers) in empty space in the right "
+"pane and choose <span class=\"guimenuitem\">Wipe available diskspace</span>."
+msgstr ""
+"Effectuez un clic-droit (sur Mac cliquez avec deux doigts) dans l'espace "
+"vide du panneau de droite puis sélectionnez <span "
+"class=\"guimenuitem\">Écraser l'espace disque disponible</span>."
+
+#. type: Bullet: '  1. '
+#, fuzzy
+#| msgid ""
+#| "The cleaning starts. It can last from a few minutes to a few hours, "
+#| "according to the size of the available diskspace. Be patient…"
+msgid ""
+"The cleaning starts. It can last from a few minutes to a few hours, "
+"according to the size of the available diskspace. Be patient…"
+msgstr ""
+"L'écrasement commence. Il peut durer de quelques minutes à quelques heures, "
+"selon l'espace libre présent sur le disque. Patience…"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"     Note that a file with a name similar to <span\n"
+"     class=\"filename\">tmp.7JwHAyBvA9</span> is created in the\n"
+"     folder. It is made as big as possible to use all the available diskspace and\n"
+"     then securely deleted.\n"
+msgstr ""
+"     Remarquez qu'un fichier avec un nom semblable à <span\n"
+"     class=\"filename\">tmp.7JwHAyBvA9</span> est créé dans le\n"
+"     dossier. Sa taille va augmenter autant que possible afin d'utiliser tout l'espace libre disponible, puis\n"
+"     il sera supprimé de manière sécurisée.\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "<a id=\"erase-device\"></a>\n"
+msgstr "<a id=\"erase-device\"></a>\n"
+
+#. type: Title =
+#, no-wrap
+msgid "Securely erasing an entire device"
+msgstr "Effacer de manière sécurisée tout un périphérique"
+
+#. type: Plain text
+#, no-wrap
+msgid "<div class=\"note\">\n"
+msgstr "<div class=\"note\">\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<p>This technique is the only way to securely delete any data, even a\n"
+"single file, from a USB stick or an SSD (Solid-State Disk).</p>\n"
+msgstr ""
+"<p>Cette technique est la seule façon d'effacer de manière sécurisée n'importe quelle donnée, même un\n"
+"seul fichier, sur une clé USB ou un SSD (Solid-State Disk).</p>\n"
+
+#. type: Bullet: '1. '
+msgid "Open the <span class=\"application\">Disks</span> utility."
+msgstr "Ouvrez l'utilitaire <span class=\"application\">Disques</span>."
+
+#. type: Plain text
+#, no-wrap
+msgid "   All the current storage devices are listed in the left pane.\n"
+msgstr "   Tous les périphériques de stockage actuels sont listés dans la partie gauche.\n"
+
+#. type: Bullet: '1. '
+msgid "Plug in the USB stick or SSD that you want to securely delete."
+msgstr ""
+"Branchez la clé USB ou le SSD que vous voulez effacer de manière sécurisée."
+
+#. type: Bullet: '1. '
+msgid "A new device appears in the list of storage devices. Click on it:"
+msgstr ""
+"Un nouveau périphérique apparaît dans la liste des périphériques de "
+"stockage. Cliquez dessus :"
+
+#. type: Plain text
+#, no-wrap
+msgid "   [[!img encrypted_volumes/storage_devices_after.png link=\"no\" alt=\"\"]]\n"
+msgstr "   [[!img encrypted_volumes/storage_devices_after.png link=\"no\" alt=\"\"]]\n"
+
+#. type: Bullet: '1. '
+msgid ""
+"Check that the description of the device on the right side of the screen "
+"corresponds to your device: its brand, its size, etc."
+msgstr ""
+"Vérifiez que la description du périphérique sur la partie droite de l'écran "
+"correspond à votre périphérique : sa marque, sa taille, etc."
+
+#. type: Bullet: '1. '
+#, fuzzy
+#| msgid ""
+#| "Click on the <span class=\"guimenu\">[[!img lib/open-menu.png "
+#| "alt=\"Menu\" class=\"symbolic\" link=\"no\"]]</span> button in the "
+#| "titlebar and choose <span class=\"guilabel\">Format Disk…</span> to erase "
+#| "all the existing partitions on the device."
+msgid ""
+"Click on the <span class=\"guimenu\">[[!img lib/open-menu.png alt=\"Menu\" "
+"class=\"symbolic\" link=\"no\"]]</span> button in the titlebar and choose "
+"<span class=\"guilabel\">Format Disk…</span> to erase all the existing "
+"partitions on the device."
+msgstr ""
+"Cliquez sur le bouton <span class=\"guimenu\">[[!img lib/open-menu.png "
+"alt=\"Menu\" class=\"symbolic\" link=\"no\"]]</span> situé dans la barre de "
+"titre et choisissez <span class=\"guilabel\">Formater le disque…</span> pour "
+"effacer toutes les partitions présentes sur le périphérique."
+
+#. type: Bullet: '1. '
+msgid "In the <span class=\"guilabel\">Format Disk</span> dialog:"
+msgstr ""
+"Dans la boîte de dialogue <span class=\"guilabel\">Formater le disque</"
+"span> :"
+
+#. type: Bullet: '   - '
+msgid ""
+"Choose to <span class=\"guilabel\">Overwrite existing data with zeroes</"
+"span> in the <span class=\"guilabel\">Erase</span> drop-down list."
+msgstr ""
+"Choisissez <span class=\"guilabel\">Écraser les données existantes avec des "
+"zéros</span> dans la liste déroulante <span class=\"guilabel\">Effacer</"
+"span>."
+
+#. type: Bullet: '   - '
+msgid ""
+"Choose <span class=\"guilabel\">Compatible with all systems and devices (MBR/"
+"DOS)</span> in the <span class=\"guilabel\">Partitioning</span> drop-down "
+"list."
+msgstr ""
+"Choisissez <span class=\"guilabel\">Compatible avec tous les systèmes et "
+"périphériques (MBR / DOS)</span> dans la liste déroulante <span "
+"class=\"guilabel\">Partitionnement</span>."
+
+#. type: Bullet: '1. '
+#, fuzzy
+#| msgid "Click <span class=\"bold\">Format…</span>."
+msgid "Click <span class=\"bold\">Format…</span>."
+msgstr "Cliquez sur <span class=\"bold\">Formater…</span>."
+
+#. type: Bullet: '1. '
+msgid ""
+"In the confirmation dialog, make sure that the device is correct. Click "
+"<span class=\"bold\">Format</span> to confirm."
+msgstr ""
+"Dans la boîte de dialogue de confirmation, assurez-vous que le périphérique "
+"est le bon. Cliquez sur <span class=\"bold\">Formater</span> pour confirmer."
+
+#, fuzzy, no-wrap
+#~| msgid ""
+#~| "<p class=\"quoted-from\">Quoted from [[!wikipedia Secure_file_deletion\n"
+#~| "desc=\"Wikipedia: %s\"]].</p>\n"
+#~ msgid "*Quoted from [[!wikipedia Data_erasure desc=\"Wikipedia: %s\"]].*\n"
+#~ msgstr ""
+#~ "<p class=\"quoted-from\">Source [[!wikipedia_fr Rémanence_des_données\n"
+#~ "desc=\"Wikipédia: %s\"]].</p>\n"
+
+#, no-wrap
+#~ msgid "     [[!img wipe_files.png link=no alt=\"Right-click&nbsp;▸ Wipe\"]]\n"
+#~ msgstr "     [[!img wipe_files.png link=no alt=\"Clic droit&nbsp;▸ Écraser\"]]\n"
+
+#, no-wrap
+#~ msgid ""
+#~ "     [[!img wipe_available_diskspace.png link=no alt=\"Right-click&nbsp;▸ Wipe\n"
+#~ "     available diskspace\"]]\n"
+#~ msgstr ""
+#~ "     [[!img wipe_available_diskspace.png link=no alt=\"Clic droit&nbsp;▸ Écraser\n"
+#~ "    l'espace disque disponible\"]]\n"
+
+#~ msgid ""
+#~ "**The methods described below will not work as expected on USB sticks "
+#~ "and\n"
+#~ "solid-state disks.**\n"
+#~ msgstr ""
+#~ "**Les méthodes évoquées ci-dessous ne fonctionneront pas pour les clés "
+#~ "USB et\n"
+#~ "les disques SSD**.\n"
+
+#~ msgid ""
+#~ "The existing hard disk-oriented techniques for secure deletion of "
+#~ "individual files are not effective."
+#~ msgstr ""
+#~ "Les techniques existantes fonctionnant pour l'effacement sécurisé de "
+#~ "fichiers individuels des disques durs ne sont pas efficaces."
+
+#~ msgid ""
+#~ "Overwriting twice the entire disk is usually, but not always, sufficient "
+#~ "to securely clean the disk."
+#~ msgstr ""
+#~ "Écraser deux fois la totalité du disque est d'habitude, mais pas "
+#~ "toujours, suffisant pour le nettoyer de manière sécurisée."
+
+#~ msgid ""
+#~ "<p>Unfortunately, Tails does not currently allow you to perform this "
+#~ "task\n"
+#~ "with graphical tools. See [[!tails_ticket 5323]].</p>\n"
+#~ msgstr ""
+#~ "<p>Malheureusement, actuellement Tails ne permet pas de faire ceci\n"
+#~ "avec des outils graphiques. Voir [[!tails_ticket 5323]].</p>\n"
+
+#~ msgid ""
+#~ "In Tails you can securely delete files thanks to an [extension of the "
+#~ "file browser](http://wipetools.tuxfamily.org/nautilus-wipe.html)."
+#~ msgstr ""
+#~ "Dans Tails vous pouvez effacer des fichiers de manière sécurisé grâce à "
+#~ "l'extension de Nautilus appelée [Nautilus Wipe](http://wipetools."
+#~ "tuxfamily.org/nautilus-wipe.html)."
+
+#~ msgid ""
+#~ "  1. Open the file browser, either\n"
+#~ "  from the <span class=\"guimenu\">Places</span> menu or the <span\n"
+#~ "  class=\"guilabel\">Home</span> icon on the desktop.\n"
+#~ msgstr ""
+#~ "  1. Ouvrez le gestionnaire de fichiers, soit\n"
+#~ "  depuis le menu <span class=\"guimenu\">Emplacements</span> soit\n"
+#~ "  par l'icône <span class=\"guilabel\">Dossier personnel</span> sur le "
+#~ "bureau.\n"
+
+#~ msgid "<a id=\"empty_trash\"></a>\n"
+#~ msgstr "<a id=\"empty_trash\"></a>\n"
+
+#~ msgid "Emptying the trash\n"
+#~ msgstr "Vider la corbeille\n"
+
+#~ msgid ""
+#~ "Before considering [[securely cleaning the available space on a disk|"
+#~ "secure_deletion#clean_disk_space]], make sure to empty the trash."
+#~ msgstr ""
+#~ "Avant de [[nettoyer de manière sécurisée l'espace libre d'un disque|"
+#~ "secure_deletion#clean_disk_space]], assurez-vous de bien vider la "
+#~ "corbeille."
+
+#~ msgid ""
+#~ "  1. Open the file browser, either from the <span "
+#~ "class=\"guimenu\">Places</span> menu or\n"
+#~ "  the <span class=\"guilabel\">Home</span> icon on the desktop.\n"
+#~ msgstr ""
+#~ "  1. Ouvrez le gestionnaire de fichiers, soit depuis le menu <span "
+#~ "class=\"guimenu\">Emplacements</span> soit\n"
+#~ "  par l'icône <span class=\"guilabel\">Dossier personnel</span> sur le "
+#~ "bureau.\n"
+
+#~ msgid ""
+#~ "     <div class=\"tip\">\n"
+#~ "     <p>On the previous screenshot, the trash in the <span\n"
+#~ "     class=\"filename\">.Trash-1000</span> folder is not deleted. See "
+#~ "the\n"
+#~ "     [[instructions above|secure_deletion#empty_trash]].</p>\n"
+#~ "     </div>\n"
+#~ msgstr ""
+#~ "     <div class=\"tip\">\n"
+#~ "     <p>Dans la capture d'écran ci-dessus, la corbeille située dans le "
+#~ "dossier <span\n"
+#~ "     class=\"filename\">.Trash-1000</span> n'est pas effacée. Veuillez "
+#~ "consulter\n"
+#~ "     les [[instructions ci-dessus|secure_deletion#empty_trash]].</p>\n"
+#~ "     </div>\n"
+
+#~ msgid ""
+#~ "<p>This option does not delete hidden files. Choose\n"
+#~ "   <span class=\"menuchoice\">\n"
+#~ "      <span class=\"guimenu\">[[!img lib/open-menu.png alt=\"Menu\" "
+#~ "class=symbolic link=no]]</span>&nbsp;▸\n"
+#~ "      <span class=\"guimenuitem\">Show hidden files</span></span>\n"
+#~ "   in the titlebar to show them.\n"
+#~ "</p>\n"
+#~ msgstr ""
+#~ "<p>Cette option n'efface pas les fichiers cachés. Sélectionnez\n"
+#~ "   <span class=\"menuchoice\">\n"
+#~ "      <span class=\"guimenu\">[[!img lib/open-menu.png alt=\"Menu\" "
+#~ "class=symbolic link=no]]</span>&nbsp;▸\n"
+#~ "      <span class=\"guimenuitem\">Afficher les fichiers cachés</span></"
+#~ "span>\n"
+#~ "   dans la barre de titre pour les afficher.\n"
+#~ "</p>\n"
+
+#~ msgid "See [[!tails_ticket 5323]]."
+#~ msgstr "Voir le [[!tails_ticket 5323]]."
+
+#, fuzzy
+#~| msgid ""
+#~| "  1. Open the <span class=\"application\">Nautilus</span> file browser, "
+#~| "either\n"
+#~| "  from the <span class=\"guimenu\">Places</span> menu or the <span\n"
+#~| "  class=\"guilabel\">Computer</span> icon on the desktop.\n"
+#~ msgid ""
+#~ "  1. Open the <span class=\"application\">Nautilus</span> file browser, "
+#~ "either\n"
+#~ "  from the <span class=\"guimenu\">Places</span> menu or the <span\n"
+#~ "  class=\"guilabel\">home</span> icon on the desktop.\n"
+#~ msgstr ""
+#~ "  1. Ouvrez le navigateur de fichiers <span "
+#~ "class=\"application\">Nautilus</span>, soit\n"
+#~ "  depuis le menu <span class=\"guimenu\">Raccourcis</span>, soit depuis "
+#~ "l'icône <span\n"
+#~ "  class=\"guilabel\">Computer</span> sur le bureau.\n"
+
+#~ msgid ""
+#~ "[[!tails_todo wiping_flash_media desc=\"See the corresponding ticket."
+#~ "\"]]\n"
+#~ msgstr ""
+#~ "[[!tails_todo wiping_flash_media desc=\"Voir le ticket correspondant."
+#~ "\"]]\n"
+
+#~ msgid "Navigate to a folder on the disk that you want to clean."
+#~ msgstr ""
+#~ "Naviguez jusqu'au dossier sur le disque que vous souhaitez nettoyer."
+
+#~ msgid ""
+#~ "<h2 class=\"bullet-number-one\">Select the files you want to securely "
+#~ "delete</h2>\n"
+#~ msgstr ""
+#~ "<h2 class=\"bullet-number-one\">Sélectionnez les fichiers que vous "
+#~ "souhaitez écraser</h2>\n"
+
+#~ msgid ""
+#~ "[[!img select_files.png link=no alt=\"Three files selected in "
+#~ "Nautilus\"]]\n"
+#~ msgstr ""
+#~ "[[!img select_files.fr.png link=no alt=\"Trois fichiers sélectionnés dans "
+#~ "Nautilus\"]]\n"
+
+#~ msgid ""
+#~ "<h2 class=\"bullet-number-two\">Securely delete them using Nautilus Wipe</"
+#~ "h2>\n"
+#~ msgstr ""
+#~ "<h2 class=\"bullet-number-two\">Écrasez les fichiers avec Nautilus Wipe</"
+#~ "h2>\n"
+
+#~ msgid "Securely delete them by doing **right-click**&nbsp;▸ **Wipe**."
+#~ msgstr ""
+#~ "Écrasez les fichiers en effectuant un **clic droit**&nbsp;▸ **Écraser**."
+
+#~ msgid ""
+#~ "[[!img are_you_sure_files.png link=no alt=\"Are you sure you want to wipe "
+#~ "the 3\n"
+#~ "selected items?\"]]\n"
+#~ msgstr "[[!img are_you_sure_files.fr.png link=no alt=\"Êtes-vous sûr?\"]]\n"
+
+#~ msgid "[[!img wiping_files.png link=no alt=\"Wiping files…\"]]\n"
+#~ msgstr ""
+#~ "[[!img wiping_files.fr.png link=no alt=\"Écrasement des fichiers…\"]]\n"
+
+#~ msgid ""
+#~ "Once the deletion will be done you should be prompted with a message "
+#~ "saying:"
+#~ msgstr ""
+#~ "Une fois l'écrasement effectué, un message devrait vous le confirmer:"
+
+#~ msgid "[[!img wipe_successful.png link=no alt=\"Wipe successful.\"]]\n"
+#~ msgstr "[[!img wipe_successful.fr.png link=no alt=\"Succès.\"]]\n"
+
+#~ msgid ""
+#~ "<h2 class=\"bullet-number-one\">Navigate to the disk you want to "
+#~ "securely\n"
+#~ "clean</h2>\n"
+#~ msgstr ""
+#~ "<h2 class=\"bullet-number-one\">Ouvrez le disque que vous souhaitez "
+#~ "nettoyer</h2>\n"
+
+#~ msgid ""
+#~ "<h2 class=\"bullet-number-two\">Securely clean the available space using "
+#~ "Nautilus\n"
+#~ "Wipe</h2>\n"
+#~ msgstr ""
+#~ "<h2 class=\"bullet-number-two\">Écraser l'espace libre d'un périphérique "
+#~ "avec Natilus Wipe</h2>\n"
+
+#~ msgid ""
+#~ "Securely clean the available diskspace by doing **right-click**&nbsp;▸ "
+#~ "**Wipe available diskspace**."
+#~ msgstr ""
+#~ "Écrasez l'espace libre sur le périphérique en faisant **clic droit**&nbsp;"
+#~ "▸ **Écraser l'espace disque disponible**."
+
+#~ msgid ""
+#~ "[[!img are_you_sure_diskspace.png link=no alt=\"Are you sure you want to "
+#~ "wipe the\n"
+#~ "available diskspace?\"]]\n"
+#~ msgstr ""
+#~ "[[!img are_you_sure_diskspace.fr.png link=no alt=\"Êtes-vous sûr?\"]]\n"
+
+#~ msgid ""
+#~ "[[!img wiping_diskspace.png link=no \"Wiping available diskspace…\"]]\n"
+#~ msgstr "[[!img wiping_diskspace.fr.png link=no \"Écrasement..\"]]\n"
+
+#~ msgid ""
+#~ "Once the cleaning will be done you should be prompted with a message "
+#~ "saying:"
+#~ msgstr ""
+#~ "Une fois l'écrasement effectué, un message devrait vous le confirmer:"
+
+#~ msgid "[[!img wipe_successful_diskspace.png link=no \"Wipe successful\"]]\n"
+#~ msgstr "[[!img wipe_successful_diskspace.fr.png link=no \"Succès\"]]\n"
+
+#~ msgid ""
+#~ "[[See the corresponding bug report.|bugs/wiping_flash_media]]\n"
+#~ "</div>\n"
+#~ msgstr ""
+#~ "[[Voir le rapport de bug correspondant.|bugs/wiping_flash_media]]\n"
+#~ "</div>\n"

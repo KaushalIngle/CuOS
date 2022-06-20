@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+import os
+import logging
+
+from tailslib.netnsdrop import run
+from tailslib.gnome import gnome_env_vars
+
+
+def main():
+    run("/usr/bin/onioncircuits", "onioncircs", "/usr/local/bin/onioncircuits")
+
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+    main()

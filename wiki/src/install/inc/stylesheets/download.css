@@ -1,0 +1,65 @@
+@import url("hide.css");
+
+/* Display no JS version by default */
+
+#ie,
+#verify-button,
+#verifying-download,
+#verification-successful,
+#verification-failed,
+#verification-error-file,
+#verification-error-json,
+#verification-error-image,
+#tails-version,
+#try-another-mirror,
+#download-img,
+#download-iso,
+#download-img-retry,
+#download-iso-retry,
+#bittorrent-verification-tip {
+  display: none;
+}
+
+/* Buttons */
+
+#verify-button input {
+  display: none;
+}
+
+#javascript-verification-tip, #verification-failed {
+  position: relative;
+}
+
+.why-failed-link {
+  position: absolute;
+  top: 0;
+  left: 35em;
+  margin: 0;
+}
+
+/* Progress bar */
+
+.progress {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.progress-bar {
+  background: #53b351;
+  height: 15px;
+}
+
+/* Verification results */
+
+img.icon {
+  margin-right: 15px;
+  vertical-align: bottom;
+}
+
+#verification-error-file, #verification-error-json, #verification-error-image {
+  margin-top: 1.5em;
+}
+
+#retry-json, #retry-image {
+  cursor: pointer;
+}

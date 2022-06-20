@@ -1,0 +1,241 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Tails\n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2021-03-30 17:21+0000\n"
+"PO-Revision-Date: 2021-12-16 19:51+0000\n"
+"Last-Translator: nihei <nihei@disroot.org>\n"
+"Language-Team: Tails translators <tails@boum.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.11.3\n"
+
+#. type: Content of: <div>
+msgid "[[!meta title=\"Thank you!\"]]"
+msgstr "[[!meta title=\"Merci !\"]]"
+
+#. type: Content of: outside any tag (error?)
+msgid ""
+"[[!meta stylesheet=\"donate/thanks\" rel=\"stylesheet\" title=\"\"]] [[!meta "
+"stylesheet=\"hide-breadcrumbs\" rel=\"stylesheet\" title=\"\"]] [[!meta "
+"stylesheet=\"hide-donate-banner\" rel=\"stylesheet\" title=\"\"]] [[!meta "
+"robots=\"noindex\"]] [[!meta script=\"donate/thanks\"]]"
+msgstr ""
+"[[!meta stylesheet=\"donate/thanks\" rel=\"stylesheet\" title=\"\"]] [[!meta "
+"stylesheet=\"hide-breadcrumbs\" rel=\"stylesheet\" title=\"\"]] [[!meta "
+"stylesheet=\"hide-donate-banner\" rel=\"stylesheet\" title=\"\"]] [[!meta "
+"robots=\"noindex\"]] [[!meta script=\"donate/thanks\"]]"
+
+#. type: Content of: <div>
+msgid ""
+"[[!img thanks.png link=\"no\" alt=\"Tails protects the most vulnerable\"]]"
+msgstr ""
+"[[!img thanks.png link=\"no\" alt=\"Tails protège les plus vulnérables\"]]"
+
+#. type: Content of: <div><div><h1>
+msgid "Thank you so much for your support!"
+msgstr "Un grand merci pour votre soutien !"
+
+#. type: Content of: <div><div><p>
+msgid ""
+"Your generous donation will keep safe the people who need it the most and "
+"protect freedom in the digital age."
+msgstr ""
+"Votre généreuse contribution permettra d'assurer la sécurité des personnes "
+"qui en ont le plus besoin et de protéger la liberté à l'ère numérique."
+
+#. type: Content of: <div><div><p>
+msgid ""
+"Most Internet tools fund themselves by spying on their users. At Tails, we "
+"do things differently and we couldn't do it without you."
+msgstr ""
+"La plupart des outils Internet se financent en espionnant leurs "
+"utilisateurs. Chez Tails, nous faisons les choses différemment et nous ne "
+"pouvons pas les faire sans vous."
+
+#. type: Content of: <div><div><p>
+msgid ""
+"If you need a donation receipt, contact us at <a href=\"mailto:tails-"
+"fundraising@boum.org\">tails-fundraising@boum.org</a> ([[OpenPGP key|tails-"
+"fundraising.key]])."
+msgstr ""
+"Si vous avez besoin d'un reçu de don, contactez-nous à <a href=\"mailto"
+":tails-fundraising@boum.org\">tails-fundraising@boum.org</a>. ([[Clé OpenPGP"
+"|tails-fundraising.key]])."
+
+#. type: Content of: <div><div><p>
+msgid "Your donation will appear as made to Riseup Labs, our fiscal sponsor."
+msgstr ""
+"Votre don apparaîtra comme fait à l'attention de Riseup Labs, notre "
+"partenaire financier."
+
+#. type: Content of: <div><div><blockquote><p><em>
+msgid ""
+"<em>We train human-rights activists and journalists to use Tails if they are "
+"gonna be looking deep into shady business."
+msgstr ""
+"<em>Nous formons des personnes militantes des droits humains et des "
+"journalistes à utiliser Tails s'ils doivent enquêter en profondeur sur des "
+"affaires louches."
+
+#. type: Content of: <div><div><blockquote><p>
+msgid ""
+"Mexico is a dangerous place to research issues when the organized crime and "
+"private companies are together behind some of the most violent stuff that we "
+"see here.</em>"
+msgstr ""
+"Le Mexique est un lieu dangereux pour les investigations quand le crime "
+"organisé et les sociétés privées mènent ensemble les actes les plus violents "
+"que l'on ait vus.</em>"
+
+#. type: Content of: <div><div><blockquote>
+msgid "&mdash; <strong>Digital security trainer, Mexico</strong>"
+msgstr "&mdash; <strong>Formateur en sécurité informatique, Mexique</strong>"
+
+#. type: Content of: <div><div><blockquote><p><em>
+msgid ""
+"<em>I always have a Tails USB stick handy, especially when traveling.  "
+"Pakistan really isn't the safest place for journalists."
+msgstr ""
+"<em>J'ai toujours une clef USB Tails sous la main, particulièrement en "
+"voyage.  Le Pakistan n'est vraiment pas un lieu sûr pour les journalistes."
+
+#. type: Content of: <div><div><blockquote><p>
+msgid "Thanks Tails for an amazing tool!</em>"
+msgstr "Merci Tails pour cet outil génial !</em>"
+
+#. type: Content of: <div><div><blockquote>
+msgid "&mdash; <strong>Freelance journalist, Pakistan</strong>"
+msgstr "&mdash; <strong>Journaliste freelance, Pakistan</strong>"
+
+#. type: Content of: <h1>
+msgid "Help us spread the word"
+msgstr "Aidez-nous à faire passer le message"
+
+#.  Tweet intent generator: https://tech.cymi.org/tweet-intents 
+#. type: Content of: <div><a>
+msgid ""
+"<a href=\"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftails.boum.org"
+"%2Fdonate%2F%3Fr%3Dtn&text=I%20donate%20to%20@Tails_live%20because%20nobody"
+"%20should%20have%20to%20pay%20to%20be%20safe%20while%20using%20computers.\" "
+"class=\"tweet\" target=\"_blank\"> [[!img godzilla.png link=\"no\" alt=\"\"]]"
+msgstr ""
+"<a href=\"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftails.boum.org%2"
+"Fdonate%2F%3Fr%3Dtn&text=Je%20donne%20à%20@Tails_live%20parce%20que%20personn"
+"e%20ne%20devrait%20avoir%20à%20payer%20pour%20une%20utilisation%20sécurisée%2"
+"0de%20son%20ordinateur.\" class=\"tweet\" target=\"_blank\"> [[!img "
+"godzilla.png link=\"no\" alt=\"\"]]"
+
+#. type: Content of: <div><a><p>
+msgid ""
+"I donate to @Tails_live because nobody should have to pay to be safe while "
+"using computers."
+msgstr ""
+"Je donne à @Tails_live parce que personne ne devrait avoir à payer pour une "
+"utilisation sécurisée de son ordinateur."
+
+#. type: Content of: <div><a><p>
+msgid "Tweet"
+msgstr "Tweet"
+
+#. type: Content of: <div><a>
+msgid ""
+"</a> <a href=\"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftails.boum."
+"org%2Fdonate%2F%3Fr%3Dts&text=I%20proudly%20support%20@Tails_live%20to%20keep"
+"%20safe%20activists%2C%20journalists%2C%20and%20domestic%20violence"
+"%20survivors.\" class=\"tweet\" target=\"_blank\"> [[!img godzilla.png link="
+"\"no\" alt=\"\"]]"
+msgstr ""
+"</a> <a href=\"https://twitter.com/intent/tweet?url=https%3A%2F%2Ftails.boum."
+"org%2Fdonate%2F%3Fr%3Dts&text=Je%20soutiens%20fi%e8rement%20@Tails_live%20pou"
+"r%20s%e9curiser%20les%20militants%2C%20journalistes%20et%20les%20victimes%20d"
+"e%20violences%20domestiques\" class=\"tweet\" target=\"_blank\"> [[!img "
+"godzilla.png link=\"no\" alt=\"\"]]"
+
+#. type: Content of: <div><a><p>
+msgid ""
+"I proudly support @Tails_live to keep safe activists, journalists, and "
+"domestic violence survivors."
+msgstr ""
+"je soutiens fièrement @Tails_live pour sécuriser les militants, journalistes "
+"et victimes de violences domestiques."
+
+#. type: Content of: <div><a>
+msgid ""
+"</a> <a href=\"https://twitter.com/intent/follow?screen_name=Tails_live\" "
+"class=\"follow\" target=\"_blank\"> [[!img twitter.png link=\"no\" alt=\"\"]]"
+msgstr ""
+"</a> <a href=\"https://twitter.com/intent/follow?screen_name=Tails_live\" "
+"class=\"follow\" target=\"_blank\"> [[!img twitter.png link=\"no\" alt=\"\"]]"
+
+#. type: Content of: <div><a><p>
+msgid "Follow us"
+msgstr "Suivez-nous"
+
+#. type: Content of: <div>
+msgid "</a>"
+msgstr "</a>"
+
+#~ msgid "[[!img love.png link=\"no\" class=\"smiley\"]]"
+#~ msgstr "[[!img love.png link=\"no\" class=\"smiley\"]]"
+
+#~ msgid "Your payment was successful."
+#~ msgstr "Votre paiement a réussi."
+
+#~ msgid "Please tweet about your donation"
+#~ msgstr "S'il vous plaît tweetez à propos de votre don"
+
+#~ msgid ""
+#~ "Show your friends that you care about privacy and Internet freedom, and "
+#~ "encourage others to do the same!"
+#~ msgstr ""
+#~ "Montrez à vos connaissances que la vie privée et la liberté sur Internet "
+#~ "vous tiennent à cœur et encouragez d'autres personnes à faire de même !"
+
+#~ msgid ""
+#~ "<a href=\"https://twitter.com/intent/tweet?text=I+donate+to+@Tails_live"
+#~ "+because+nobody+should+have+to+pay+to+be+safe+while+using+computers: "
+#~ "https://tails.boum.org/donate/?r=nobody\" class=\"tweet\" target=\"_blank"
+#~ "\"> I donate to @Tails_live because nobody should have to pay to be safe "
+#~ "while using computers.  </a> <a href=https://twitter.com/intent/tweet?"
+#~ "text=If+like+me+you+want+more+leaks,+donate+to+@Tails_live!+https://tails."
+#~ "boum.org/donate/?r=leaks\" class=\"tweet\" target=\"_blank\"> If like me "
+#~ "you want more leaks, donate to @Tails_live! </a> <a href=\"https://"
+#~ "twitter.com/intent/tweet?text=I+proudly+support+@Tails_live+to+help"
+#~ "+journalists+and+human+rights+defenders+do+their+job+safely:+https://"
+#~ "tails.boum.org/donate/?r=hrd\" class=\"tweet\" target=\"_blank\"> I "
+#~ "proudly support @Tails_live to help journalists and human rights "
+#~ "defenders do their job safely.  </a> <a href=\"https://twitter.com/intent/"
+#~ "tweet?text=It+takes+more+than+two+to+do+the+anonymity+dance.+Join+me+in"
+#~ "+donating+to+@Tails_live+to+keep+dancing:+https://tails.boum.org/donate/?"
+#~ "r=dance\" class=\"tweet\" target=\"_blank\"> It takes more than two to do "
+#~ "the anonymity dance. Join me in donating to @Tails_live to keep dancing.  "
+#~ "</a>"
+#~ msgstr ""
+#~ "<a href=\"https://twitter.com/intent/tweet?text=Je+donne+à+@Tails_live+car"
+#~ "+personne+ne+devrait+avoir+à+payer+pour+être+en+sécurité++en+utilisant+des"
+#~ "+ordinateurs: https://tails.boum.org/donate/index.fr.html?r=nobody\" "
+#~ "class=\"tweet\" target=\"_blank\"> Je donne à @Tails_live car personne ne "
+#~ "devrait avoir à payer pour être en sécurité en utilisant des "
+#~ "ordinateurs.  </a> <a href=https://twitter.com/intent/tweet?text=Si+comme"
+#~ "+moi+vous+voulez+plus+de+leaks,+faites+un+don+à+@Tails_live+!+https://"
+#~ "tails.boum.org/donate/index.fr.html?r=leaks\" class=\"tweet\" target="
+#~ "\"_blank\"> Si comme moi vous voulez plus de leaks, faites un don à "
+#~ "@Tails_live ! </a> <a href=\"https://twitter.com/intent/tweet?text=Je"
+#~ "+soutiens+fièrement+@Tails_live+pour+aider+journalistes+et+défenseurs+des"
+#~ "+droits+humains+à+agir+en+sécurité:+https://tails.boum.org/donate/index."
+#~ "fr.html?r=hrd\" class=\"tweet\" target=\"_blank\"> Je soutiens fièrement "
+#~ "@Tails_live pour aider journalistes et défenseurs des droits humains à "
+#~ "agir en sécurité.  </a> <a href=\"https://twitter.com/intent/tweet?text=It"
+#~ "+takes+more+than+two+to+do+the+anonymity+dance.+Join+me+in+donating+to"
+#~ "+@Tails_live+to+keep+dancing:+https://tails.boum.org/donate/?r=dance\" "
+#~ "class=\"tweet\" target=\"_blank\"> It takes more than two to do the "
+#~ "anonymity dance. Join me in donating to @Tails_live to keep dancing.  </a>"

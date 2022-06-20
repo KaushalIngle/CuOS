@@ -1,0 +1,9 @@
+boot/initrd.img-*
+boot/vmlinux-*
+boot/vmlinuz-*
+debootstrap/*
+tmp/*
+var/cache/apt/pkgcache.bin
+var/cache/apt/srcpkgcache.bin
+var/lib/apt/lists/*
+var/lib/initramfs-tools/*-amd64

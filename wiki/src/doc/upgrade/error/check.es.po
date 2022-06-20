@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: tails-l10n@boum.org\n"
+"POT-Creation-Date: 2021-09-07 14:15+0200\n"
+"PO-Revision-Date: 2022-04-30 06:22+0000\n"
+"Last-Translator: Joaquín Serna <bubuanabelas@cryptolab.net>\n"
+"Language-Team: Spanish <http://translate.tails.boum.org/projects/tails/"
+"upgrade_error_check/es/>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.9.1\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta title=\"Error while checking for upgrades\"]]\n"
+msgstr "[[!meta title=\"Error mientras se comprobaba por actualizaciones\"]]\n"
+
+#. type: Plain text
+#, fuzzy
+#| msgid ""
+#| "Tails could not determine whether an upgrade is available from our "
+#| "website."
+msgid ""
+"Tails could not determine whether an upgrade is available from our website.  "
+"This is most likely caused by a network connection problem."
+msgstr ""
+"Tails no pudo determinar si hay una actualización disponible desde nuestro "
+"sitio web."
+
+#. type: Plain text
+msgid "To solve it:"
+msgstr "Para solucionarlo:"
+
+#. type: Bullet: '1. '
+msgid ""
+"Check your network connection and restart Tails to check for upgrades again."
+msgstr ""
+"Revisa tu conexión de red, y reinicia Tails para revisar por actualizaciones "
+"de nuevo."
+
+#. type: Bullet: '1. '
+msgid ""
+"Read our [[release notes|doc/upgrade/release_notes]] to see if there are "
+"known issues with automatically upgrading to the latest version of Tails."
+msgstr ""
+
+#. type: Bullet: '1. '
+#, fuzzy
+#| msgid "- [[Do a manual upgrade|doc/upgrade#manual]]"
+msgid "If the problem persists, do a [[manual upgrade|doc/upgrade#manual]]."
+msgstr "- [[Hacer una actualización manual|doc/upgrade#manual]]"
+
+#. type: Plain text
+#, no-wrap
+msgid "<a id=\"4.18\"></a>\n"
+msgstr "<a id=\"4.18\"></a>\n"
+
+#. type: Title =
+#, no-wrap
+msgid "Automatic upgrades are broken between Tails 4.15 and Tails 4.18"
+msgstr ""
+
+#. type: Plain text
+msgid ""
+"To upgrade from Tails 4.15, Tails 4.16, Tails 4.17, or Tails 4.18, you can "
+"either:"
+msgstr ""
+
+#. type: Plain text
+#, fuzzy
+#| msgid "- [[Do a manual upgrade|doc/upgrade#manual]]"
+msgid "- Do a [[manual upgrade|doc/upgrade#manual]]."
+msgstr "- [[Hacer una actualización manual|doc/upgrade#manual]]"
+
+#. type: Plain text
+msgid "- Fix the automatic upgrade from a terminal. To do so:"
+msgstr ""
+
+#. type: Bullet: '  1. '
+msgid ""
+"Start Tails and set up an [[administration password|doc/first_steps/"
+"welcome_screen/administration_password]]."
+msgstr ""
+
+#. type: Bullet: '  1. '
+msgid "In a terminal, execute the following command:"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"         torsocks curl --silent https://tails.boum.org/isrg-root-x1-cross-signed.pem \\\n"
+"         | sudo tee --append /usr/local/etc/ssl/certs/tails.boum.org-CA.pem \\\n"
+"         && systemctl --user restart tails-upgrade-frontend\n"
+msgstr ""
+"         torsocks curl --silent https://tails.boum.org/isrg-root-x1-cross-"
+"signed.pem \\\n"
+"         | sudo tee --append /usr/local/etc/ssl/certs/tails.boum.org-CA.pem "
+"\\\n"
+"         && systemctl --user restart tails-upgrade-frontend\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "     <div class=\"note\">\n"
+msgstr "     <div class=\"note\">\n"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"     <p>This command is a single command that wraps across several lines.\n"
+"     Copy and paste the entire block at once and make sure that it executes\n"
+"     as a single command.</p>\n"
+msgstr ""
+
+#. type: Plain text
+#, no-wrap
+msgid "     </div>\n"
+msgstr "     </div>\n"
+
+#. type: Bullet: '  1. '
+msgid ""
+"Approximately 30 seconds later, you should be prompted to upgrade to the "
+"latest version of Tails. If no prompt appears, you might already be running "
+"the latest version of Tails."
+msgstr ""
+
+#~ msgid "This is most likely caused by a network connection problem."
+#~ msgstr "Esto está sucediendo muy posiblemente por un problema de conexión."
+
+#~ msgid "If the problem persists, you can either:"
+#~ msgstr "Si el problema persiste, puedes:"
+
+#~ msgid "- [[Report an error|support]]"
+#~ msgstr "- [[Reporta un error|support]]"
+
+#~ msgid ""
+#~ "  Include in your report the debugging information that appears in the "
+#~ "error message.\n"
+#~ msgstr ""
+#~ "  Incluye en tu reporte la información de depuración que aparece en el "
+#~ "mensaje de error.\n"
+
+#~ msgid "This error could also be caused by:"
+#~ msgstr "Este error también podría ser causado por:"
+
+#~ msgid "an error in Tails Upgrader"
+#~ msgstr "un error en el Actualizador de Tails"
+
+#~ msgid ""
+#~ "a failure or an attack on the Tor exit node being used, your Internet "
+#~ "service provider, or our website."
+#~ msgstr ""
+#~ "un error o un ataque en el nodo de salida de Tor usado, tu proveedor de "
+#~ "Internet, o nuestro sitio web."
+
+#~ msgid "Sending us a report is the best way to further analyse the error."
+#~ msgstr "Enviarnos un reporte es la mejor manera de analizar el error."

@@ -1,0 +1,341 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2022-05-31 09:31+0200\n"
+"PO-Revision-Date: 2022-05-04 19:24+0000\n"
+"Last-Translator: Chre <tor@renaudineau.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.9.1\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta title=\"Launching our donation campaign for 2020\"]]\n"
+msgstr "[[!meta title=\"Lancement de notre campagne de don pour 2020\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!meta date=\"Mon, 07 Oct 2019 15:00:55 +0000\"]]\n"
+msgstr "[[!meta date=\"Mon, 07 Oct 2019 15:00:55 +0000\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!pagetemplate template=\"news.tmpl\"]]\n"
+msgstr "[[!pagetemplate template=\"news.tmpl\"]]\n"
+
+#. type: Plain text
+#, no-wrap
+msgid "[[!tag announce]]\n"
+msgstr "[[!tag announce]]\n"
+
+#. type: Plain text
+msgid ""
+"The mission of Tails is to empower people worldwide by giving out an "
+"operating system that protects from surveillance and censorship."
+msgstr ""
+"La mission de Tails est d'encapaciter les personnes du monde entier en leur "
+"fournissant un système d'exploitation qui les protègent de la surveillance "
+"et de la censure."
+
+#. type: Plain text
+msgid ""
+"We build liberating technology to put people in control of their digital "
+"lives, keeping in mind that the most vulnerable and oppressed people are "
+"also the most in need of privacy and security:"
+msgstr ""
+"Nous fabriquons une technologie libératrice qui met les personnes en "
+"situation de contrôler leur vie numérique, en gardant à l'esprit que les "
+"personnes les plus vulnérables et oppressées sont aussi celles qui ont le "
+"plus besoin de confidentialité et de sécurité :"
+
+#. type: Bullet: '- '
+msgid ""
+"Journalists and whistleblowers use Tails to denounce the wrongdoings of "
+"governments and corporations."
+msgstr ""
+"Journalistes, lanceurs et lanceuses d'alerte utilisent Tails pour dénoncer "
+"les actes répréhensibles des gouvernements et entreprises."
+
+#. type: Bullet: '- '
+msgid ""
+"Activists use Tails to avoid surveillance and organize their struggles for "
+"liberatory social change."
+msgstr ""
+"Les activistes utilisent Tails pour éviter la surveillance et organiser "
+"leurs luttes pour un changement social libérateur."
+
+#. type: Bullet: '- '
+msgid ""
+"Human-rights defenders use Tails to avoid censorship and report human-rights "
+"violations."
+msgstr ""
+"Les personnes défendant les droits humains utilisent Tails pour éviter la "
+"censure et signaler les violations des droits humains."
+
+#. type: Bullet: '- '
+msgid ""
+"Domestic violence survivors use Tails to escape surveillance in their homes."
+msgstr ""
+"Les personnes ayant échappé à des violences familiales utilisent Tails pour "
+"échapper à la surveillance dans leur domicile."
+
+#. type: Bullet: '- '
+msgid "Privacy-concerned citizens use Tails to avoid online tracking."
+msgstr ""
+"Les personnes soucieuses de la vie privée utilisent Tails pour éviter d'être "
+"pistées en ligne."
+
+#. type: Plain text
+msgid ""
+"And we give out Tails for free because nobody should have to pay to be safe "
+"while using computers."
+msgstr ""
+"Et nous distribuons Tails gratuitement car personne ne devrait avoir à payer "
+"pour être en sécurité lors de l'utilisation d'ordinateurs."
+
+#. type: Plain text
+msgid ""
+"However, Tails needs funds to keep up the fight and we know that people who "
+"need Tails the most cannot always donate: because they would get in trouble "
+"for giving to an anti-surveillance tool or simply because they don't have "
+"the money."
+msgstr ""
+"Toutefois, Tails à besoin de fonds pour poursuivre le combat et nous savons "
+"que les personnes qui ont le plus besoin de Tails ne peuvent pas toujours "
+"donner : parce qu'elles pourraient avoir des ennuis pour avoir donné à un "
+"outil de lutte contre la surveillance ou simplement parce qu'elles n'ont pas "
+"d'argent."
+
+#. type: Title =
+#, no-wrap
+msgid "Why supporting Tails is more important than ever"
+msgstr "Pourquoi soutenir Tails est plus important que jamais"
+
+#. type: Plain text
+msgid ""
+"The [2019 World Press Freedom Index](https://rsf.org/en/2019-world-press-"
+"freedom-index-cycle-fear) compiled by Reporters Without Borders (RSF) shows "
+"how hatred of journalists has degenerated into violence, contributing to an "
+"increase in fear. The number of countries regarded as safe, where "
+"journalists can work in complete security, continues to decline, while "
+"authoritarian regimes continue to tighten their grip on the media."
+msgstr ""
+"Le [Classement mondial de la liberté de la presse 2019](https://rsf.org/fr/"
+"classement-mondial-de-la-liberte-de-la-presse-2019-la-mecanique-de-la-peur) "
+"compilé par Reporters sans frontières (RSF) montre comment la haine des "
+"journalistes a dégénéré en violence, contribuant à augmenter la peur. Le "
+"nombre de pays considéré comme sûrs, dans lesquels les journalistes peuvent "
+"travailler complètement en sécurité, continue de diminuer, tandis que les "
+"régimes autoritaires continuent de renforcer leur emprise sur les médias."
+
+#. type: Plain text
+#, fuzzy
+#| msgid ""
+#| "According to the [2019 Report by United Nations' Special Rapporteur David "
+#| "Kaye](https://daccess-ods.un.org/access.nsf/Get?Open&DS=A/"
+#| "HRC/41/35&Lang=E), surveillance of individuals – often journalists, "
+#| "activists, opposition figures, critics and others exercising their right "
+#| "to freedom of expression – thrives because of weak controls on exports "
+#| "and transfers of surveillance technology to repressive governments. This "
+#| "surveillance is known to lead to arbitrary detention, sometimes to "
+#| "torture and possibly to extrajudicial killings."
+msgid ""
+"According to the [2019 Report by United Nations' Special Rapporteur David "
+"Kaye](https://daccess-ods.un.org/access.nsf/Get?Open&DS=A/HRC/41/35&Lang=E), "
+"surveillance of individuals – often journalists, activists, opposition "
+"figures, critics and others exercising their right to freedom of expression "
+"– thrives because of weak controls on exports and transfers of surveillance "
+"technology to repressive governments. This surveillance is known to lead to "
+"arbitrary detention, sometimes to torture and possibly to extrajudicial "
+"killings."
+msgstr ""
+"Comme l'indique le [rapport 2019 du Rapporteur spécial des Nations Unies "
+"David Kaye](https://daccess-ods.un.org/access.nsf/Get?Open&DS=A/"
+"HRC/41/35&Lang=F), la surveillance des individus – souvent des journalistes, "
+"des activistes, des opposants, des critiques et d'autres exerçant leur droit "
+"à la liberté d'expression – prospère en raison de la faiblesse des contrôles "
+"sur les exportations et des transferts de technologies de surveillance aux "
+"gouvernements répressifs. Cette surveillance est connue pour conduire à des "
+"détentions arbitraires, quelquefois à de la torture et à de possibles "
+"meurtres extrajudiciaires."
+
+#. type: Plain text
+msgid ""
+"These technologies include targeted malware, online interception of network "
+"communications, and deep packet inspection; all technologies that Tails is "
+"one of the best tool to protect from while reducing the risk of dangerous "
+"mistakes."
+msgstr ""
+"Ces technologies incluent des diffusions de logiciels malveillants, des "
+"interceptions de communications réseau et de l'inspection profonde de "
+"paquets (DPI - Deep Packet Inspection) ; toutes technologies pour lesquelles "
+"Tails est l'un des meilleurs outils pour s'en protéger en réduisant les "
+"risques de dangereuses erreurs."
+
+#. type: Plain text
+msgid ""
+"A legal framework to regulate this surveillance industry, as recommended by "
+"David Kaye, might be useful for the future. But digital freedom tools like "
+"Tails are more needed than ever right now, in an act of empowerment and self-"
+"defense."
+msgstr ""
+"Un cadre légal pour réguler cette industrie de la surveillance, comme le "
+"recommande David Kaye, pourrait être utile dans le futur. Mais les outils de "
+"liberté numérique comme Tails sont aujourd'hui plus que jamais nécessaires, "
+"dans un acte d'autonomisation et d'autodéfense."
+
+#. type: Title =
+#, no-wrap
+msgid "You are our best guarantee"
+msgstr "Vous êtes notre meilleure garantie"
+
+#. type: Plain text
+msgid ""
+"We often hear complaints about software projects that are meant to fight "
+"surveillance, like Tor and Tails, getting funds from the US government. We "
+"share this concern and we will never be at ease as long as the well-being of "
+"our project depends on such funding."
+msgstr ""
+"Nous entendons souvent des plaintes au sujet de projets logiciels destinés à "
+"lutter contre la surveillance, comme Tor et Tails, qui obtiennent des fonds "
+"du gouvernement des États-Unis. Nous partageons cette préoccupation et nous "
+"ne serons jamais à l'aise tant que le bon fonctionnement de notre projet "
+"dépendra d'un tel financement."
+
+#. type: Plain text
+msgid ""
+"This is why it's so important to be sustained by users like you: our "
+"independence depends on you."
+msgstr ""
+"C'est pourquoi il est si important d'être soutenu par des personnes comme "
+"vous : notre indépendance dépend de vous."
+
+#. type: Plain text
+msgid ""
+"We are extremely proud that our primary source of funding in the last years "
+"has been donations from passionate people like you. Let's keep it this way!"
+msgstr ""
+"Nous avons la fierté que notre source principale de fonds de ces dernières "
+"années soit des dons de personnes passionnées comme vous. Que les choses "
+"restent ainsi !"
+
+#. type: Plain text
+msgid "In 2017&ndash;2019, our money came from:"
+msgstr "En 2017&ndash;2019, notre argent venait de :"
+
+#. type: Plain text
+#, no-wrap
+msgid ""
+"<div class=\"chart\">\n"
+"<div class=\"chart-content\">\n"
+"<svg width=\"75%\" height=\"75%\" viewBox=\"0 0 64 64\">\n"
+"<circle cx=\"32\" cy=\"32\" r=\"15.91549430918954\" fill=\"transparent\" stroke=\"#5da5da\" stroke-width=\"32\" stroke-dasharray=\"36 64\" stroke-dashoffset=\"25\" aria-labelledby=\"\"></circle>\n"
+"<circle cx=\"32\" cy=\"32\" r=\"15.91549430918954\" fill=\"transparent\" stroke=\"#faa43a\" stroke-width=\"32\" stroke-dasharray=\"30 70\" stroke-dashoffset=\"89\" aria-labelledby=\"\"></circle>\n"
+"<circle cx=\"32\" cy=\"32\" r=\"15.91549430918954\" fill=\"transparent\" stroke=\"#60bd68\" stroke-width=\"32\" stroke-dasharray=\"25 75\" stroke-dashoffset=\"59\" aria-labelledby=\"\"></circle>\n"
+"<circle cx=\"32\" cy=\"32\" r=\"15.91549430918954\" fill=\"transparent\" stroke=\"#f17cb0\" stroke-width=\"32\" stroke-dasharray=\"9 91\" stroke-dashoffset=\"34\" aria-labelledby=\"\"></circle>\n"
+"</svg>\n"
+"</div>\n"
+"<div class=\"chart-key\">\n"
+"<ul class=\"chart-key-list\">\n"
+"<li class=\"blue\"><div class=\"key-label\">Passionate people like you</div><div class=\"key-percent\">(36%)</div></li>\n"
+"<li class=\"orange\"><div class=\"key-label\">Foundations & NGOs</div><div class=\"key-percent\">(30%)</div><br/>like Mozilla or the Handshake Foundation</li>\n"
+"<li class=\"green\"><div class=\"key-label\">Entities related to the US government</div><div class=\"key-percent\">(25%)</div><br/>like the Open Technology Fund or the ISC Project</li>\n"
+"<li class=\"pink\"><div class=\"key-label\">Private companies</div><div class=\"key-percent\">(9%)</div><br/>like DuckDuckGo or Lush</li>\n"
+"</ul>\n"
+"</div>\n"
+"</div>\n"
+msgstr ""
+"<div class=\"chart\">\n"
+"<div class=\"chart-content\">\n"
+"<svg width=\"75%\" height=\"75%\" viewBox=\"0 0 64 64\">\n"
+"<circle cx=\"32\" cy=\"32\" r=\"15.91549430918954\" fill=\"transparent\" stroke=\"#5da5da\" stroke-width=\"32\" stroke-dasharray=\"36 64\" stroke-dashoffset=\"25\" aria-labelledby=\"\"></circle>\n"
+"<circle cx=\"32\" cy=\"32\" r=\"15.91549430918954\" fill=\"transparent\" stroke=\"#faa43a\" stroke-width=\"32\" stroke-dasharray=\"30 70\" stroke-dashoffset=\"89\" aria-labelledby=\"\"></circle>\n"
+"<circle cx=\"32\" cy=\"32\" r=\"15.91549430918954\" fill=\"transparent\" stroke=\"#60bd68\" stroke-width=\"32\" stroke-dasharray=\"25 75\" stroke-dashoffset=\"59\" aria-labelledby=\"\"></circle>\n"
+"<circle cx=\"32\" cy=\"32\" r=\"15.91549430918954\" fill=\"transparent\" stroke=\"#f17cb0\" stroke-width=\"32\" stroke-dasharray=\"9 91\" stroke-dashoffset=\"34\" aria-labelledby=\"\"></circle>\n"
+"</svg>\n"
+"</div>\n"
+"<div class=\"chart-key\">\n"
+"<ul class=\"chart-key-list\">\n"
+"<li class=\"blue\"><div class=\"key-label\">Personnes passionnées comme vous</div><div class=\"key-percent\">(36%)</div></li>\n"
+"<li class=\"orange\"><div class=\"key-label\">Fondations & ONG</div><div class=\"key-percent\">(30%)</div><br/>comme Mozilla ou the Handshake Foundation</li>\n"
+"<li class=\"green\"><div class=\"key-label\">Entités liées au gouvernement des États-Unis</div><div class=\"key-percent\">(25%)</div><br/>comme the Open Technology Fund ou the ISC Project</li>\n"
+"<li class=\"pink\"><div class=\"key-label\">Entreprises privées</div><div class=\"key-percent\">(9%)</div><br/>comme DuckDuckGo ou Lush</li>\n"
+"</ul>\n"
+"</div>\n"
+"</div>\n"
+
+#. type: Title =
+#, no-wrap
+msgid "New anonymous ways to donate"
+msgstr "Nouvelles méthodes anonymes pour faire un don"
+
+#. type: Plain text
+msgid ""
+"Because we know that being able to donate anonymously is very important to "
+"some of you, we are adding this year 3 new ways to donate anonymously to "
+"Tails."
+msgstr ""
+"Parce que nous savons qu'avoir la possibilité de faire un don anonymement "
+"est très importante pour certaines personnes parmi vous, nous avons ajouté "
+"cette année trois nouvelles méthodes pour faire un don de manière anonyme à "
+"Tails."
+
+#. type: Plain text
+msgid "You can send us:"
+msgstr "Vous pouvez nous envoyer :"
+
+#. type: Plain text
+msgid "- Monero:"
+msgstr "- Monero :"
+
+#. type: Plain text
+#, no-wrap
+msgid "  4B93hjotwmMQeaZ799D84XTxhqUGqqjfveUTB1GeduAKNeH47WDyn5eb8P2mtScErGbsbL5X3J6vUPAVPrw8j5pMFh6dAwY\n"
+msgstr "  4B93hjotwmMQeaZ799D84XTxhqUGqqjfveUTB1GeduAKNeH47WDyn5eb8P2mtScErGbsbL5X3J6vUPAVPrw8j5pMFh6dAwY\n"
+
+#. type: Plain text
+msgid "- Zcash:"
+msgstr "- Zcash :"
+
+#. type: Plain text
+#, no-wrap
+msgid "  zs1ayrt0wckfpkddxqsqv9af6n7vtuspnv3t59w7e9mvykyznmcr3h9vep8emte2lgak8d5s0q65q2\n"
+msgstr "  zs1ayrt0wckfpkddxqsqv9af6n7vtuspnv3t59w7e9mvykyznmcr3h9vep8emte2lgak8d5s0q65q2\n"
+
+#. type: Plain text
+msgid "- Cash by post:"
+msgstr "- du liquide par courrier postal :"
+
+#. type: Plain text
+#, no-wrap
+msgid "  <em>Our former postal address is not valid anymore.</em>\n"
+msgstr "  <em>Notre ancienne adresse postale n'est plus valide.</em>\n"
+
+#. type: Plain text
+msgid "Please take a minute to donate to Tails today!"
+msgstr "Merci de prendre une minute pour donner à Tails aujourd'hui !"
+
+#. type: Plain text
+#, no-wrap
+msgid "<div class=\"donate-button\"><a href=\"https://tails.boum.org/donate/?r=2019\">Donate</a></div>\n"
+msgstr "<div class=\"donate-button\"><a href=\"https://tails.boum.org/donate/?r=2019\">Faire un don</a></div>\n"
+
+#~ msgid ""
+#~ "  Weber<br/>\n"
+#~ "  Merseburger Strasse 95<br/>\n"
+#~ "  04177 Leipzig<br/>\n"
+#~ "  Germany\n"
+#~ msgstr ""
+#~ "  Weber<br/>\n"
+#~ "  Merseburger Strasse 95<br/>\n"
+#~ "  04177 Leipzig<br/>\n"
+#~ "  Allemagne\n"
